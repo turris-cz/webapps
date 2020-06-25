@@ -1,0 +1,60 @@
+{
+    "selected": "reforis",
+    "lang": "en",
+    "apps": [
+        {
+            "selected": false,
+            "title": "Foris",
+            "url": "/foris/config/",
+            "icon": "../icons/reforis.jpg",
+            "description": {
+                "en": "Simple configuration interface for Turris OS"
+            }
+        },
+        {
+            "selected": true,
+            "title": "ReForis",
+            "url": "/reforis/",
+            "icon": "../icons/reforis.jpg",
+            "description": {
+                "en": "Redesigned web interface for Turris OS"
+            }
+        },
+        {
+            "selected": false,
+            "title": "LuCI",
+            "url": "/cgi-bin/luci",
+            "icon": "../icons/luci.jpg",
+            "description": {
+                "en": "OpenWRT advance web configuration"
+            }
+        },
+        {
+            "selected": false,
+            "title": "Nextcloud",
+            "url": "/cgi-bin/luci",
+            "icon": "../icons/nextcloud.jpg",
+            "description": {
+                "en": "Nextcloud is a suite of client-server software for creating and using file hosting services."
+            }
+        },
+        {
+            "selected": false,
+            "title": "Transmission",
+            "url": "/cgi-bin/luci",
+            "icon": "../icons/transmission.jpg",
+            "description": {
+                "en": "Transmission is a BitTorrent client."
+            }
+        },
+        {
+            "selected": false,
+            "title": "TVheadend",
+            "url": "/cgi-bin/luci",
+            "icon": "../icons/tvheadend.jpg",
+            "description": {
+                "en": "Tvheadend is a TV streaming server and recorder"
+            }
+        }
+    ]
+}
