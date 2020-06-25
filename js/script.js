@@ -57,7 +57,7 @@ getJSON("js/apps.json")
             container.innerHTML += `<div class="cards">
                             <a href="${url}" title="${title} - ${appDescription}">
                                 <div class="card-item ${
-                                    selected ? "selected" : null
+                                    selected ? "selected" : ""
                                 }">
                                         <img class="card-icon responsive" src="${icon}"></img>
                                     <div class="card-info">
