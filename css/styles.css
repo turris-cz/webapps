@@ -100,6 +100,8 @@ body {
     text-decoration: none;
     flex: 1 1 0px;
     min-width: 0;
+    transition: transform 0.3s;
+    -webkit-transition: transform 0.3s;
 }
 
 .cards .card-item {
@@ -112,6 +114,8 @@ body {
     overflow: hidden;
     transition: transform 0.3s;
     -webkit-transition: transform 0.3s;
+    /* -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important; */
 }
 
 .cards a:focus {
@@ -122,15 +126,15 @@ body {
     box-shadow: 0 20px 40px -14px rgba(0, 162, 226, 0.829);
 }
 
-.cards .card-item:hover {
+.cards .card-item:hover:not(:focus),
+.cards a:focus:not(:hover) {
     cursor: pointer;
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
+    /* -webkit-filter: grayscale(0) !important;
+    filter: grayscale(0) !important; */
 }
 
-.cards .card-item:hover .card-icon {
-    opacity: 1;
-}
 .cards .card-info {
     display: flex;
     flex: 1 1 auto;
@@ -168,7 +172,12 @@ body {
 .cards .card-icon {
     border-radius: 6px 6px 0px 0px;
     margin: auto;
-    opacity: 0.91;
+    opacity: 0.85;
+}
+
+.cards .card-item:hover .card-icon,
+.cards a:focus .card-icon {
+    opacity: 1;
 }
 
 .responsive {
