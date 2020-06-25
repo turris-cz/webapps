@@ -13,22 +13,44 @@ const getJSON = async (url) => {
 
 getJSON("js/apps.json")
     .then((data) => {
+        var timeout = document.getElementById("timeout");
         var container = document.querySelector(".container");
 
         var userLang = navigator.language || navigator.userLanguage;
         console.log("The language is: " + userLang);
 
+        const lang = data.langs;
+        var pageTitle;
+        var pageDescription;
+
+        switch (userLang) {
+            case "cs":
+                pageTitle = lang.cs.title;
+                pageDescription = lang.cs.description;
+                break;
+            default:
+                pageTitle = lang.en.title;
+                pageDescription = lang.en.description;
+                break;
+        }
+        timeout.insertAdjacentHTML(
+            "beforeBegin",
+            `<h1>${pageTitle}</h1>
+                            <p>${pageDescription}</p>`
+        );
+
+        // Rendering apps
         for (let i = 0; i < data.apps.length; i++) {
-            const element = data.apps[i];
-            const { title, icon, url, selected } = element;
-            var appDescription = element.description;
+            const app = data.apps[i];
+            const { title, icon, url, selected } = app;
+            var appDescription = app.description;
 
             switch (userLang) {
                 case "cs":
-                    appDescription = element.description.cs;
+                    appDescription = app.description.cs;
                     break;
                 default:
-                    appDescription = element.description.en;
+                    appDescription = app.description.en;
                     break;
             }
 
@@ -59,11 +81,11 @@ var duration = 25;
 window.onload = function () {
     var progressBar = document.getElementById("bar-status");
     var timeout = document.getElementById("timeout");
-    timeout.textContent = duration;
+    timeout.textContent = ` ${duration} sec.`;
     var timer = setInterval(frame, 1000);
     function frame() {
         var step = width / duration;
-        timeout.textContent = duration;
+        timeout.textContent = ` ${duration} sec.`;
         duration = Math.max(0, duration - 1);
         if (width <= 100) {
             progressBar.style.width = width + "%";

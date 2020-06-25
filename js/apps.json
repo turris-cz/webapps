@@ -1,6 +1,14 @@
 {
-    "selected": "reforis",
-    "lang": "en",
+    "langs": {
+        "en": {
+            "title": "Available applications",
+            "description": "Switching to the selected one in:"
+        },
+        "cs": {
+            "title": "Dostupné rozhraní",
+            "description": "Přepnutí na vybrané rozhraní za:"
+        }
+    },
     "apps": [
         {
             "selected": false,
@@ -19,7 +27,7 @@
             "icon": "../icons/reforis.jpg",
             "description": {
                 "en": "Redesigned web interface for Turris OS",
-                "cs": "Nový design web rozhraní pro nastavení Turris OS"
+                "cs": "Nový design rozhraní pro nastavení Turris OS"
             }
         },
         {
