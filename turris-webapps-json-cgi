@@ -1,0 +1,75 @@
+#!/bin/sh
+
+. /lib/functions.sh
+
+config_load foris
+config_get_bool WIZARD_FINISHED wizard finished "0"
+config_get LANG settings lang "en"
+config_load webapps
+config_get DEFAULT webapps default "reforis"
+
+old_to_json() {
+    NAME=""
+    URL=""
+    DESCRIPTION=""
+    ICON=""
+    . "$1"
+    cat << ENTRY
+"$(basename "$1" .conf | sed 's|^[0-9]*_||')": {
+    "title": "$(echo "$NAME" | sed 's| - .*||')",
+    "url": "$URL",
+    "icon": "$ICON",
+    "description": {
+	"en": "$(echo "$NAME" | sed 's|.* - ||')"
+    }
+}
+ENTRY
+}
+
+print_all() {
+    SEP=""
+    for fl in /usr/share/turris-webapps/[0-9]*.conf /etc/turris-webapps/[0-9]*.conf; do
+        [ -f "$fl" ] || continue
+        echo -n "$SEP"
+        old_to_json "$fl"
+        SEP=","
+    done
+    for fl in /usr/share/turris-webapps/[0-9]*.json /etc/turris-webapps/[0-9]*.json; do
+        [ -f "$fl" ] || continue
+        echo -n "$SEP"
+        cat "$fl"
+        SEP=","
+    done
+}
+
+print_default() {
+    fl="$(ls -1 /usr/share/turris-webapps/*$default*.conf | head -n 1)"
+    if [ -f "$fl" ]; then
+        old_to_json "$fl"
+    else
+        fl="$(ls -1 /usr/share/turris-webapps/*$default*.json | head -n 1)"
+        cat "$fl"
+    fi
+}
+
+if [ "$WIZARD_FINISHED" = "1" ]; then
+  cat << JSON
+{
+    "default": "$DEFAULT",
+    "lang": "$LANG",
+    "apps": {
+$(print_all)
+    }
+}
+JSON
+else
+  cat << JSON
+{
+    "default": "$DEFAULT",
+    "lang": "$LANG",
+    "apps": {
+$(print_default)
+    }
+}
+JSON
+fi
