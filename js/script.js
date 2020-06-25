@@ -15,10 +15,23 @@ getJSON("js/apps.json")
     .then((data) => {
         var container = document.querySelector(".container");
 
+        var userLang = navigator.language || navigator.userLanguage;
+        console.log("The language is: " + userLang);
+
         for (let i = 0; i < data.apps.length; i++) {
             const element = data.apps[i];
             const { title, icon, url, selected } = element;
-            const appDescription = element.description.en;
+            var appDescription = element.description;
+
+            switch (userLang) {
+                case "cs":
+                    appDescription = element.description.cs;
+                    break;
+                default:
+                    appDescription = element.description.en;
+                    break;
+            }
+
             container.innerHTML += `<div class="cards">
                             <a href="${url}" title="${title} - ${appDescription}">
                                 <div class="card-item ${
