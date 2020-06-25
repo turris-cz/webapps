@@ -8,7 +8,8 @@
             "url": "/foris/config/",
             "icon": "../icons/reforis.jpg",
             "description": {
-                "en": "Simple configuration interface for Turris OS"
+                "en": "Simple configuration interface for Turris OS",
+                "cs": "Jednoduché rozhraní pro nastavení Turris OS"
             }
         },
         {
@@ -17,7 +18,8 @@
             "url": "/reforis/",
             "icon": "../icons/reforis.jpg",
             "description": {
-                "en": "Redesigned web interface for Turris OS"
+                "en": "Redesigned web interface for Turris OS",
+                "cs": "Nový design web rozhraní pro nastavení Turris OS"
             }
         },
         {
@@ -26,7 +28,8 @@
             "url": "/cgi-bin/luci",
             "icon": "../icons/luci.jpg",
             "description": {
-                "en": "OpenWRT advance web configuration"
+                "en": "OpenWRT advance web configuration",
+                "cs": "OpenWrt rozhraní pro nastavení routeru"
             }
         },
         {
