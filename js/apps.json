@@ -2,16 +2,17 @@
     "langs": {
         "en": {
             "title": "Available applications",
-            "description": "Switching to the selected one in:"
+            "countdown": "Switching to the selected one in:"
         },
         "cs": {
             "title": "Dostupné rozhraní",
-            "description": "Přepnutí na vybrané rozhraní za:"
+            "countdown": "Přepnutí na vybrané rozhraní za:"
         }
     },
+    "selected": "foris",
     "apps": [
         {
-            "selected": false,
+            "id": "foris",
             "title": "Foris",
             "url": "/foris/config/",
             "icon": "../icons/reforis.jpg",
@@ -21,7 +22,7 @@
             }
         },
         {
-            "selected": true,
+            "id": "reforis",
             "title": "ReForis",
             "url": "/reforis/",
             "icon": "../icons/reforis.jpg",
@@ -31,7 +32,7 @@
             }
         },
         {
-            "selected": false,
+            "id": "luci",
             "title": "LuCI",
             "url": "/cgi-bin/luci",
             "icon": "../icons/luci.jpg",
@@ -41,7 +42,7 @@
             }
         },
         {
-            "selected": false,
+            "id": "nextcloud",
             "title": "Nextcloud",
             "url": "/cgi-bin/luci",
             "icon": "../icons/nextcloud.jpg",
@@ -50,7 +51,7 @@
             }
         },
         {
-            "selected": false,
+            "id": "transmission",
             "title": "Transmission",
             "url": "/cgi-bin/luci",
             "icon": "../icons/transmission.jpg",
@@ -59,7 +60,7 @@
             }
         },
         {
-            "selected": false,
+            "id": "tvheadend",
             "title": "TVheadend",
             "url": "/cgi-bin/luci",
             "icon": "../icons/tvheadend.jpg",
