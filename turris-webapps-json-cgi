@@ -15,7 +15,8 @@ old_to_json() {
     ICON=""
     . "$1"
     cat << ENTRY
-"$(basename "$1" .conf | sed 's|^[0-9]*_||')": {
+{
+    "id": "$(basename "$1" .conf | sed 's|^[0-9_]*||')",
     "title": "$(echo "$NAME" | sed 's| - .*||')",
     "url": "$URL",
     "icon": "$ICON",
@@ -27,23 +28,23 @@ ENTRY
 }
 
 print_all() {
-    SEP=""
+    local sep=""
     for fl in /usr/share/turris-webapps/[0-9]*.conf /etc/turris-webapps/[0-9]*.conf; do
         [ -f "$fl" ] || continue
-        echo -n "$SEP"
+        echo -n "$sep"
         old_to_json "$fl"
-        SEP=","
+        sep=","
     done
     for fl in /usr/share/turris-webapps/[0-9]*.json /etc/turris-webapps/[0-9]*.json; do
         [ -f "$fl" ] || continue
-        echo -n "$SEP"
+        echo -n "$sep"
         cat "$fl"
-        SEP=","
+        sep=","
     done
 }
 
 print_default() {
-    fl="$(ls -1 /usr/share/turris-webapps/*$default*.conf | head -n 1)"
+    local fl="$(ls -1 /usr/share/turris-webapps/*$default*.conf | head -n 1)"
     if [ -f "$fl" ]; then
         old_to_json "$fl"
     else
@@ -52,24 +53,15 @@ print_default() {
     fi
 }
 
-if [ "$WIZARD_FINISHED" = "1" ]; then
-  cat << JSON
+cat << JSON
 {
-    "default": "$DEFAULT",
     "lang": "$LANG",
-    "apps": {
-$(print_all)
-    }
+    "selected": "$DEFAULT",
+    "langs": {
+$(cat /usr/share/turris-webapps/l10n.json)
+    },
+    "apps": [
+$(if [ "$WIZARD_FINISHED" = "1" ]; then print_all; else print_default; fi)
+    ]
 }
 JSON
-else
-  cat << JSON
-{
-    "default": "$DEFAULT",
-    "lang": "$LANG",
-    "apps": {
-$(print_default)
-    }
-}
-JSON
-fi
