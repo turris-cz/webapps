@@ -21,28 +21,29 @@ getJSON("js/apps.json")
 
         const lang = data.langs;
         var pageTitle;
-        var pageDescription;
+        var pageCountdown;
 
         switch (userLang) {
             case "cs":
                 pageTitle = lang.cs.title;
-                pageDescription = lang.cs.description;
+                pageCountdown = lang.cs.countdown;
                 break;
             default:
                 pageTitle = lang.en.title;
-                pageDescription = lang.en.description;
+                pageCountdown = lang.en.countdown;
                 break;
         }
         timeout.insertAdjacentHTML(
             "beforeBegin",
             `<h1>${pageTitle}</h1>
-                            <p>${pageDescription}</p>`
+                            <p>${pageCountdown}</p>`
         );
 
         // Rendering apps
         for (let i = 0; i < data.apps.length; i++) {
             const app = data.apps[i];
-            const { title, icon, url, selected } = app;
+            const { title, icon, url, id } = app;
+            const { selected } = data;
             var appDescription = app.description;
 
             switch (userLang) {
@@ -54,10 +55,12 @@ getJSON("js/apps.json")
                     break;
             }
 
+            selected == id ? (selectedApp = true) : (selectedApp = false);
+
             container.innerHTML += `<div class="cards">
                             <a href="${url}" title="${title} - ${appDescription}">
                                 <div class="card-item ${
-                                    selected ? "selected" : ""
+                                    selectedApp ? "selected" : ""
                                 }">
                                         <img class="card-icon responsive" src="${icon}"></img>
                                     <div class="card-info">
