@@ -44,7 +44,7 @@
         {
             "id": "nextcloud",
             "title": "Nextcloud",
-            "url": "/cgi-bin/luci",
+            "url": "/nextcloud",
             "icon": "../icons/nextcloud.jpg",
             "description": {
                 "en": "Nextcloud is a suite of client-server software for creating and using file hosting services."
@@ -53,7 +53,7 @@
         {
             "id": "transmission",
             "title": "Transmission",
-            "url": "/cgi-bin/luci",
+            "url": "/transmission",
             "icon": "../icons/transmission.jpg",
             "description": {
                 "en": "Transmission is a BitTorrent client."
@@ -62,7 +62,7 @@
         {
             "id": "tvheadend",
             "title": "TVheadend",
-            "url": "/cgi-bin/luci",
+            "url": "/tvheadend",
             "icon": "../icons/tvheadend.jpg",
             "description": {
                 "en": "Tvheadend is a TV streaming server and recorder"

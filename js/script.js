@@ -1,3 +1,6 @@
+var timeout = document.getElementById("timeout");
+var appRedirect;
+
 // Fetching JSON
 const getJSON = async (url) => {
     try {
@@ -11,15 +14,11 @@ const getJSON = async (url) => {
     }
 };
 
-getJSON("js/apps.json")
+getJSON("192.168.1.1/apps.json")
     .then((data) => {
-        var timeout = document.getElementById("timeout");
-        var container = document.querySelector(".container");
-
-        var userLang = navigator.language || navigator.userLanguage;
-        console.log("The language is: " + userLang);
-
+        // Language Switch
         const lang = data.langs;
+        var userLang = navigator.language || navigator.userLanguage;
         var pageTitle;
         var pageCountdown;
 
@@ -42,8 +41,9 @@ getJSON("js/apps.json")
         // Rendering apps
         for (let i = 0; i < data.apps.length; i++) {
             const app = data.apps[i];
-            const { title, icon, url, id } = app;
+            const { title, icon, id, url } = app;
             const { selected } = data;
+            var container = document.querySelector(".container");
             var appDescription = app.description;
 
             switch (userLang) {
@@ -55,7 +55,9 @@ getJSON("js/apps.json")
                     break;
             }
 
-            selected == id ? (selectedApp = true) : (selectedApp = false);
+            selected == id
+                ? (selectedApp = true) && (appRedirect = url)
+                : (selectedApp = false);
 
             container.innerHTML += `<div class="cards">
                             <a href="${url}" title="${title} - ${appDescription}">
@@ -83,7 +85,6 @@ var width = 100;
 var duration = 25;
 window.onload = function () {
     var progressBar = document.getElementById("bar-status");
-    var timeout = document.getElementById("timeout");
     timeout.textContent = ` ${duration} sec.`;
     var timer = setInterval(frame, 1000);
     function frame() {
@@ -97,8 +98,12 @@ window.onload = function () {
             }
             width -= step;
         }
-        if (duration == 0) {
-            // redirectTo("#");
+        if (duration === 0) {
+            redirectTo(appRedirect);
         }
     }
 };
+
+function redirectTo(url) {
+    location.replace(url);
+}
