@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="/css/styles.css" />
-        <title>Available Applications | Turris</title>
-    </head>
-    <body>
-        <div class="intro">
-            <span id="timeout"></span>
-            <div class="progress">
-                <div id="bar-status" class="bar" style="width: 100%;">
-                    <p id="bar-title" class="percent"></p>
-                </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Available Applications | Turris</title>
+</head>
+
+<body>
+    <div class="intro">
+        <span id="timeout"></span>
+    </div>
+    <div class="container">
+        <div id="progress" class="progress">
+            <div id="bar-status" class="bar" style="width: 100%;">
+                <p id="bar-title" class="percent"></p>
             </div>
         </div>
-        <div class="container"></div>
-        <script src="/js/script.js"></script>
-    </body>
+        <div class="break"></div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
 </html>
