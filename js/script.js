@@ -14,7 +14,7 @@ const getJSON = async (url) => {
     }
 };
 
-getJSON("192.168.1.1/apps.json")
+getJSON("js/apps.json")
     .then((data) => {
         // Language Switch
         const lang = data.langs;
@@ -62,9 +62,9 @@ getJSON("192.168.1.1/apps.json")
             container.innerHTML += `<div class="cards">
                             <a href="${url}" title="${title} - ${appDescription}">
                                 <div class="card-item ${
-                                    selectedApp ? "selected" : ""
-                                }">
-                                        <img class="card-icon responsive" src="${icon}"></img>
+                selectedApp ? "selected" : ""
+                }">
+                                        <div class="card-icon" style="background-image:url(${icon})"></div>
                                     <div class="card-info">
                                         <h2 class="card-name">${title}</h2>
                                         <p>
@@ -80,7 +80,7 @@ getJSON("192.168.1.1/apps.json")
         console.error(error);
     });
 
-// Timer
+// Timer & Progress Bar
 var width = 100;
 var duration = 25;
 window.onload = function () {
@@ -98,12 +98,23 @@ window.onload = function () {
             }
             width -= step;
         }
-        if (duration === 0) {
+        if (duration == 0) {
             redirectTo(appRedirect);
         }
     }
+    dynamicWidth();
 };
 
 function redirectTo(url) {
     location.replace(url);
+}
+
+function dynamicWidth() {
+    const childCardNumber = document.getElementsByClassName("cards").length;
+    var progressContainer = document.getElementById("progress");
+    if (childCardNumber === 4) {
+        progressContainer.style.maxWidth = "1285px";
+    } else if (childCardNumber === 3) {
+        progressContainer.style.maxWidth = "950px";
+    }
 }
