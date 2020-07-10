@@ -15,7 +15,7 @@
             "id": "foris",
             "title": "Foris",
             "url": "/foris/config/",
-            "icon": "../icons/reforis.jpg",
+            "icon": "../icons/turris.svg",
             "description": {
                 "en": "Simple configuration interface for Turris OS",
                 "cs": "Jednoduché rozhraní pro nastavení Turris OS"
@@ -25,7 +25,7 @@
             "id": "reforis",
             "title": "ReForis",
             "url": "/reforis/",
-            "icon": "../icons/reforis.jpg",
+            "icon": "../icons/foris.svg",
             "description": {
                 "en": "Redesigned web interface for Turris OS",
                 "cs": "Nový design rozhraní pro nastavení Turris OS"
@@ -35,7 +35,7 @@
             "id": "luci",
             "title": "LuCI",
             "url": "/cgi-bin/luci",
-            "icon": "../icons/luci.jpg",
+            "icon": "../icons/luci.svg",
             "description": {
                 "en": "OpenWRT advance web configuration",
                 "cs": "OpenWrt rozhraní pro nastavení routeru"
@@ -45,7 +45,7 @@
             "id": "nextcloud",
             "title": "Nextcloud",
             "url": "/nextcloud",
-            "icon": "../icons/nextcloud.jpg",
+            "icon": "../icons/nextcloud.svg",
             "description": {
                 "en": "Nextcloud is a suite of client-server software for creating and using file hosting services."
             }
@@ -54,7 +54,7 @@
             "id": "transmission",
             "title": "Transmission",
             "url": "/transmission",
-            "icon": "../icons/transmission.jpg",
+            "icon": "../icons/transmission.svg",
             "description": {
                 "en": "Transmission is a BitTorrent client."
             }
@@ -63,7 +63,7 @@
             "id": "tvheadend",
             "title": "TVheadend",
             "url": "/tvheadend",
-            "icon": "../icons/tvheadend.jpg",
+            "icon": "../icons/tvheadend.svg",
             "description": {
                 "en": "Tvheadend is a TV streaming server and recorder"
             }
