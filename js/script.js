@@ -55,6 +55,11 @@ getJSON("js/apps.json")
                     break;
             }
 
+            // Fallback if description is not translated
+            if (!appDescription) {
+                appDescription = app.description.en;
+            }
+
             selected == id
                 ? (selectedApp = true) && (appRedirect = url)
                 : (selectedApp = false);
