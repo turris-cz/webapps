@@ -19,7 +19,7 @@ old_to_json() {
     "id": "$(basename "$1" .conf | sed 's|^[0-9_]*||')",
     "title": "$(echo "$NAME" | sed 's| - .*||')",
     "url": "$URL",
-    "icon": "$ICON",
+    "icon": "/icons/$ICON",
     "description": {
 	"en": "$(echo "$NAME" | sed 's|.* - ||')"
     }
