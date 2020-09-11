@@ -1,5 +1,48 @@
-var timeout = document.getElementById("timeout");
-var appRedirect;
+/*
+ * Copyright (c) 2020 CZ.NIC z.s.p.o. (http://www.nic.cz/)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
+const intro = document.getElementById("intro");
+const progressBar = document.getElementById("progress-bar");
+let appRedirect;
+
+// Timer & Progress Bar
+window.onload = () => {
+    let start = true;
+    setTimeout(() => {
+        if (start) {
+            start = false;
+            let duration = 25;
+            let progressWidth = 100;
+            const bar = document.getElementById("progress-bar");
+            const timeout = document.getElementById("timeout");
+
+            timeout.textContent = ` ${duration} sec.`;
+            const timer = setInterval(frame, 1000);
+
+            function frame() {
+                let step = progressWidth / duration;
+                duration = Math.max(0, duration - 1);
+                timeout.textContent = ` ${duration} sec.`;
+                if (progressWidth < 1) {
+                    clearInterval(timer);
+                    start = true;
+                    redirectTo(appRedirect);
+                } else {
+                    progressWidth = progressWidth - step;
+                    bar.style.width = progressWidth + "%";
+                }
+            }
+        }
+    }, 100);
+};
+
+const redirectTo = (url) => {
+    window.location.assign(url);
+};
 
 // Fetching JSON
 const getJSON = async (url) => {
@@ -18,7 +61,7 @@ getJSON("js/apps.json")
     .then((data) => {
         // Language Switch
         const lang = data.langs;
-        var userLang = navigator.language || navigator.userLanguage;
+        const userLang = navigator.language || navigator.userLanguage;
         var pageTitle;
         var pageCountdown;
 
@@ -32,10 +75,10 @@ getJSON("js/apps.json")
                 pageCountdown = lang.en.countdown;
                 break;
         }
-        timeout.insertAdjacentHTML(
+        intro.insertAdjacentHTML(
             "beforeBegin",
             `<h1>${pageTitle}</h1>
-                            <p>${pageCountdown}</p>`
+            <p class="lead text-muted">${pageCountdown}<span id="timeout"></span></p>`
         );
 
         // Rendering apps
@@ -43,7 +86,7 @@ getJSON("js/apps.json")
             const app = data.apps[i];
             const { title, icon, id, url } = app;
             const { selected } = data;
-            var container = document.querySelector(".container");
+            const container = document.querySelector(".container .row");
             var appDescription = app.description;
 
             switch (userLang) {
@@ -64,62 +107,32 @@ getJSON("js/apps.json")
                 ? (selectedApp = true) && (appRedirect = url)
                 : (selectedApp = false);
 
-            container.innerHTML += `<div class="cards">
-                            <a href="${url}" title="${title} - ${appDescription}">
-                                <div class="card-item ${
-                selectedApp ? "selected" : ""
-                }">
-                                        <div class="card-icon" style="background-image:url(${icon})"></div>
-                                    <div class="card-info">
-                                        <h2 class="card-name">${title}</h2>
-                                        <p>
-                                            ${appDescription}
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>`;
+            container.innerHTML += `
+            <div class="col mb-5">
+                <div class="card h-100 shadow-sm mr-auto ml-auto">
+                    <img class="bd-placeholder-img card-img-top p-4 border-bottom" height="310" src="${icon}" alt="${title}" />
+                    <div class="card-body">
+                        <a 
+                        href="${url}" 
+                        title="${title} - ${appDescription}" 
+                        class="stretched-link" 
+                        tabindex="${i + 1}"
+                        >
+                            <h2 class="h3 text-dark d-inline-block align-middle card-name">${title}</h2>
+                        </a>
+                        ${
+                            selectedApp
+                                ? "<span class='badge badge-primary ml-1 mb-1 align-middle'>default</span>"
+                                : ""
+                        }  
+                        <p class="card-text text-truncate">
+                            ${appDescription}
+                        </p>
+                    </div>
+                </div>
+            </div>`;
         }
     })
     .catch((error) => {
         console.error(error);
     });
-
-// Timer & Progress Bar
-var width = 100;
-var duration = 25;
-window.onload = function () {
-    var progressBar = document.getElementById("bar-status");
-    timeout.textContent = ` ${duration} sec.`;
-    var timer = setInterval(frame, 1000);
-    function frame() {
-        var step = width / duration;
-        timeout.textContent = ` ${duration} sec.`;
-        duration = Math.max(0, duration - 1);
-        if (width <= 100) {
-            progressBar.style.width = width + "%";
-            if (width <= 1) {
-                progressBar.style.opacity = "0";
-            }
-            width -= step;
-        }
-        if (duration == 0) {
-            redirectTo(appRedirect);
-        }
-    }
-    dynamicWidth();
-};
-
-function redirectTo(url) {
-    location.replace(url);
-}
-
-function dynamicWidth() {
-    const childCardNumber = document.getElementsByClassName("cards").length;
-    var progressContainer = document.getElementById("progress");
-    if (childCardNumber === 4) {
-        progressContainer.style.maxWidth = "1285px";
-    } else if (childCardNumber === 3) {
-        progressContainer.style.maxWidth = "950px";
-    }
-}

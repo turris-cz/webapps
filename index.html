@@ -1,27 +1,79 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <title>Available Applications | Turris</title>
-</head>
-
-<body>
-    <div class="intro">
-        <span id="timeout"></span>
-    </div>
-    <div class="container">
-        <div id="progress" class="progress">
-            <div id="bar-status" class="bar" style="width: 100%;">
-                <p id="bar-title" class="percent"></p>
+<html class="h-100" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Main Turris OS disambiguation for web appliactions"
+        />
+        <link href="/favicon.ico" rel="shortcut icon" />
+        <link href="/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/css/styles.min.css" rel="stylesheet" />
+        <link href="/css/dark-mode.min.css" rel="stylesheet" />
+        <title>Available Applications | Turris</title>
+    </head>
+    <body
+        class="d-flex flex-column h-100"
+        id="content-wrapper"
+        data-theme="dark"
+    >
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <!-- Navigation -->
+        <header>
+            <div class="navbar fixed-top navbar-light bg-light shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <a href="/" class="navbar-brand d-flex align-items-center">
+                        <img src="/icons/turris-dark.svg" alt="Turris Logo" />
+                    </a>
+                    <div class="custom-control custom-switch">
+                        <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="darkSwitch"
+                        />
+                        <label class="custom-control-label" for="darkSwitch"
+                            >Dark Mode</label
+                        >
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="break"></div>
-    </div>
-    <script src="/js/script.js"></script>
-</body>
-
+        </header>
+        <!-- Main -->
+        <main role="main">
+            <section class="intro text-center container">
+                <div class="container" id="intro">
+                    <div class="progress">
+                        <div
+                            class="progress-bar progress-bar-striped progress-bar-animated"
+                            id="progress-bar"
+                            role="progressbar"
+                            aria-valuenow="75"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            style="width: 100%"
+                        ></div>
+                    </div>
+                </div>
+            </section>
+            <div class="py-3">
+                <div class="container">
+                    <div
+                        class="row row-cols-1 row-cols-md-3 justify-content-center"
+                    ></div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 bg-light shadow">
+            <div class="container text-center">
+                <span class="text-muted">
+                    Turris is developed by CZ.NIC, the CZ domain registry.
+                </span>
+            </div>
+        </footer>
+        <script src="/js/script.min.js"></script>
+        <script src="/js/dark-mode-switch.min.js"></script>
+    </body>
 </html>
