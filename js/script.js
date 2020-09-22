@@ -110,7 +110,7 @@ getJSON("js/apps.json")
             container.innerHTML += `
             <div class="col mb-5">
                 <div class="card h-100 shadow-sm mr-auto ml-auto">
-                    <img class="bd-placeholder-img card-img-top p-4 border-bottom" height="310" src="${icon}" alt="${title}" />
+                    <img class="bd-placeholder-img card-img-top p-5 border-bottom" src="${icon}" alt="${title}" />
                     <div class="card-body">
                         <a 
                         href="${url}" 
