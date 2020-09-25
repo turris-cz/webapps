@@ -8,16 +8,16 @@
             name="description"
             content="Main Turris OS disambiguation for web appliactions"
         />
-        <link href="/favicon.ico" rel="shortcut icon" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/css/styles.min.css" rel="stylesheet" />
-        <link href="/css/dark-mode.min.css" rel="stylesheet" />
+        <link rel="icon" href="favicon-black.png" id="light-scheme-icon">
+        <link rel="icon" href="favicon-white.png" id="dark-scheme-icon">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/styles.min.css" rel="stylesheet" />
+        <link href="css/dark-mode.min.css" rel="stylesheet" />
         <title>Available Applications | Turris</title>
     </head>
     <body
         class="d-flex flex-column h-100"
         id="content-wrapper"
-        data-theme="dark"
     >
         <noscript class="text-center pt-4"
             >You need to enable JavaScript to run this app.</noscript
@@ -27,7 +27,7 @@
             <div class="navbar fixed-top navbar-light bg-light shadow-sm">
                 <div class="container d-flex justify-content-between">
                     <a href="/" class="navbar-brand d-flex align-items-center">
-                        <img src="/icons/turris-dark.svg" alt="Turris Logo" />
+                        <img src="icons/turris-dark.svg" alt="Turris Logo" />
                     </a>
                     <div class="custom-control custom-switch">
                         <input
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </header>
-        <!-- Main -->
+        <!-- Main Content -->
         <main role="main">
             <section class="intro text-center container">
                 <div class="container" id="intro">
@@ -75,7 +75,7 @@
                 </span>
             </div>
         </footer>
-        <script async src="/js/dark-mode-switch.min.js"></script>
-        <script src="/js/script.min.js"></script>
+        <script async src="js/dark-mode-switch.min.js"></script>
+        <script src="js/script.min.js"></script>
     </body>
 </html>
