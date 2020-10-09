@@ -69,3 +69,15 @@
     ~ .custom-control-label::after {
     background-color: rgb(24, 26, 27);
 }
+
+[data-theme="dark"] .card:hover {
+    box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.175) !important;
+}
+
+[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075) !important;
+}
+
+[data-theme="dark"] .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15) !important;
+}
