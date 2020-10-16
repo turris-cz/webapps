@@ -80,3 +80,16 @@ footer p {
 .alt-theme-color {
     background-color: black;
 }
+
+/* Safari only */
+@media not all and (min-resolution:.001dpcm){
+
+    @supports (-webkit-appearance:none) {
+        /* Fix odd icons padding */
+        .card-img-top {
+            padding-top:  0!important;
+            padding-bottom: 0!important;
+        } 
+        }
+    
+}
