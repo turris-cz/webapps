@@ -1,4 +1,9 @@
 #!/bin/sh
+set -e
+
+USR_DIR="/usr/share/turris-webapps"
+ETC_DIR="/etc/turris-webapps"
+L10N="/usr/share/turris-webapps/l10n.json"
 
 . /lib/functions.sh
 
@@ -8,67 +13,84 @@ config_get LANG settings lang "en"
 config_load webapps
 config_get DEFAULT webapps default "reforis"
 
-old_to_json() {
-    NAME=""
-    URL=""
-    DESCRIPTION=""
-    ICON=""
-    . "$1"
-    cat << ENTRY
-{
-    "id": "$(basename "$1" .conf | sed 's|^[0-9_]*||')",
-    "title": "$(echo "$NAME" | sed 's| - .*||')",
-    "url": "$URL",
-    "icon": "/icons/$ICON",
-    "description": {
-	"en": "$(echo "$NAME" | sed 's|.* - ||')"
-    }
-}
-ENTRY
+conf2json() (
+	NAME=""
+	URL=""
+	ICON=""
+	. "$1"
+	cat <<-ENTRY
+		{
+			"id": "$(basename "$1" .conf | sed 's|^[0-9_]*||')",
+			"title": "$(echo "$NAME" | sed 's| - .*||')",
+			"url": "$URL",
+			"icon": "/icons/$ICON",
+			"description": {
+			"en": "$(echo "$NAME" | sed 's|.* - ||')"
+			}
+		}
+	ENTRY
+)
+
+print_config() {
+	local conf="$1"
+	[ "$conf" != "$L10N" ] || return
+	case "${conf##*.}" in
+		json)
+			paste -s "$conf"
+			;;
+		conf)
+			conf2json "$conf" | paste -s
+			;;
+		*)
+			echo "print_config: unknown format: $conf" >&2
+			exit 1
+			;;
+	esac
 }
 
 print_all() {
-    local sep=""
-    for fl in /usr/share/turris-webapps/[0-9]*.conf /etc/turris-webapps/[0-9]*.conf; do
-        [ -f "$fl" ] || continue
-        echo -n "$sep"
-        old_to_json "$fl"
-        sep=","
-    done
-    for fl in /usr/share/turris-webapps/[0-9]*.json /etc/turris-webapps/[0-9]*.json; do
-        [ -f "$fl" ] || continue
-        echo -n "$sep"
-        cat "$fl"
-        sep=","
-    done
+	for dir in "$USR_DIR" "$ETC_DIR"; do
+		for conf in "$dir"/*.json "$dir"/*.conf; do
+			[ -f "$conf" ] || continue
+			print_config "$conf"
+		done
+	done
 }
 
 print_default() {
-    local fl="$(ls -1 /usr/share/turris-webapps/*$default*.conf | head -n 1)"
-    if [ -f "$fl" ]; then
-        old_to_json "$fl"
-    else
-        fl="$(ls -1 /usr/share/turris-webapps/*$default*.json | head -n 1)"
-        cat "$fl"
-    fi
+	for conf in "$USR_DIR"/*"$DEFAULT.json" "$ETC_DIR"/*"$DEFAULT.conf"; do
+		[ -f "$conf" ] || continue
+		print_config "$conf"
+		return
+	done
+	echo "There is no default config: $DEFAULT" >&2
+	exit 1
+}
+
+print_apps() {
+	{
+		if [ "$WIZARD_FINISHED" = "1" ]; then
+			print_all
+		else
+			print_default
+		fi
+	} | paste -sd, | sed "s|@HOST@|$SERVER_NAME|g"
 }
 
 # Handle IPv6 URLs
-if expr "$SERVER_NAME" : '^.*:' > /dev/null; then
-    HOST="[$SERVER_NAME]"
-else
-    HOST="$SERVER_NAME"
+if expr "$SERVER_NAME" : '.*:' > /dev/null; then
+	SERVER_NAME="[$SERVER_NAME]"
 fi
 
-cat << JSON
-{
-    "lang": "$LANG",
-    "selected": "$DEFAULT",
-    "langs": {
-$(cat /usr/share/turris-webapps/l10n.json)
-    },
-    "apps": [
-$(if [ "$WIZARD_FINISHED" = "1" ]; then print_all; else print_default; fi | sed "s|@HOST@|$HOST|g")
-    ]
-}
+cat <<-JSON
+	{
+		"lang": "$LANG",
+		"selected": "$DEFAULT",
+		"langs": {
+			$(paste -s "$L10N")
+		},
+		"apps": [
+			$(print_apps)
+		]
+	}
 JSON
