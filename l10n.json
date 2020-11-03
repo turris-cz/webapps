@@ -1,8 +1,8 @@
 "en": {
     "title": "Available applications",
-    "countdown": "Switching to the selected one in:"
+    "countdown": "Switching to the default one in:"
 },
 "cs": {
     "title": "Dostupné aplikace",
-    "countdown": "Přepnutí do vybrané aplikace za:"
+    "countdown": "Přepnutí do výchozí aplikace za:"
 }
