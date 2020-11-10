@@ -2,11 +2,11 @@
     "langs": {
         "en": {
             "title": "Available applications",
-            "countdown": "Switching to the highlighted app in:"
+            "countdown": "Switching to the default app in:"
         },
         "cs": {
             "title": "Dostupné rozhraní",
-            "countdown": "Přepnutí na označené rozhraní za:"
+            "countdown": "Přepnutí na výchozí rozhraní za:"
         }
     },
     "selected": "foris",
