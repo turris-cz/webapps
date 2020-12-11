@@ -115,14 +115,14 @@ getJSON("js/apps.json")
                         <a 
                         href="${url}" 
                         title="${title} - ${appDescription}" 
-                        class="stretched-link" 
+                        class="stretched-link d-inline-block" 
                         tabindex="${i + 1}"
                         >
-                            <h2 class="h3 text-dark d-inline-block align-middle card-name">${title}</h2>
+                            <h2 class="h3 text-dark d-inline align-middle card-name">${title}</h2>
                         </a>
                         ${
                             selectedApp
-                                ? "<span class='badge badge-primary ml-1 mb-1 align-middle'>default</span>"
+                                ? "<span class='badge badge-primary align-middle'>default</span>"
                                 : ""
                         }  
                         <p class="card-text text-truncate">

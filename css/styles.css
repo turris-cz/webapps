@@ -40,7 +40,7 @@ main .intro {
 }
 
 .row-cols-1 .card {
-    max-width: 330px;
+    max-width: 310px;
 }
 
 .card {
@@ -82,14 +82,12 @@ footer p {
 }
 
 /* Safari only */
-@media not all and (min-resolution:.001dpcm){
-
-    @supports (-webkit-appearance:none) {
+@media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
         /* Fix odd icons padding */
         .card-img-top {
-            padding-top:  0!important;
-            padding-bottom: 0!important;
-        } 
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
         }
-    
+    }
 }
