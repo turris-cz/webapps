@@ -1,5 +1,8 @@
 #!/bin/sh
 
+USR_DIR="/usr/share/turris-webapps"
+ETC_DIR="/etc/turris-webapps"
+
 . /lib/functions.sh
 
 config_load foris
@@ -8,12 +11,14 @@ config_get LANG settings lang "en"
 config_load webapps
 config_get DEFAULT webapps default "reforis"
 
+set -e
+
 old_to_json() {
     NAME=""
     URL=""
     DESCRIPTION=""
     ICON=""
-    . "$1"
+    source "$1" || return 1
     cat << ENTRY
 {
     "id": "$(basename "$1" .conf | sed 's|^[0-9_]*||')",
@@ -27,34 +32,45 @@ old_to_json() {
 ENTRY
 }
 
-print_all() {
-    local sep=""
-    for fl in /usr/share/turris-webapps/[0-9]*.conf /etc/turris-webapps/[0-9]*.conf; do
-        [ -f "$fl" ] || continue
-        echo -n "$sep"
-        old_to_json "$fl"
-        sep=","
-    done
-    for fl in /usr/share/turris-webapps/[0-9]*.json /etc/turris-webapps/[0-9]*.json; do
-        [ -f "$fl" ] || continue
-        echo -n "$sep"
-        cat "$fl"
-        sep=","
-    done
-}
-
-print_default() {
-    local fl="$(ls -1 /usr/share/turris-webapps/*$default*.conf | head -n 1)"
-    if [ -f "$fl" ]; then
+print_config() {
+    if [ "${fl##*.}" = conf ]; then
         old_to_json "$fl"
     else
-        fl="$(ls -1 /usr/share/turris-webapps/*$default*.json | head -n 1)"
         cat "$fl"
     fi
 }
 
+print_all() {
+    local sep=","
+    print_default || sep=""
+    for fl in "$ETC_DIR"/[0-9]*.json \
+              "$ETC_DIR"/[0-9]*.conf \
+              "$USR_DIR"/[0-9]*.json \
+              "$USR_DIR"/[0-9]*.conf; do
+        [ -f "$fl" ] || continue
+        if expr "$fl" : ".*/[0-9][0-9]_$DEFAULT\." > /dev/null; then
+            continue
+        fi
+        echo -n "$sep"
+        print_config "$fl"
+    done
+}
+
+print_default() {
+    local ret=1
+    for fl in "$ETC_DIR"/[0-9][0-9]_$DEFAULT.json \
+              "$ETC_DIR"/[0-9][0-9]_$DEFAULT.conf \
+              "$USR_DIR"/[0-9][0-9]_$DEFAULT.json \
+              "$USR_DIR"/[0-9][0-9]_$DEFAULT.conf; do
+        [ -f "$fl" ] || continue
+        print_config "$fl"
+        ret="$?"
+    done
+    return $ret
+}
+
 # Handle IPv6 URLs
-if expr "$SERVER_NAME" : '^.*:' > /dev/null; then
+if expr "$SERVER_NAME" : '.*:' > /dev/null; then
     HOST="[$SERVER_NAME]"
 else
     HOST="$SERVER_NAME"
@@ -68,7 +84,13 @@ cat << JSON
 $(cat /usr/share/turris-webapps/l10n.json)
     },
     "apps": [
-$(if [ "$WIZARD_FINISHED" = "1" ]; then print_all; else print_default; fi | sed "s|@HOST@|$HOST|g")
+$(
+    if [ "$WIZARD_FINISHED" = "1" ]; then
+        print_all
+    else
+        print_default
+    fi | sed "s|@HOST@|$HOST|g"
+)
     ]
 }
 JSON
