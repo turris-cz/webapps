@@ -81,6 +81,12 @@ getJSON("js/apps.json")
             <p class="lead text-muted">${pageCountdown}<span id="timeout"></span></p>`
         );
 
+        // Handle special case with only one app
+        if (data.apps.length == 1) {
+            redirectTo(data.apps[0].url);
+            return;
+        }
+
         // Rendering apps
         for (let i = 0; i < data.apps.length; i++) {
             const app = data.apps[i];
