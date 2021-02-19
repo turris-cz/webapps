@@ -60,6 +60,13 @@ const redirectTo = (url) => {
     window.location.assign(url);
 };
 
+const handleKeyPress = (event, url) => {
+    if (event.keyCode == 13) {
+        event.preventDefault();
+        redirectTo(url);
+    }
+};
+
 // Render apps on page load
 window.addEventListener("load", () => {
     const intro = document.getElementById("intro");
@@ -72,8 +79,8 @@ window.addEventListener("load", () => {
             // Language Switch
             const lang = data.langs;
             const userLang = navigator.language || navigator.userLanguage;
-            var pageTitle;
-            var pageCountdown;
+            let pageTitle;
+            let pageCountdown;
 
             switch (userLang) {
                 case "cs":
@@ -89,24 +96,28 @@ window.addEventListener("load", () => {
             // Insert intro & countdown
             intro.insertAdjacentHTML(
                 "beforeBegin",
-                `<h1>${pageTitle}</h1>
-            <p class="lead text-muted">${pageCountdown}<span id="timeout"> 25 sec.</span></p>`
+                `
+                <h1>${pageTitle}</h1>
+                <p class="lead text-muted">
+                    ${pageCountdown}
+                    <span id="timeout"> 25 sec.</span>
+                </p>`
             );
 
-            // Insert progressbar
+            // Insert progress bar
             intro.innerHTML += `
-        <div class="progress">
-            <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                id="progress-bar"
-                role="progressbar"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-                style="animation-direction: reverse; width: 100%"
-            >
-            </div>
-        </div>`;
+                <div class="progress">
+                    <div
+                        class="progress-bar progress-bar-striped progress-bar-animated"
+                        id="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="animation-direction: reverse; width: 100%"
+                    >
+                    </div>
+                </div>`;
 
             // Handle special case with only one app
             if (data.apps.length == 1) {
@@ -116,11 +127,11 @@ window.addEventListener("load", () => {
 
             // Rendering apps
             for (let i = 0; i < data.apps.length; i++) {
+                const container = document.querySelector(".container .row");
                 const app = data.apps[i];
+                let appDescription = app.description;
                 const { title, icon, id, url } = app;
                 const { selected } = data;
-                const container = document.querySelector(".container .row");
-                var appDescription = app.description;
 
                 switch (userLang) {
                     case "cs":
@@ -141,30 +152,30 @@ window.addEventListener("load", () => {
                     : (selectedApp = false);
 
                 container.innerHTML += `
-            <div class="col mb-5">
-                <div class="card h-100 shadow-sm mr-auto ml-auto">
-                    <img class="bd-placeholder-img card-img-top p-5 border-bottom" src="${icon}" alt="${title}" />
-                    <div class="card-body">
-                        <a 
-                        href="${url}" 
-                        title="${title} - ${appDescription}" 
-                        class="stretched-link d-inline-block" 
-                        tabindex="${i + 1}"
+                    <div class="col mb-5">
+                        <div 
+                            class="card h-100 shadow-sm mr-auto ml-auto" 
+                            tabindex="${i + 1}" 
+                            onclick="window.location.href='${url}';" 
+                            onkeypress="handleKeyPress(event, '${url}')"
+                            title="${title} - ${appDescription}"
                         >
-                            <h2 class="h3 text-dark d-inline align-middle card-name">${title}</h2>
-                        </a>
-                        ${
-                            selectedApp
-                                ? "<span class='badge badge-primary align-middle'>default</span>"
-                                : ""
-                        }  
-                        <p class="card-text text-truncate">
-                            ${appDescription}
-                        </p>
-                    </div>
-                </div>
-            </div>`;
+                            <img class="bd-placeholder-img card-img-top p-5 border-bottom" src="${icon}" alt="${title}" />
+                            <div class="card-body">
+                                <h2 class="h3 text-dark d-inline align-middle card-name">${title}</h2>
+                                ${
+                                    selectedApp
+                                        ? "<span class='badge badge-primary align-middle'>default</span>"
+                                        : ""
+                                }  
+                                <p class="card-text text-truncate">
+                                    ${appDescription}
+                                </p>
+                            </div>
+                        </div>
+                    </div>`;
             }
+
             // Start timer and progress bar after apps render
             timerAndProgressBar();
         })
