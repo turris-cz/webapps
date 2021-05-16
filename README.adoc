@@ -1,4 +1,4 @@
-Turris Webapps
+Turris WebApps
 ==============
 
 Simple landing page allowing users to choose which we application they want to
