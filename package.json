@@ -1,0 +1,67 @@
+{
+    "name": "webapps",
+    "version": "4.0.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^11.2.7",
+        "@testing-library/user-event": "^12.8.3",
+        "bootstrap": "^5.1.1",
+        "react": "^17.0.2",
+        "react-bootstrap": "^2.0.0-beta.6",
+        "react-bootstrap-icons": "^1.5.0",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3"
+    },
+    "devDependencies": {
+        "axios": "^0.21.4",
+        "express": "^4.17.1",
+        "express-pino-logger": "^6.0.0",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.1.2",
+        "node-env-run": "^4.0.2",
+        "node-sass": "^6.0.1",
+        "nodemon": "^2.0.12",
+        "npm-run-all": "^4.1.5",
+        "pino-colada": "^2.1.0",
+        "prettier": "^2.4.0",
+        "web-vitals": "^1.1.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "server": "node-env-run -E .env.development.local server --exec nodemon | pino-colada",
+        "dev": "run-p server start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "proxy": "http://localhost:3001"
+}

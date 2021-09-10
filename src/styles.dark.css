@@ -1,0 +1,112 @@
+/*
+ * Copyright (c) 2019-2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
+[data-theme="dark"] {
+    background-color: #111 !important;
+    color: rgb(209, 205, 199);
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+}
+
+[data-theme="dark"] a img,
+[data-theme="dark"] .card .card-img-top {
+    filter: invert(0.6);
+}
+
+[data-theme="dark"] .progress {
+    background-color: rgb(35, 38, 39);
+}
+
+[data-theme="dark"] .card {
+    background-color: rgb(24, 26, 27);
+    border-color: rgba(140, 130, 115, 0.13);
+}
+
+[data-theme="dark"] .border-bottom {
+    border-bottom-color: white !important;
+}
+
+[data-theme="dark"] span.badge.bg-primary,
+[data-theme="dark"] button.btn.btn-outline-primary:hover,
+[data-theme="dark"] .progress-bar {
+    color: rgb(232, 230, 227);
+    background-color: rgb(0, 98, 204) !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: rgb(195, 190, 182) !important;
+}
+
+[data-theme="dark"] .form-switch .form-check-input:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
+}
+
+[data-theme="dark"] .card:hover,
+[data-theme="dark"] .card:focus {
+    box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.175) !important;
+}
+
+[data-theme="dark"] .card:focus {
+    outline: none;
+    border: 1px solid #0062cc;
+    -webkit-box-shadow: 0px 0px 5px #0062cc;
+    box-shadow: 0px 0px 5px #0062cc;
+}
+
+/* Shadows */
+[data-theme="dark"] .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075) !important;
+}
+
+[data-theme="dark"] .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Tooltips */
+[data-theme="dark"] .bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #fafafa;
+}
+
+[data-theme="dark"] .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #fafafa;
+}
+
+[data-theme="dark"] .bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #fafafa;
+}
+
+[data-theme="dark"] .bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #fafafa;
+}
+
+[data-theme="dark"] .tooltip-inner {
+    color: #111;
+    background-color: #fafafa;
+}
+
+[data-theme="dark"] #backdrop {
+    background-color: rgba(0, 0, 0, 0.692);
+}
+
+[data-theme="dark"] .border {
+    border-color: rgb(65, 70, 75) !important;
+}
+
+[data-theme="dark"] p kbd {
+    color: #000 !important;
+    background-color: #e9ecef !important;
+}
