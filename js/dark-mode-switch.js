@@ -3,59 +3,45 @@ const lightSchemeIcon = document.querySelector("link#light-scheme-icon");
 const darkSchemeIcon = document.querySelector("link#dark-scheme-icon");
 
 matcher = window.matchMedia("(prefers-color-scheme: dark)");
-matcher.addListener(onUpdate);
-onUpdate();
+matcher.addListener(onColorSchemeUpdate);
 
-function onUpdate() {
+darkSwitch.addEventListener("change", () => {
+    localStorage.setItem("color-scheme",
+        darkSwitch.checked ? "dark" : "light")
+    updateTheme();
+});
+
+function onColorSchemeUpdate() {
     if (matcher.matches) {
         lightSchemeIcon.remove();
         document.head.append(darkSchemeIcon);
+        darkSwitch.checked = true;
     } else {
         document.head.append(lightSchemeIcon);
         darkSchemeIcon.remove();
+        darkSwitch.checked = false;
     }
-}
-
-if (darkSwitch) {
-    initTheme();
-    darkSwitch.addEventListener("change", () => {
-        resetTheme();
-    });
+    updateTheme();
 }
 
 /**
- * Summary: function that adds or removes the attribute 'data-theme' depending if
- * the switch is 'on' or 'off'.
- *
- * Description: initTheme is a function that uses localStorage from JavaScript DOM,
- * to store the value of the HTML switch. If the switch was already switched to
- * 'on' it will set an HTML attribute to the body named: 'data-theme' to a 'dark'
- * value. If it is the first time opening the page, or if the switch was off the
- * 'data-theme' attribute will not be set.
- * @return {void}
- */
-function initTheme() {
-    const darkThemeSelected =
-        localStorage.getItem("darkSwitch") !== null &&
-        localStorage.getItem("darkSwitch") === "dark";
-    darkSwitch.checked = darkThemeSelected;
-    darkThemeSelected
+- * Summary: updateTheme checks if the switch is 'on' or 'off' and if it is toggled
+- * on it will set the HTML attribute 'data-theme' to dark so the dark-theme CSS is
+- * applied.
+- * @return {void}
+- */
+function updateTheme() {
+    if (localStorage.getItem("color-scheme") === "dark") {
+        darkSwitch.checked = true;
+    }
+    if (localStorage.getItem("color-scheme") === "light") {
+        darkSwitch.checked = false;
+    }
+    darkSwitch.checked
         ? document.body.setAttribute("data-theme", "dark")
         : document.body.removeAttribute("data-theme");
 }
 
-/**
- * Summary: resetTheme checks if the switch is 'on' or 'off' and if it is toggled
- * on it will set the HTML attribute 'data-theme' to dark so the dark-theme CSS is
- * applied.
- * @return {void}
- */
-function resetTheme() {
-    if (darkSwitch.checked) {
-        document.body.setAttribute("data-theme", "dark");
-        localStorage.setItem("darkSwitch", "dark");
-    } else {
-        document.body.removeAttribute("data-theme");
-        localStorage.removeItem("darkSwitch");
-    }
-}
+
+// Update theme (this calls updateTheme as well as it updates icons)
+onColorSchemeUpdate();
