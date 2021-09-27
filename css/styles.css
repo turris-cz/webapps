@@ -46,6 +46,7 @@ main .intro {
 .card {
     transition: transform 0.4s;
     -webkit-transition: transform 0.4s;
+    transition: all 0.3s ease;
 }
 
 .card a {
