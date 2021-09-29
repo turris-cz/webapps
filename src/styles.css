@@ -84,7 +84,7 @@ footer p {
 @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
         /* Fix odd icons padding */
-        .card-img-top {
+        img.card-img-top {
             padding-top: 0 !important;
             padding-bottom: 0 !important;
         }
