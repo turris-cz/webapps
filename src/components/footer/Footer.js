@@ -5,8 +5,6 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
-
 const Footer = () => {
     return (
         <footer className="footer mt-auto py-3 bg-light shadow">

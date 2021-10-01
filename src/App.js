@@ -4,12 +4,13 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
+
 import React, { useEffect, useLayoutEffect } from "react";
 
-import ErrorBoundary from "./utils/ErrorBoundary";
+import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Main from "./components/main/Main";
-import Footer from "./components/footer/Footer";
+import ErrorBoundary from "./utils/ErrorBoundary";
 
 const App = () => {
     const getPrefColorScheme = () => {
@@ -24,11 +25,11 @@ const App = () => {
         const userPrefersDark = getPrefColorScheme();
         if (isReturningUser) {
             return savedMode;
-        } else if (userPrefersDark) {
-            return true;
-        } else {
-            return false;
         }
+        if (userPrefersDark) {
+            return true;
+        }
+        return false;
     };
 
     const [darkMode, setDarkMode] = React.useState(getInitialMode());

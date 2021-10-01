@@ -5,8 +5,9 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
+import PropTypes from "prop-types";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
 const CountDown = ({ countDownTime = 30, onComplete }) => {
@@ -34,6 +35,11 @@ const CountDown = ({ countDownTime = 30, onComplete }) => {
             />
         </>
     );
+};
+
+CountDown.propTypes = {
+    countDownTime: PropTypes.number,
+    onComplete: PropTypes.func,
 };
 
 export default CountDown;

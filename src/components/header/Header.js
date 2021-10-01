@@ -4,14 +4,11 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
-
-import React from "react";
-
-import Navbar from "react-bootstrap/Navbar";
+import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/Navbar";
 
 import DarkModeToggle from "./DarkModeToggle";
-
 import TurrisLogo from "./turris-dark.svg";
 
 const Header = ({ darkMode, toggleMode }) => {
@@ -39,6 +36,11 @@ const Header = ({ darkMode, toggleMode }) => {
             </Navbar>
         </header>
     );
+};
+
+Header.propTypes = {
+    darkMode: PropTypes.bool,
+    toggleMode: PropTypes.func,
 };
 
 export default Header;

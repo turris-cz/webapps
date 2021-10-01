@@ -5,13 +5,12 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
-
-import Card from "react-bootstrap/Card";
-import Badge from "react-bootstrap/Badge";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import PropTypes from "prop-types";
 import { ChevronRight, InfoCircleFill } from "react-bootstrap-icons";
+import Badge from "react-bootstrap/Badge";
+import Card from "react-bootstrap/Card";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 const AppCard = ({
     title,
@@ -71,6 +70,15 @@ const AppCard = ({
             </Card>
         </div>
     );
+};
+
+AppCard.propTypes = {
+    title: PropTypes.string,
+    url: PropTypes.string,
+    icon: PropTypes.string,
+    description: PropTypes.string,
+    defaultApp: PropTypes.bool,
+    tabIndexPosition: PropTypes.number,
 };
 
 export default AppCard;

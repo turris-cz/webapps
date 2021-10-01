@@ -5,8 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
-
+import PropTypes from "prop-types";
 import Spinner from "react-bootstrap/Spinner";
 
 import AppCard from "./AppCard";
@@ -55,6 +54,12 @@ const Cards = ({ apps, error, isLoading }) => {
             </div>
         </div>
     );
+};
+
+Cards.propTypes = {
+    apps: PropTypes.array,
+    error: PropTypes.string,
+    isLoading: PropTypes.bool,
 };
 
 export default Cards;

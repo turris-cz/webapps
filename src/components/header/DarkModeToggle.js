@@ -5,11 +5,10 @@
  * See /LICENSE for more information.
  */
 
-import React from "react";
-
-import Tooltip from "react-bootstrap/Tooltip";
+import PropTypes from "prop-types";
 import Form from "react-bootstrap/Form";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 
 const DarkModeToggle = ({ darkMode, toggleMode }) => {
     const renderTooltip = (props) => (
@@ -30,6 +29,11 @@ const DarkModeToggle = ({ darkMode, toggleMode }) => {
             </OverlayTrigger>
         </Form>
     );
+};
+
+DarkModeToggle.propTypes = {
+    darkMode: PropTypes.bool,
+    toggleMode: PropTypes.func,
 };
 
 export default DarkModeToggle;
