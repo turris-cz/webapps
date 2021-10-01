@@ -8,3 +8,8 @@ test:
     script:
         - npm install
         - npm test
+
+lint:
+    script:
+        - npm install
+        - npm run lint
