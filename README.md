@@ -138,6 +138,10 @@ performance.
 
 The build is minified and the filenames include the hashes.
 
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md).
+
 ## Contributing
 
 Feel free to open issues and pull requests!
