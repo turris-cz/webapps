@@ -16,7 +16,6 @@
         "source-map-explorer": "^2.5.2"
     },
     "devDependencies": {
-        "axios": "^0.21.4",
         "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-import": "^2.24.2",
