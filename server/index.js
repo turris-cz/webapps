@@ -9,7 +9,7 @@ app.use(pino);
 
 app.get("/api/apps.json", (req, res) => {
     res.setHeader("Content-Type", "application/json");
-    res.send(JSON.stringify(dummyData.apps));
+    res.send(JSON.stringify(dummyData));
 });
 
 app.listen(3001, () =>
