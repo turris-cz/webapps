@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import ProgressBar from "react-bootstrap/ProgressBar";
 
-const CountDown = ({ countDownTime = 30, onComplete }) => {
+const CountDown = ({ countDownTime = 25, onComplete }) => {
     const [timeLeft, setTimeLeft] = useState(countDownTime);
 
     useEffect(() => {

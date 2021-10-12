@@ -35,7 +35,7 @@ const AppCard = ({
                     className="bd-placeholder-img card-img-top p-5 border-bottom"
                     alt={`${title} Logo`}
                 />
-                <Card.Body>
+                <Card.Body className="text-truncate">
                     <Card.Title
                         as={"h2"}
                         className="h4 text-dark d-inline align-middle card-name"
@@ -60,7 +60,7 @@ const AppCard = ({
                         <a
                             tabIndex={tabIndexPosition}
                             href={url}
-                            className="btn btn-outline-primary stretched-link btn-wrap-text"
+                            className="btn btn-outline-primary stretched-link d-inline-block text-truncate"
                         >
                             <span className="align-middle">Go to {title}</span>
                             <ChevronRight className="align-middle ms-1" />
