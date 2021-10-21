@@ -9,8 +9,8 @@ import { useEffect } from "react";
 
 import Spinner from "react-bootstrap/Spinner";
 
-import getAllData from "../../utils/api";
-import useHttp from "../../utils/use-http";
+import useHttp from "../../hooks/use-http";
+import getAllData from "../../lib/api";
 import Cards from "../Cards/Cards";
 import CountDown from "./CountDown";
 
