@@ -11,6 +11,7 @@ import Badge from "react-bootstrap/Badge";
 import Card from "react-bootstrap/Card";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import { t } from "ttag";
 
 const AppCard = ({
     title,
@@ -33,7 +34,7 @@ const AppCard = ({
                     variant="top"
                     src={icon}
                     className="bd-placeholder-img card-img-top p-5 border-bottom"
-                    alt={`${title} Logo`}
+                    alt={t`${title} Logo`}
                 />
                 <Card.Body className="text-truncate">
                     <Card.Title
@@ -53,7 +54,7 @@ const AppCard = ({
                     </OverlayTrigger>
                     {defaultApp && (
                         <Badge bg="primary" className="ms-1 align-middle">
-                            default
+                            {t`default`}
                         </Badge>
                     )}
                     <div className="d-grid mt-1">
@@ -62,7 +63,10 @@ const AppCard = ({
                             href={url}
                             className="btn btn-outline-primary stretched-link d-inline-block text-truncate"
                         >
-                            <span className="align-middle">Go to {title}</span>
+                            <span className="align-middle">
+                                {t`Go to `}
+                                {title}
+                            </span>
                             <ChevronRight className="align-middle ms-1" />
                         </a>
                     </div>
