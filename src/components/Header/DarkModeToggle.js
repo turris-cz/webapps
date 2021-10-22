@@ -21,7 +21,7 @@ const DarkModeToggle = ({ darkMode, toggleMode }) => {
     );
 
     return (
-        <Form className="ms-auto">
+        <Form>
             <OverlayTrigger placement="left" overlay={renderTooltip}>
                 <Form.Check
                     type="switch"

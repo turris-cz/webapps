@@ -10,6 +10,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { t } from "ttag";
 
 import DarkModeToggle from "./DarkModeToggle";
+import LangSwitcher from "./LangSwitcher";
 import TurrisLogo from "./turris-dark.svg";
 
 const Header = ({ darkMode, toggleMode }) => {
@@ -29,10 +30,13 @@ const Header = ({ darkMode, toggleMode }) => {
                             alt={t`Turris Logo`}
                         />
                     </Navbar.Brand>
-                    <DarkModeToggle
-                        darkMode={darkMode}
-                        toggleMode={toggleMode}
-                    />
+                    <div className="ms-auto d-flex align-items-center align-content-center">
+                        <DarkModeToggle
+                            darkMode={darkMode}
+                            toggleMode={toggleMode}
+                        />
+                        <LangSwitcher />
+                    </div>
                 </Container>
             </Navbar>
         </header>
