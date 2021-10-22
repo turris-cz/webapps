@@ -111,3 +111,7 @@ msgstr ""
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
 msgstr ""
+
+#: src/App.js:40
+msgid "Available Applications | Turris"
+msgstr ""

@@ -7,6 +7,8 @@
 
 import React, { useEffect, useLayoutEffect } from "react";
 
+import { t } from "ttag";
+
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -35,6 +37,7 @@ const App = () => {
     const [darkMode, setDarkMode] = React.useState(getInitialMode());
 
     useEffect(() => {
+        document.title = t`Available Applications | Turris`;
         localStorage.setItem("dark", JSON.stringify(darkMode));
     }, [darkMode]);
 

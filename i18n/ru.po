@@ -116,3 +116,7 @@ msgstr "по умолчанию"
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
 msgstr "Перейти в "
+
+#: src/App.js:40
+msgid "Available Applications | Turris"
+msgstr "Доступные Приложения | Turris"
