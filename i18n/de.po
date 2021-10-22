@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 2; plural = (n != 1);\n"
+"Language: de\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/utils/ErrorBoundary.js:25
+#, javascript-format
+msgid "An error ocurred in WebApps: \"${ error }\", see details below."
+msgstr ""
+
+#: src/utils/ErrorBoundary.js:33
+msgid "An Error Occurred - Available Applications | Turris"
+msgstr ""
+
+#: src/utils/ErrorBoundary.js:38
+msgid "Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.js:45
+msgid ""
+"More detailed information is available in the console of your web browser - "
+"on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
+"<kbd>F12</kbd>."
+msgstr ""
+
+#: src/utils/ErrorBoundary.js:49
+msgid ""
+"Please report this error to our support team via e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+
+#: src/components/Main/CountDown.js:28
+#, javascript-format
+msgid "Switching to the default one in: ${ timeLeft } sec."
+msgstr ""
+
+#: src/components/Main/CountDown.js:34
+msgid "${ timeLeft } sec."
+msgstr ""
+
+#: src/components/Main/Main.js:35
+msgid "Loading..."
+msgstr ""
+
+#: src/components/Main/Main.js:50
+msgid "No apps found."
+msgstr ""
+
+#: src/components/Main/Main.js:66
+msgid "Available Applications"
+msgstr ""
+
+#: src/components/Header/DarkModeToggle.js:15
+msgid "Light"
+msgstr ""
+
+#: src/components/Header/DarkModeToggle.js:15
+msgid "Dark"
+msgstr ""
+
+#: src/components/Header/DarkModeToggle.js:19
+#, javascript-format
+msgid "Toggle ${ modeLabel } Mode"
+msgstr ""
+
+#: src/components/Header/Header.js:30
+msgid "Turris Logo"
+msgstr ""
+
+#: src/components/Header/LanguageMenuItem.js:15
+msgid "Czech"
+msgstr ""
+
+#: src/components/Header/LanguageMenuItem.js:16
+msgid "English"
+msgstr ""
+
+#: src/components/Header/LanguageMenuItem.js:17
+msgid "German"
+msgstr ""
+
+#: src/components/Header/LanguageMenuItem.js:18
+msgid "Russian"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.js:21
+msgid "Language"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.js:29
+msgid "Participate"
+msgstr ""
+
+#: src/components/Footer/Footer.js:15
+msgid "Turris is developed by CZ.NIC, the CZ domain registry."
+msgstr ""
+
+#: src/components/Cards/AppCard.js:37
+#, javascript-format
+msgid "${ title } Logo"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:57
+msgid "default"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:67
+msgid "Go to "
+msgstr ""

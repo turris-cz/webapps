@@ -1,0 +1,118 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 3; plural = (n % 10 == 1 && n % 100 != 11 ? 0 : n "
+"% 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2);\n"
+"Language: ru\n"
+"mime-version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/utils/ErrorBoundary.js:25
+#, javascript-format
+msgid "An error ocurred in WebApps: \"${ error }\", see details below."
+msgstr "Произошла ошибка в WebApps: \"${ error }\", подробности см. ниже."
+
+#: src/utils/ErrorBoundary.js:33
+msgid "An Error Occurred - Available Applications | Turris"
+msgstr "Произошла ошибка - Доступные Приложения | Turris"
+
+#: src/utils/ErrorBoundary.js:38
+msgid "Something went wrong:"
+msgstr "Что-то пошло не так:"
+
+#: src/utils/ErrorBoundary.js:45
+msgid ""
+"More detailed information is available in the console of your web browser - "
+"on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
+"<kbd>F12</kbd>."
+msgstr ""
+"Более подробная информация доступна в консоли вашего веб-браузера - в "
+"большинстве браузеров, она доступна после нажатия <kbd>Ctrl+Shift+J</kbd> "
+"или <kbd>F12</kbd>."
+
+#: src/utils/ErrorBoundary.js:49
+msgid ""
+"Please report this error to our support team via e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+
+#: src/components/Main/CountDown.js:28
+#, javascript-format
+msgid "Switching to the default one in: ${ timeLeft } sec."
+msgstr "Переключение на приложение по умолчанию через: ${ timeLeft } сек."
+
+#: src/components/Main/CountDown.js:34
+msgid "${ timeLeft } sec."
+msgstr "${ timeLeft } сек."
+
+#: src/components/Main/Main.js:35
+msgid "Loading..."
+msgstr "Загрузка..."
+
+#: src/components/Main/Main.js:50
+msgid "No apps found."
+msgstr "Приложения не найдены."
+
+#: src/components/Main/Main.js:66
+msgid "Available Applications"
+msgstr "Доступные Приложения"
+
+#: src/components/Header/DarkModeToggle.js:15
+msgid "Light"
+msgstr "светлый"
+
+#: src/components/Header/DarkModeToggle.js:15
+msgid "Dark"
+msgstr "тёмный"
+
+#: src/components/Header/DarkModeToggle.js:19
+#, javascript-format
+msgid "Toggle ${ modeLabel } Mode"
+msgstr "Включить ${ modeLabel } режим"
+
+#: src/components/Header/Header.js:30
+msgid "Turris Logo"
+msgstr "Логотип Turris"
+
+#: src/components/Header/LanguageMenuItem.js:15
+msgid "Czech"
+msgstr "Чешский"
+
+#: src/components/Header/LanguageMenuItem.js:16
+msgid "English"
+msgstr "Английский"
+
+#: src/components/Header/LanguageMenuItem.js:17
+msgid "German"
+msgstr "Немецкий"
+
+#: src/components/Header/LanguageMenuItem.js:18
+msgid "Russian"
+msgstr "Русский"
+
+#: src/components/Header/LangSwitcher.js:21
+msgid "Language"
+msgstr "Язык"
+
+#: src/components/Header/LangSwitcher.js:29
+msgid "Participate"
+msgstr "Участвовать"
+
+#: src/components/Footer/Footer.js:15
+msgid "Turris is developed by CZ.NIC, the CZ domain registry."
+msgstr "Turris разработан CZ.NIC, реестром доменов CZ."
+
+#: src/components/Cards/AppCard.js:37
+#, javascript-format
+msgid "${ title } Logo"
+msgstr "${ title } Логотип"
+
+#: src/components/Cards/AppCard.js:57
+msgid "default"
+msgstr "по умолчанию"
+
+#: src/components/Cards/AppCard.js:67
+msgid "Go to "
+msgstr "Перейти в "
