@@ -110,3 +110,35 @@
     color: #000 !important;
     background-color: #e9ecef !important;
 }
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.55) !important;
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link:focus,
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+[data-theme="dark"] .dropdown-menu {
+    background-color: #333333;
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .dropdown-menu a {
+    color: #dee2e6;
+}
+
+[data-theme="dark"] .dropdown-menu a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .dropdown-menu a:focus {
+    color: #fff;
+    background-color: #0d6efd;
+}
+
+[data-theme="dark"] .dropdown-menu .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.85);
+}
