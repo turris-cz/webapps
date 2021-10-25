@@ -45,8 +45,6 @@
         "test": "react-scripts test",
         "lint": "npx eslint src",
         "lint:fix": "npx eslint --fix src",
-        "update": "ttag update i18n/cs.po src/ && ttag update i18n/ru.po src/ && ttag update i18n/de.po src/",
-        "po2json": "ttag po2json i18n/cs.po > i18n/cs.po.json && ttag po2json i18n/ru.po > i18n/ru.po.json && ttag po2json i18n/de.po > i18n/de.po.json",
         "analyze": "source-map-explorer 'build/static/js/*.js'",
         "eject": "react-scripts eject"
     },
