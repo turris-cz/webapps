@@ -1,0 +1,15 @@
+image: node:16-slim
+
+cache:
+    paths:
+        - ./node_modules/
+
+test:
+    script:
+        - npm install
+        - npm test
+
+lint:
+    script:
+        - npm install
+        - npm run lint
