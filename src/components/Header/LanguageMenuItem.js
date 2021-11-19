@@ -7,15 +7,14 @@
 
 import { Check2 } from "react-bootstrap-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { t } from "ttag";
 
 import { locale, saveLocale } from "../../i18n";
 
 const LANGS = [
-    { id: "cs", title: t`Czech` },
-    { id: "en", title: t`English` },
-    { id: "de", title: t`German` },
-    { id: "ru", title: t`Russian` },
+    { id: "cs", title: "Čeština" },
+    { id: "en", title: "English" },
+    { id: "de", title: "Deutsch" },
+    { id: "ru", title: "Русский" },
 ];
 
 const setLocale = (locale) => (event) => {
@@ -24,8 +23,12 @@ const setLocale = (locale) => (event) => {
     window.location.reload();
 };
 
-const LanguageMenuItem = () =>
-    LANGS.map((language) => {
+const LanguageMenuItem = () => {
+    const sortedLangs = [
+        ...LANGS.filter((language) => language.id === locale),
+        ...LANGS.filter((language) => language.id !== locale),
+    ];
+    return sortedLangs.map((language) => {
         return (
             <NavDropdown.Item
                 key={language.id}
@@ -42,5 +45,6 @@ const LanguageMenuItem = () =>
             </NavDropdown.Item>
         );
     });
+};
 
 export default LanguageMenuItem;
