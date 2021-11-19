@@ -6,8 +6,7 @@
  */
 
 import PropTypes from "prop-types";
-import { ChevronRight, InfoCircleFill } from "react-bootstrap-icons";
-import Badge from "react-bootstrap/Badge";
+import { ChevronRight, HouseFill, InfoCircleFill } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
@@ -21,9 +20,15 @@ const AppCard = ({
     defaultApp,
     tabIndexPosition,
 }) => {
-    const renderTooltip = (props) => (
-        <Tooltip id="button-tooltip" {...props}>
+    const renderInfoTooltip = (props) => (
+        <Tooltip id="info-tooltip" {...props}>
             {`${title} - ${description}`}
+        </Tooltip>
+    );
+
+    const renderHomeTooltip = (props) => (
+        <Tooltip id="home-tooltip" {...props}>
+            {t`Default Application`}
         </Tooltip>
     );
 
@@ -43,8 +48,32 @@ const AppCard = ({
                     >
                         {title}
                     </Card.Title>
-                    <OverlayTrigger placement="top" overlay={renderTooltip}>
-                        <span style={{ position: "relative", zIndex: "2" }}>
+                    {defaultApp && (
+                        <OverlayTrigger
+                            placement="top"
+                            overlay={renderHomeTooltip}
+                        >
+                            <span
+                                style={{
+                                    position: "relative",
+                                    zIndex: "2",
+                                }}
+                            >
+                                <HouseFill
+                                    className="text-secondary ms-1"
+                                    width="17"
+                                    height="17"
+                                />
+                            </span>
+                        </OverlayTrigger>
+                    )}
+                    <OverlayTrigger placement="top" overlay={renderInfoTooltip}>
+                        <span
+                            style={{
+                                position: "relative",
+                                zIndex: "2",
+                            }}
+                        >
                             <InfoCircleFill
                                 className="text-secondary ms-1"
                                 width="17"
@@ -52,11 +81,6 @@ const AppCard = ({
                             />
                         </span>
                     </OverlayTrigger>
-                    {defaultApp && (
-                        <Badge bg="primary" className="ms-1 align-middle">
-                            {t`default`}
-                        </Badge>
-                    )}
                     <div className="d-grid mt-1">
                         <a
                             tabIndex={tabIndexPosition}
