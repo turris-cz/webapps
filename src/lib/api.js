@@ -16,4 +16,16 @@ const getAllData = async () => {
     return data;
 };
 
+const getAuthData = async () => {
+    const response = await fetch("/login.json");
+    const data = await response.json();
+
+    if (!response.ok) {
+        throw new Error(data.message || t`Could not fetch data.`);
+    }
+
+    return data;
+};
+
+export { getAuthData };
 export default getAllData;
