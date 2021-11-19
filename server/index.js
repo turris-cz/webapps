@@ -12,6 +12,11 @@ app.get("/api/apps.json", (req, res) => {
     res.send(JSON.stringify(dummyData));
 });
 
+app.get("/login.json", (req, res) => {
+    res.setHeader("Content-Type", "application/json");
+    res.send(JSON.stringify({ accesstime: null }));
+});
+
 app.listen(3001, () =>
     console.log("Express server is running on localhost:3001")
 );
