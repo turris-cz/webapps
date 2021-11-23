@@ -33,6 +33,7 @@ const Header = ({ darkMode, toggleMode }) => {
                             className="d-inline-block align-top"
                             src={TurrisLogo}
                             alt={t`Turris Logo`}
+                            height="30"
                         />
                     </Navbar.Brand>
                     <div className="ms-auto d-flex align-items-center align-content-center">
