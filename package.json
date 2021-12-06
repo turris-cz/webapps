@@ -7,13 +7,10 @@
         "@testing-library/react": "^11.2.7",
         "@testing-library/user-event": "^12.8.3",
         "bootstrap": "^5.1.1",
-        "prop-types": "^15.7.2",
         "react": "^17.0.2",
         "react-bootstrap": "^2.0.0-beta.6",
         "react-bootstrap-icons": "^1.5.0",
         "react-dom": "^17.0.2",
-        "react-scripts": "4.0.3",
-        "source-map-explorer": "^2.5.2",
         "ttag": "^1.7.24"
     },
     "devDependencies": {
@@ -34,6 +31,9 @@
         "npm-run-all": "^4.1.5",
         "pino-colada": "^2.1.0",
         "prettier": "^2.4.1",
+        "prop-types": "^15.7.2",
+        "react-scripts": "4.0.3",
+        "source-map-explorer": "^2.5.2",
         "ttag-cli": "^1.9.3",
         "web-vitals": "^1.1.2"
     },
