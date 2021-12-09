@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 
 import PropTypes from "prop-types";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { t } from "ttag";
 
 const CountDown = ({ countDownTime = 25, onComplete }) => {
     const [timeLeft, setTimeLeft] = useState(countDownTime);
@@ -24,13 +25,13 @@ const CountDown = ({ countDownTime = 25, onComplete }) => {
     return (
         <>
             <p className="text-muted">
-                {`Switching to the default one in: ${timeLeft} sec.`}
+                {t`Switching to the default one in: ${timeLeft} sec.`}
             </p>
             <ProgressBar
                 animated
                 max={countDownTime}
                 now={timeLeft}
-                label={`${timeLeft} sec.`}
+                label={t`${timeLeft} sec.`}
                 visuallyHidden
             />
         </>

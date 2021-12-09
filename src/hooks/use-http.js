@@ -51,7 +51,7 @@ function useHttp(requestFunction, startWithPending = false) {
             } catch (error) {
                 dispatch({
                     type: "ERROR",
-                    errorMessage: error.message || "Something went wrong!",
+                    errorMessage: error.message || t`Something went wrong!`,
                 });
             }
         },

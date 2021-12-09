@@ -8,9 +8,10 @@
 import { useEffect } from "react";
 
 import Spinner from "react-bootstrap/Spinner";
+import { t } from "ttag";
 
-import getAllData from "../../utils/api";
-import useHttp from "../../utils/use-http";
+import useHttp from "../../hooks/use-http";
+import getAllData from "../../lib/api";
 import Cards from "../Cards/Cards";
 import CountDown from "./CountDown";
 
@@ -31,7 +32,7 @@ const Main = () => {
             <div id="backdrop">
                 <div className="spinner-center">
                     <Spinner animation="border" role="status" variant="primary">
-                        <span className="visually-hidden">Loading...</span>
+                        <span className="visually-hidden">{t`Loading...`}</span>
                     </Spinner>
                 </div>
             </div>
@@ -46,7 +47,7 @@ const Main = () => {
         status === "completed" &&
         (!loadedData || loadedData.apps.length === 0)
     ) {
-        return <p className="py-5 text-center">No apps found.</p>;
+        return <p className="py-5 text-center">{t`No apps found.`}</p>;
     }
 
     const [defaultApp] = loadedData.apps.filter(
@@ -62,7 +63,7 @@ const Main = () => {
         <main role="main">
             <section className="py-4 text-center container">
                 <div className="container">
-                    <h1>Available Applications</h1>
+                    <h1>{t`Available Applications`}</h1>
                     <CountDown
                         countDownTime={loadedData.countdown}
                         onComplete={onCompleteHandler}

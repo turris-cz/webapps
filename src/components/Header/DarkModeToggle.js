@@ -9,16 +9,19 @@ import PropTypes from "prop-types";
 import Form from "react-bootstrap/Form";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import { t } from "ttag";
 
 const DarkModeToggle = ({ darkMode, toggleMode }) => {
+    let modeLabel = darkMode ? t`Light` : t`Dark`;
+
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
-            {`Toggle ${darkMode ? "Light" : "Dark"} Mode`}
+            {t`Toggle ${modeLabel} Mode`}
         </Tooltip>
     );
 
     return (
-        <Form className="ms-auto">
+        <Form>
             <OverlayTrigger placement="left" overlay={renderTooltip}>
                 <Form.Check
                     type="switch"

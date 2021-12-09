@@ -4,6 +4,7 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
+import { t } from "ttag";
 
 const Footer = () => {
     return (
@@ -11,7 +12,7 @@ const Footer = () => {
             <div className="container text-center">
                 <span className="text-muted">
                     <small>
-                        Turris is developed by CZ.NIC, the CZ domain registry.
+                        {t`Turris is developed by CZ.NIC, the CZ domain registry.`}
                     </small>
                 </span>
             </div>
