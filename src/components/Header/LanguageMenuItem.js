@@ -15,6 +15,7 @@ const LANGS = [
     { id: "en", title: "English" },
     { id: "de", title: "Deutsch" },
     { id: "ru", title: "Русский" },
+    { id: "nb_NO", title: "Norsk Bokmål" },
 ];
 
 const setLocale = (locale) => (event) => {
