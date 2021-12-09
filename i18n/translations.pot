@@ -79,22 +79,6 @@ msgstr ""
 msgid "Participate"
 msgstr ""
 
-#: src/components/Header/LanguageMenuItem.js:15
-msgid "Czech"
-msgstr ""
-
-#: src/components/Header/LanguageMenuItem.js:16
-msgid "English"
-msgstr ""
-
-#: src/components/Header/LanguageMenuItem.js:17
-msgid "German"
-msgstr ""
-
-#: src/components/Header/LanguageMenuItem.js:18
-msgid "Russian"
-msgstr ""
-
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr ""
