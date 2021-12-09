@@ -2,13 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-10-25 12:11+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
-"webapps/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål "
+"<https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
 "Language: nb_NO\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9-dev\n"
+"x-generator: Weblate 4.9-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
@@ -42,8 +42,8 @@ msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Innrapporter denne feilen til brukerstøttelaget via e-post: <a href=\"mailto"
-":tech.support@turris.cz\">tech@support@turris.cz</a>."
+"Innrapporter denne feilen til brukerstøttelaget via e-post: <a "
+"href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -90,22 +90,6 @@ msgstr "Språk"
 #: src/components/Header/LangSwitcher.js:29
 msgid "Participate"
 msgstr "Delta"
-
-#: src/components/Header/LanguageMenuItem.js:15
-msgid "Czech"
-msgstr "Tsjekkisk"
-
-#: src/components/Header/LanguageMenuItem.js:16
-msgid "English"
-msgstr "Engelsk"
-
-#: src/components/Header/LanguageMenuItem.js:17
-msgid "German"
-msgstr "Tysk"
-
-#: src/components/Header/LanguageMenuItem.js:18
-msgid "Russian"
-msgstr "Russisk"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
