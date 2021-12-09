@@ -76,22 +76,6 @@ msgstr "Включить ${ modeLabel } режим"
 msgid "Turris Logo"
 msgstr "Логотип Turris"
 
-#: src/components/Header/LanguageMenuItem.js:15
-msgid "Czech"
-msgstr "Чешский"
-
-#: src/components/Header/LanguageMenuItem.js:16
-msgid "English"
-msgstr "Английский"
-
-#: src/components/Header/LanguageMenuItem.js:17
-msgid "German"
-msgstr "Немецкий"
-
-#: src/components/Header/LanguageMenuItem.js:18
-msgid "Russian"
-msgstr "Русский"
-
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
 msgstr "Язык"
