@@ -10,6 +10,13 @@ and this project adheres to
 
 -   ...
 
+## [4.0.0] - 2022-12-31
+
+-   Migrate to React.js
+-   Add language switcher
+-   Add GitLab CI
+-   Other improvements
+
 ## [3.7] - 2021-09-27
 
 -   Use color-scheme detection for theme
@@ -75,7 +82,8 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.7...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.0.0...master
+[4.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.7...v4.0.0
 [3.7]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.6...v3.7
 [3.6]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.5..v3.6
 [3.5]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.4...v3.5
