@@ -4,6 +4,7 @@ stages:
   - test
   - build
   - release
+  - deploy
 
 ## Install stage ###################################################################
 
@@ -77,3 +78,16 @@ release:
     - apk add bash curl
   script:
     - .gitlab-ci/release.sh
+
+## Deploy stage for GitLab pages ##################################################
+
+pages:
+  stage: deploy
+  dependencies: build
+  script:
+  - tar -xzvf turris-webapps-${CI_COMMIT_SHORT_SHA}.tar.gz -C public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
