@@ -8,8 +8,9 @@
 # testing
 /coverage
 
-# production
+# production and GitLab pages (public folder)
 /build
+/public
 
 # misc
 .DS_Store
