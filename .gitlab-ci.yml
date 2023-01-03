@@ -86,9 +86,9 @@ pages:
   rules:
     - if: "$CI_COMMIT_TAG"
   needs:
-    - job: build
+    - job: release
   script:
-  - tar -xzvf turris-webapps-${CI_COMMIT_SHORT_SHA}.tar.gz -C public
+  - mkdir public && tar -xvzf turris-webapps-hash.tar.gz -C public --strip-components 1
   artifacts:
     paths:
       - public
