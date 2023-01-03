@@ -71,7 +71,7 @@ release:
   rules:
     - if: "$CI_COMMIT_TAG"
   needs:
-    - job: test build
+    - job: build
       artifacts: true
   before_script:
     - apk update
@@ -83,7 +83,8 @@ release:
 
 pages:
   stage: deploy
-  dependencies: build
+  dependencies:
+  - build
   script:
   - tar -xzvf turris-webapps-${CI_COMMIT_SHORT_SHA}.tar.gz -C public
   artifacts:
