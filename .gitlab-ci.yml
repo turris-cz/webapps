@@ -85,8 +85,8 @@ pages:
   stage: deploy
   rules:
     - if: "$CI_COMMIT_TAG"
-  dependencies:
-  - build
+  needs:
+    - job: build
   script:
   - tar -xzvf turris-webapps-${CI_COMMIT_SHORT_SHA}.tar.gz -C public
   artifacts:
