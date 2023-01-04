@@ -24,6 +24,7 @@
         "express": "^4.17.1",
         "express-pino-logger": "^6.0.0",
         "husky": "^7.0.2",
+        "jest-junit": "^15.0.0",
         "lint-staged": "^11.1.2",
         "node-env-run": "^4.0.2",
         "node-sass": "^6.0.1",
@@ -46,7 +47,8 @@
         "lint": "npx eslint src",
         "lint:fix": "npx eslint --fix src",
         "analyze": "source-map-explorer 'build/static/js/*.js'",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+	"test:ci": "npm run test -- --testResultsProcessor=\"jest-junit\" --watchAll=false --ci --coverage"
     },
     "eslintConfig": {
         "extends": [
