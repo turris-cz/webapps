@@ -30,7 +30,15 @@ test:
     - job: install
       artifacts: true
   script:
-    - npm test
+    - npm run test:ci
+  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+  artifacts:
+    paths:
+      - coverage/
+    when: always
+    reports:
+      junit:
+        - junit.xml
 
 test-js-build:
   stage: test
