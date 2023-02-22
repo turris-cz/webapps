@@ -5,7 +5,7 @@
  * See /LICENSE for more information.
  */
 
-import React, { useEffect, useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 
 import { t } from "ttag";
 
@@ -34,7 +34,7 @@ const App = () => {
         return false;
     };
 
-    const [darkMode, setDarkMode] = React.useState(getInitialMode());
+    const [darkMode, setDarkMode] = useState(getInitialMode());
 
     useEffect(() => {
         document.title = t`Available Applications | Turris`;
