@@ -6,6 +6,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.1.0] - 2023-02-22
+
+### Added
+
+-   Added `.pre` stage to GitLab CI
+-   Added GitLab CI/CD unit test for coverage
+-   Added login and logout support for turris-auth
+
+### Changed
+
+-   Reworked app icons and tooltips
+-   Droped unreleased section in Changelog
+-   Changed primary color to Turris specific
+-   Removed obsolete styles
+
 ## [4.0.0] - 2022-12-31
 
 -   Migrate to React.js
@@ -78,7 +93,8 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.0.0...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.1.0...master
+[4.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.0.0...v4.1.0
 [4.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.7...v4.0.0
 [3.7]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.6...v3.7
 [3.6]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.5..v3.6
