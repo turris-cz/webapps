@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-03-03 12:36+0000\n"
+"PO-Revision-Date: 2023-03-04 23:41+0000\n"
 "Last-Translator: Michal Hrušecký <michal@hrusecky.net>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>"
 "\n"
@@ -14,15 +14,15 @@ msgstr ""
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
+msgstr "Došlo k chybě ve WebApps: \"${ error }\", detaily naleznete níže."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Došlo k chybě - Dostupné aplikace | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr ""
+msgstr "Něco se pokazilo:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -30,12 +30,17 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
+"Více podrobností naleznete v konzoli vašeho prohlížeče - na většině "
+"prohlížeců je k dispozici pod klávesovou zkratkou <kbd>Ctrl+Shift+J</kbd> "
+"nebo <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Nahlaste, prosím, tuto chybu naší technické podpoře prostřednictvím e-mailu "
+"na: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -52,7 +57,7 @@ msgstr "Načítám..."
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr ""
+msgstr "Nebyly nalezeny žádné aplikace."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
@@ -73,7 +78,7 @@ msgstr "Přepnout na ${ modeLabel } režim"
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
-msgstr ""
+msgstr "Logo Turris"
 
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
@@ -81,24 +86,24 @@ msgstr "Jazyk"
 
 #: src/components/Header/LangSwitcher.js:29
 msgid "Participate"
-msgstr ""
+msgstr "Podílet se"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turris je vyvíjen sdružením CZ.NIC, správcem domény CZ."
 
 #: src/components/Cards/AppCard.js:37
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "Logo ${ title }"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
-msgstr ""
+msgstr "výchozí"
 
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
-msgstr ""
+msgstr "Jít na "
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
