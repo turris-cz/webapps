@@ -1,26 +1,31 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2023-03-04 23:41+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
+">\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.16.2-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Dostupné aplikácie | Turris"
 
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
+msgstr "Vo WebApps nastala chyba: \"${ error }\", podrobnosti sú nižšie."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Nastala chyba – Dostupné aplikácie | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr ""
+msgstr "Nastala chyba:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -28,72 +33,77 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
+"Podrobnejšie informácie sú k dispozícii v konzole vášho prehliadača – "
+"obvykle je dostupná klávesovou skratkou <kbd>Ctrl+Shift+J</kbd> alebo "
+"<kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Prosím, ohláste túto chybu našej technickej podpore na e-mail: <a href="
+"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr ""
+msgstr "Prepnutie na predvolenú o ${ timeLeft } s."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } s."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
-msgstr ""
+msgstr "Načítavanie…"
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr ""
+msgstr "Nenašli sa žiadne aplikácie."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
-msgstr ""
+msgstr "Dostupné aplikácie"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr ""
+msgstr "svetlý"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr ""
+msgstr "tmavý"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr ""
+msgstr "Prepnúť na ${ modeLabel } režim"
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
-msgstr ""
+msgstr "Logo Turris"
 
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: src/components/Header/LangSwitcher.js:29
 msgid "Participate"
-msgstr ""
+msgstr "Podieľať sa"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turris vyvíja združenie CZ.NIC, správca domény CZ."
 
 #: src/components/Cards/AppCard.js:37
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "Logo ${ title }"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
-msgstr ""
+msgstr "predvolené"
 
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
-msgstr ""
+msgstr "Ísť na "
