@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-03-04 23:41+0000\n"
-"Last-Translator: Michal Hrušecký <michal@hrusecky.net>\n"
+"PO-Revision-Date: 2023-03-16 16:38+0000\n"
+"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>"
 "\n"
 "Language: cs\n"
@@ -49,7 +49,7 @@ msgstr "Přepínám na výchozí za: ${ timeLeft } sec."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr "${ timeLeft } sec."
+msgstr "${ timeLeft } s"
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
