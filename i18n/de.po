@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-08-12 11:12+0000\n"
-"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
 "Language: de\n"
@@ -101,11 +101,11 @@ msgstr "${ title }-Logo"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
-msgstr ""
+msgstr "Standard"
 
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
-msgstr ""
+msgstr "Wechsle zu "
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
