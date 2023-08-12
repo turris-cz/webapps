@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-12 11:12+0000\n"
+"PO-Revision-Date: 2023-08-12 11:14+0000\n"
 "Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
@@ -15,16 +15,15 @@ msgstr ""
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr ""
-"Ein Fehler ist in den WebApps aufgetreten: \"${ error }\", siehe die Details "
-"unten."
+"Der Fehler \"${ error }\" ist in WebApps aufgetreten, Details siehe unten."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr "Ein Fehler ist aufgetreten - Verfügbare Anwendungen | Turris"
+msgstr "Ein Fehler ist aufgetreten -  Verfügbare Anwendungen | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr "Irgendetwas ist schiefgelaufen:"
+msgstr "Etwas ist schiefgegangen:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -32,9 +31,9 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Detailliertere Informationen sind in der Konsole Ihres Webbrowsers verfügbar "
-"– diese ist in den meisten Webbrowsern durch Drücken von "
-"<kbd>Strg+Umschalt+J</kbd> oder <kbd>F12</kbd> zu öffnen."
+"Mehr Informationen finden Sie in der Konsole Ihres Browsers. In den meisten "
+"Browsern lässt sich diese durch Drücken von <kbd>Strg+Shift+J</kbd> oder "
+"<kbd>F12</kbd> aufrufen."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
@@ -109,4 +108,4 @@ msgstr "Wechsle zu "
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Verfügbare Anwendungen | Turris"
