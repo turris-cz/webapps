@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-12 11:14+0000\n"
-"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"PO-Revision-Date: 2023-08-13 11:47+0000\n"
+"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
 "Language: de\n"
@@ -40,8 +40,8 @@ msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Bitte berichten Sie diesen Fehler an unser Support-Team, die E-Mail-Adresse "
-"lautet <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+"Bitte melden Sie diesen Fehler unserem Support-Team via E-Mail: <a href="
+"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
