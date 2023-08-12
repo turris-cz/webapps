@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-08-13 11:47+0000\n"
-"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
+"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
 "Language: de\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr "Ein Fehler ist aufgetreten -  Verfügbare Anwendungen | Turris"
+msgstr "Ein Fehler ist aufgetreten - Verfügbare Anwendungen | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
@@ -31,9 +31,9 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Mehr Informationen finden Sie in der Konsole Ihres Browsers. In den meisten "
-"Browsern lässt sich diese durch Drücken von <kbd>Strg+Shift+J</kbd> oder "
-"<kbd>F12</kbd> aufrufen."
+"Detailliertere Informationen finden Sie in der Konsole Ihres Webbrowsers. In "
+"den meisten Browsern lässt sich diese durch Drücken von <kbd>Strg+Shift+J</"
+"kbd> oder <kbd>F12</kbd> aufrufen."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
