@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-12 11:11+0000\n"
+"PO-Revision-Date: 2023-08-12 11:12+0000\n"
 "Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
@@ -97,7 +97,7 @@ msgstr "Turris wird entwickelt von CZ.NIC, der CZ-Domain-Verwaltungsstelle."
 #: src/components/Cards/AppCard.js:37
 #, javascript-format
 msgid "${ title } Logo"
-msgstr "${ title } Logo"
+msgstr "${ title }-Logo"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
