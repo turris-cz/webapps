@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-12 11:09+0000\n"
+"PO-Revision-Date: 2023-08-12 11:10+0000\n"
 "Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
@@ -51,7 +51,7 @@ msgstr "Wechsle zum Standard in ${ timeLeft } Sekunden."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } Sekunden."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
@@ -59,7 +59,7 @@ msgstr ""
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr ""
+msgstr "Keine Apps gefunden."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
