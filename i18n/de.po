@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-08-12 11:10+0000\n"
-"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"Last-Translator: Jonas Wiegner <jonas.wiegner@posteo.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
 ">\n"
 "Language: de\n"
@@ -67,20 +67,20 @@ msgstr "Verfügbare Apps"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr ""
+msgstr "Hell"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr ""
+msgstr "Dunkel"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr ""
+msgstr "Zu Modus ${ modeLabel } wechseln"
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
-msgstr ""
+msgstr "Turris Logo"
 
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
