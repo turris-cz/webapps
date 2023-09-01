@@ -1,26 +1,31 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2023-09-02 10:51+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/"
+"sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Tillgängliga applikationer | Turris"
 
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
+msgstr "Ett fel inträffade i WebApps: \"${ error }\", se detaljerna nedan."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Ett fel inträffade - Tillgängliga applikationer | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr ""
+msgstr "Någonting gick fel:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -28,12 +33,17 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
+"Mer detaljerad information finns tillgängligt i din webbläsares konsol - kan "
+"nås i de flesta webbläsarna genom att man trycker <kbd>Ctrl+Shift+J</kbd> "
+"eller <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a href="
+"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -42,27 +52,27 @@ msgstr ""
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } sek."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
-msgstr ""
+msgstr "Laddar..."
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr ""
+msgstr "Inga appar hittades."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
-msgstr ""
+msgstr "Tillgängliga applikationer"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr ""
+msgstr "Ljus"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr ""
+msgstr "Mörk"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
@@ -71,29 +81,29 @@ msgstr ""
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
-msgstr ""
+msgstr "Logga för Turris"
 
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
-msgstr ""
+msgstr "Språk"
 
 #: src/components/Header/LangSwitcher.js:29
 msgid "Participate"
-msgstr ""
+msgstr "Delta"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turris utvecklas av CZ.NIC, registret för CZ-domänen."
 
 #: src/components/Cards/AppCard.js:37
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "${ title } Logga"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
-msgstr ""
+msgstr "standard"
 
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
-msgstr ""
+msgstr "Gå till "
