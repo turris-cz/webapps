@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-09-02 10:51+0000\n"
+"PO-Revision-Date: 2023-09-04 20:50+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/"
 "sv/>\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr ""
+msgstr "Byter till den huvudsakliga om: ${ timeLeft } sek."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
@@ -77,7 +77,7 @@ msgstr "Mörk"
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr ""
+msgstr "Växla ${ modeLabel } läget"
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
