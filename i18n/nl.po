@@ -1,26 +1,33 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-01-04 20:08+0000\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/webapps/nl/>"
+"\n"
 "Language: nl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Beschikbare applicaties | Turris"
 
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr ""
+"De volgende fout is opgetreden in WebApps: \"${ error }\". Zie hieronder "
+"voor meer informatie."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Er is een fout opgetreden - beschikbare applicaties | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr ""
+msgstr "Er is een fout opgetreden:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -28,72 +35,77 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
+"Er is uitgebreidere informatie beschikbaar in de console van uw webbrowser. "
+"Deze kan in de meeste browsers geopend worden door te drukken op "
+"<kbd>Ctrl+Shift+J</kbd> of <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a href="
+"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr ""
+msgstr "Schakelen naar de standaardinstelling in ${ timeLeft } sec."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } sec."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
-msgstr ""
+msgstr "Laden ..."
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr ""
+msgstr "Er zijn geen apps gevonden."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
-msgstr ""
+msgstr "Beschikbare applicaties"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr ""
+msgstr "Licht"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr ""
+msgstr "Donker"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr ""
+msgstr "Modus ${ modeLabel } omschakelen"
 
 #: src/components/Header/Header.js:30
 msgid "Turris Logo"
-msgstr ""
+msgstr "Turris-logo"
 
 #: src/components/Header/LangSwitcher.js:21
 msgid "Language"
-msgstr ""
+msgstr "Taal"
 
 #: src/components/Header/LangSwitcher.js:29
 msgid "Participate"
-msgstr ""
+msgstr "Deelnemen"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turris is ontwikkeld door CZ.NIC, de Tsjechische domeinregistreerder."
 
 #: src/components/Cards/AppCard.js:37
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "${ title }-logo"
 
 #: src/components/Cards/AppCard.js:57
 msgid "default"
-msgstr ""
+msgstr "standaard"
 
 #: src/components/Cards/AppCard.js:67
 msgid "Go to "
-msgstr ""
+msgstr "Ga naar "
