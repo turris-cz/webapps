@@ -2,81 +2,47 @@
     "name": "webapps",
     "version": "4.1.0",
     "private": true,
+    "type": "module",
     "dependencies": {
-        "@testing-library/jest-dom": "^5.14.1",
-        "@testing-library/react": "^11.2.7",
-        "@testing-library/user-event": "^12.8.3",
-        "bootstrap": "^5.1.1",
-        "react": "^17.0.2",
-        "react-bootstrap": "^2.0.0-beta.6",
-        "react-bootstrap-icons": "^1.5.0",
-        "react-dom": "^17.0.2",
-        "ttag": "^1.7.24"
+        "@vitejs/plugin-react": "^4.2.1",
+        "bootstrap": "^5.3.3",
+        "react": "^18.3.1",
+        "react-bootstrap": "^2.10.2",
+        "react-bootstrap-icons": "^1.11.4",
+        "react-dom": "^18.3.1",
+        "ttag": "^1.7.24",
+        "vite": "^5.2.11"
     },
     "devDependencies": {
-        "eslint": "^7.32.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-import": "^2.24.2",
-        "eslint-plugin-jsx-a11y": "^6.4.1",
-        "eslint-plugin-prettier": "^4.0.0",
-        "eslint-plugin-react": "^7.26.1",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "express": "^4.17.1",
-        "express-pino-logger": "^6.0.0",
-        "husky": "^7.0.2",
-        "jest-junit": "^15.0.0",
-        "lint-staged": "^11.1.2",
-        "node-env-run": "^4.0.2",
-        "node-sass": "^6.0.1",
-        "nodemon": "^2.0.12",
-        "npm-run-all": "^4.1.5",
-        "pino-colada": "^2.1.0",
-        "prettier": "^2.4.1",
-        "prop-types": "^15.7.2",
-        "react-scripts": "4.0.3",
-        "source-map-explorer": "^2.5.2",
+        "@babel/eslint-parser": "^7.24.5",
+        "@testing-library/jest-dom": "^6.4.5",
+        "@testing-library/react": "^15.0.7",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.34.1",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "jsdom": "^24.0.0",
+        "msw": "^2.3.0",
+        "prettier": "^3.2.5",
+        "rimraf": "^5.0.7",
+        "sass": "^1.77.1",
         "ttag-cli": "^1.9.3",
-        "web-vitals": "^1.1.2"
+        "vitest": "^1.6.0"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "server": "node-env-run -E .env.development.local server --exec nodemon | pino-colada",
-        "dev": "run-p server start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "lint": "npx eslint src",
-        "lint:fix": "npx eslint --fix src",
-        "analyze": "source-map-explorer 'build/static/js/*.js'",
-        "eject": "react-scripts eject",
-        "test:ci": "npm run test -- --testResultsProcessor=\"jest-junit\" --watchAll=false --ci --coverage"
+        "dev": "vite",
+        "preview": "vite preview",
+        "build": "vite build",
+        "test": "vitest",
+        "lint": "eslint",
+        "lint:fix": "eslint"
     },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
+    "msw": {
+        "workerDirectory": [
+            "public"
         ]
-    },
-    "lint-staged": {
-        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-            "prettier --write"
-        ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "proxy": "http://localhost:3001"
+    }
 }

@@ -1,11 +1,11 @@
 /*
- * Copyright (c) 2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
 
-const dummyData = {
+const dummyApps = {
     countdown: 25,
     selected: "reforis",
     apps: [
@@ -78,4 +78,4 @@ const dummyData = {
     ],
 };
 
-module.exports = dummyData;
+export default dummyApps;

@@ -13,6 +13,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import ErrorBoundary from "./utils/ErrorBoundary";
+import { AuthContextProvider } from "./store/auth-context";
 
 const App = () => {
     const getPrefColorScheme = () => {
@@ -42,7 +43,7 @@ const App = () => {
     }, [darkMode]);
 
     useLayoutEffect(() => {
-        document.body.setAttribute(
+        document.documentElement.setAttribute(
             "data-theme",
             `${darkMode ? "dark" : "light"}`
         );
@@ -53,13 +54,13 @@ const App = () => {
     };
 
     return (
-        <>
+        <AuthContextProvider>
             <Header darkMode={darkMode} toggleMode={darkModeToggleHandler} />
             <ErrorBoundary>
                 <Main />
             </ErrorBoundary>
             <Footer />
-        </>
+        </AuthContextProvider>
     );
 };
 

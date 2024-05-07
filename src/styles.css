@@ -42,7 +42,8 @@ section .container {
     margin-bottom: 0.5rem;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-primary:hover,
+.btn-outline-primary:focus-visible {
     color: #fff !important;
 }
 

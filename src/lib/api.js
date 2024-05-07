@@ -7,22 +7,35 @@
 
 const getAllData = async () => {
     const response = await fetch("/api/apps.json");
-    const data = await response.json();
 
     if (!response.ok) {
-        throw new Error(data.message || t`Could not fetch data.`);
+        throw new Error(data.message || "Could not fetch data");
     }
 
+    if (!response.headers.get("content-type")?.includes("application/json")) {
+        throw new Error(
+            "Expected JSON, got " + response.headers.get("content-type")
+        );
+    }
+
+    const data = await response.json();
     return data;
 };
 
 const getAuthData = async () => {
     const response = await fetch("/login.json");
-    const data = await response.json();
 
     if (!response.ok) {
-        throw new Error(data.message || t`Could not fetch data.`);
+        throw new Error(data.message || "Could not fetch data.");
     }
+
+    if (!response.headers.get("content-type")?.includes("application/json")) {
+        throw new Error(
+            "Expected JSON, got " + response.headers.get("content-type")
+        );
+    }
+
+    const data = await response.json();
 
     return data;
 };

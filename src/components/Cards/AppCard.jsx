@@ -6,10 +6,10 @@
  */
 
 import PropTypes from "prop-types";
-import { ChevronRight, HouseFill, InfoCircleFill } from "react-bootstrap-icons";
 import Card from "react-bootstrap/Card";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import { ChevronRight, HouseFill, InfoCircleFill } from "react-bootstrap-icons";
 import { t } from "ttag";
 
 const AppCard = ({
@@ -44,7 +44,7 @@ const AppCard = ({
                 <Card.Body className="text-truncate">
                     <Card.Title
                         as={"h2"}
-                        className="h4 text-dark d-inline align-middle card-name"
+                        className="h4 text-dark d-inline align-middle card-name me-1"
                     >
                         {title}
                     </Card.Title>
@@ -60,7 +60,7 @@ const AppCard = ({
                                 }}
                             >
                                 <HouseFill
-                                    className="text-secondary ms-1"
+                                    className="text-secondary me-1"
                                     width="17"
                                     height="17"
                                 />
@@ -75,7 +75,7 @@ const AppCard = ({
                             }}
                         >
                             <InfoCircleFill
-                                className="text-secondary ms-1"
+                                className="text-secondary"
                                 width="17"
                                 height="17"
                             />
@@ -87,11 +87,11 @@ const AppCard = ({
                             href={url}
                             className="btn btn-outline-primary stretched-link d-inline-block text-truncate"
                         >
-                            <span className="align-middle">
+                            <span className="align-middle me-1">
                                 {t`Go to `}
                                 {title}
                             </span>
-                            <ChevronRight className="align-middle ms-1" />
+                            <ChevronRight className="align-middle" />
                         </a>
                     </div>
                 </Card.Body>

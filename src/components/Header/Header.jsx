@@ -12,10 +12,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { t } from "ttag";
 
-import AuthContext from "../../store/auth-context";
 import DarkModeToggle from "./DarkModeToggle";
 import LangSwitcher from "./LangSwitcher";
 import TurrisLogo from "./turris-dark.svg";
+import AuthContext from "../../store/auth-context";
 
 const Header = ({ darkMode, toggleMode }) => {
     const { isLoggedIn, login, logout } = useContext(AuthContext);

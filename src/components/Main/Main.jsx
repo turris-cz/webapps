@@ -10,10 +10,10 @@ import { useEffect } from "react";
 import Spinner from "react-bootstrap/Spinner";
 import { t } from "ttag";
 
+import CountDown from "./CountDown";
 import useHttp from "../../hooks/use-http";
 import getAllData from "../../lib/api";
 import Cards from "../Cards/Cards";
-import CountDown from "./CountDown";
 
 const Main = () => {
     const {
@@ -55,7 +55,8 @@ const Main = () => {
     );
 
     const onCompleteHandler = () => {
-        if (process.env.NODE_ENV === "development") return null;
+        if (import.meta.env.DEV) return;
+
         window.location.assign(defaultApp.url);
     };
 

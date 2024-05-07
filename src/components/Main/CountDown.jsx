@@ -15,11 +15,21 @@ const CountDown = ({ countDownTime = 25, onComplete }) => {
     const [timeLeft, setTimeLeft] = useState(countDownTime);
 
     useEffect(() => {
+        let timerId = null;
         if (!timeLeft) {
-            onComplete();
-            return null;
+            if (typeof onComplete === "function") {
+                onComplete();
+            }
+            return;
+        } else {
+            timerId = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
         }
-        setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
+
+        return () => {
+            if (timerId) {
+                clearTimeout(timerId);
+            }
+        };
     }, [timeLeft, onComplete]);
 
     return (
