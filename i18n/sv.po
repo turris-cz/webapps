@@ -2,13 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-09-04 20:50+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/"
-"sv/>\n"
+"Language-Team: Swedish "
+"<https://hosted.weblate.org/projects/turris/webapps/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"x-generator: Weblate 5.0.1-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
@@ -33,17 +33,17 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Mer detaljerad information finns tillgängligt i din webbläsares konsol - kan "
-"nås i de flesta webbläsarna genom att man trycker <kbd>Ctrl+Shift+J</kbd> "
-"eller <kbd>F12</kbd>."
+"Mer detaljerad information finns tillgängligt i din webbläsares konsol - "
+"kan nås i de flesta webbläsarna genom att man trycker "
+"<kbd>Ctrl+Shift+J</kbd> eller <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a href="
-"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+"Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -79,15 +79,15 @@ msgstr "Mörk"
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Växla ${ modeLabel } läget"
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr "Logga för Turris"
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr "Språk"
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr "Delta"
 
@@ -95,15 +95,27 @@ msgstr "Delta"
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris utvecklas av CZ.NIC, registret för CZ-domänen."
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title } Logga"
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr "standard"
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr "Gå till "
+
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""

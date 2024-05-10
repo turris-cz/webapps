@@ -2,13 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-03-04 23:41+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
-">\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.16.2-dev\n"
+"x-generator: Weblate 4.16.2-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
@@ -42,8 +42,8 @@ msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Prosím, ohláste túto chybu našej technickej podpore na e-mail: <a href="
-"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+"Prosím, ohláste túto chybu našej technickej podpore na e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -79,15 +79,15 @@ msgstr "tmavý"
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Prepnúť na ${ modeLabel } režim"
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr "Logo Turris"
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr "Jazyk"
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr "Podieľať sa"
 
@@ -95,15 +95,27 @@ msgstr "Podieľať sa"
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris vyvíja združenie CZ.NIC, správca domény CZ."
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "Logo ${ title }"
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr "predvolené"
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr "Ísť na "
+
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""

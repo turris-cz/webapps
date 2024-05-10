@@ -2,13 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-11-03 05:13+0000\n"
 "Last-Translator: Anselmo <anselmo@casinadicornia.com>\n"
-"Language-Team: Italian <https://hosted.weblate.org/projects/turris/webapps/"
-"it/>\n"
+"Language-Team: Italian "
+"<https://hosted.weblate.org/projects/turris/webapps/it/>\n"
 "Language: it\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2-dev\n"
+"x-generator: Weblate 5.2-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
@@ -17,8 +17,7 @@ msgstr "Applicazioni disponibili | Turris"
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
-"Si è verificato un errore in WebApps:\"${ error }\", di seguito i dettagli."
+msgstr "Si è verificato un errore in WebApps:\"${ error }\", di seguito i dettagli."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -34,8 +33,8 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Maggiori informazioni sono disponibili nella console del vostro web browser -"
-" generalmente accessibile con la digitazione di <kbd>Ctrl+Shift+J</kbd> or "
+"Maggiori informazioni sono disponibili nella console del vostro web browser "
+"- generalmente accessibile con la digitazione di <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
@@ -44,7 +43,8 @@ msgid ""
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
 "Vi prego di riportare questo errore alla nostra squadra di supporto via "
-"e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+"e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -80,15 +80,15 @@ msgstr "Scuro"
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Attiva la modalità ${ modeLabel }"
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr "Logo Turris"
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr "Lingua"
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr "Partecipa"
 
@@ -96,15 +96,27 @@ msgstr "Partecipa"
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris è sviluppato da CZ.NIC, il registro del dominio CZ."
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title } Logo"
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr "predefinito"
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr "Vai a "
+
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""

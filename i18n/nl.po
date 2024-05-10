@@ -2,13 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-01-04 20:08+0000\n"
 "Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
-"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/webapps/nl/>"
-"\n"
+"Language-Team: Dutch "
+"<https://hosted.weblate.org/projects/turris/webapps/nl/>\n"
 "Language: nl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4-dev\n"
+"x-generator: Weblate 5.4-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
@@ -44,8 +44,8 @@ msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a href="
-"\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+"Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
@@ -81,15 +81,15 @@ msgstr "Donker"
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Modus ${ modeLabel } omschakelen"
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr "Turris-logo"
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr "Taal"
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr "Deelnemen"
 
@@ -97,15 +97,27 @@ msgstr "Deelnemen"
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris is ontwikkeld door CZ.NIC, de Tsjechische domeinregistreerder."
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title }-logo"
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr "standaard"
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr "Ga naar "
+
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""
