@@ -33,6 +33,10 @@ msgid ""
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
 
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
@@ -67,15 +71,23 @@ msgstr ""
 msgid "Toggle ${ modeLabel } Mode"
 msgstr ""
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr ""
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr ""
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr ""
 
@@ -83,15 +95,15 @@ msgstr ""
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr ""
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr ""
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr ""
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr ""
