@@ -72,15 +72,15 @@ msgstr "тёмный"
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Включить ${ modeLabel } режим"
 
-#: src/components/Header/Header.js:30
+#: src/components/Header/Header.js:35
 msgid "Turris Logo"
 msgstr "Логотип Turris"
 
-#: src/components/Header/LangSwitcher.js:21
+#: src/components/Header/LangSwitcher.js:19
 msgid "Language"
 msgstr "Язык"
 
-#: src/components/Header/LangSwitcher.js:29
+#: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
 msgstr "Участвовать"
 
@@ -88,19 +88,31 @@ msgstr "Участвовать"
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris разработан CZ.NIC, реестром доменов CZ."
 
-#: src/components/Cards/AppCard.js:37
+#: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title } Логотип"
 
-#: src/components/Cards/AppCard.js:57
-msgid "default"
-msgstr "по умолчанию"
-
-#: src/components/Cards/AppCard.js:67
+#: src/components/Cards/AppCard.js:91
 msgid "Go to "
 msgstr "Перейти в "
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
 msgstr "Доступные Приложения | Turris"
+
+#: src/store/auth-context.js:42
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Logout"
+msgstr ""
+
+#: src/components/Header/Header.js:47
+msgid "Login"
+msgstr ""
+
+#: src/components/Cards/AppCard.js:31
+msgid "Default Application"
+msgstr ""

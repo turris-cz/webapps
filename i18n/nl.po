@@ -1,31 +1,33 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-25 12:11+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
-"Language: nb_NO\n"
+"PO-Revision-Date: 2024-01-04 20:08+0000\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
+"Language-Team: Dutch "
+"<https://hosted.weblate.org/projects/turris/webapps/nl/>\n"
+"Language: nl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"x-generator: Weblate 4.9-dev\n"
+"x-generator: Weblate 5.4-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr "Tilgjengelige programmer | Turris"
+msgstr "Beschikbare applicaties | Turris"
 
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "En feil oppstod i WebApp: \"${ error }\", detaljer er å finne nedenfor"
+msgstr ""
+"De volgende fout is opgetreden in WebApps: \"${ error }\". Zie hieronder "
+"voor meer informatie."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr "En feil oppstod - Tilgjengelige programmer | Turris"
+msgstr "Er is een fout opgetreden - beschikbare applicaties | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr "Noe gikk galt:"
+msgstr "Er is een fout opgetreden:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -33,51 +35,51 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Mer detaljert info er å finne i din nettlesers konsoll. På de fleste "
-"nettlesere er dette tilgjengelig ved å trykke <kbd>Ctrl+Shift+J</kbd> eller "
-"<kbd>F12</kbd>."
+"Er is uitgebreidere informatie beschikbaar in de console van uw webbrowser. "
+"Deze kan in de meeste browsers geopend worden door te drukken op "
+"<kbd>Ctrl+Shift+J</kbd> of <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Innrapporter denne feilen til brukerstøttelaget via e-post: <a "
-"href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
+"Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr "Bytter til forvalget om ${ timeLeft } sek."
+msgstr "Schakelen naar de standaardinstelling in ${ timeLeft } sec."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr "${ timeLeft } sek."
+msgstr "${ timeLeft } sec."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
-msgstr "Laster inn …"
+msgstr "Laden ..."
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr "Fant ingen programmer."
+msgstr "Er zijn geen apps gevonden."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
-msgstr "Tilgjengelige programmer"
+msgstr "Beschikbare applicaties"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr "Lys"
+msgstr "Licht"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr "Mørk"
+msgstr "Donker"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr "Vesksle ${ modeLabel } modus"
+msgstr "Modus ${ modeLabel } omschakelen"
 
 #: src/components/Header/Header.js:35
 msgid "Turris Logo"
@@ -85,15 +87,15 @@ msgstr "Turris-logo"
 
 #: src/components/Header/LangSwitcher.js:19
 msgid "Language"
-msgstr "Språk"
+msgstr "Taal"
 
 #: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
-msgstr "Delta"
+msgstr "Deelnemen"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr "Turris utvikles av CZ.NIC, det tsjekkiske domeneregisteret."
+msgstr "Turris is ontwikkeld door CZ.NIC, de Tsjechische domeinregistreerder."
 
 #: src/components/Cards/AppCard.js:42
 #, javascript-format
@@ -102,7 +104,7 @@ msgstr "${ title }-logo"
 
 #: src/components/Cards/AppCard.js:91
 msgid "Go to "
-msgstr "Gå til "
+msgstr "Ga naar "
 
 #: src/store/auth-context.js:42
 msgid "Loading…"

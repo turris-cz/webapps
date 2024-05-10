@@ -1,31 +1,31 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-25 12:11+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
-"Language: nb_NO\n"
+"PO-Revision-Date: 2023-03-04 23:41+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
+"Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"x-generator: Weblate 4.9-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"x-generator: Weblate 4.16.2-dev\n"
 
 #: src/App.js:40
 msgid "Available Applications | Turris"
-msgstr "Tilgjengelige programmer | Turris"
+msgstr "Dostupné aplikácie | Turris"
 
 #: src/utils/ErrorBoundary.js:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "En feil oppstod i WebApp: \"${ error }\", detaljer er å finne nedenfor"
+msgstr "Vo WebApps nastala chyba: \"${ error }\", podrobnosti sú nižšie."
 
 #: src/utils/ErrorBoundary.js:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr "En feil oppstod - Tilgjengelige programmer | Turris"
+msgstr "Nastala chyba – Dostupné aplikácie | Turris"
 
 #: src/utils/ErrorBoundary.js:38
 msgid "Something went wrong:"
-msgstr "Noe gikk galt:"
+msgstr "Nastala chyba:"
 
 #: src/utils/ErrorBoundary.js:45
 msgid ""
@@ -33,8 +33,8 @@ msgid ""
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
-"Mer detaljert info er å finne i din nettlesers konsoll. På de fleste "
-"nettlesere er dette tilgjengelig ved å trykke <kbd>Ctrl+Shift+J</kbd> eller "
+"Podrobnejšie informácie sú k dispozícii v konzole vášho prehliadača – "
+"obvykle je dostupná klávesovou skratkou <kbd>Ctrl+Shift+J</kbd> alebo "
 "<kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.js:49
@@ -42,67 +42,67 @@ msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
-"Innrapporter denne feilen til brukerstøttelaget via e-post: <a "
-"href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
+"Prosím, ohláste túto chybu našej technickej podpore na e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.js:28
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr "Bytter til forvalget om ${ timeLeft } sek."
+msgstr "Prepnutie na predvolenú o ${ timeLeft } s."
 
 #: src/components/Main/CountDown.js:34
 msgid "${ timeLeft } sec."
-msgstr "${ timeLeft } sek."
+msgstr "${ timeLeft } s."
 
 #: src/components/Main/Main.js:35
 msgid "Loading..."
-msgstr "Laster inn …"
+msgstr "Načítavanie…"
 
 #: src/components/Main/Main.js:50
 msgid "No apps found."
-msgstr "Fant ingen programmer."
+msgstr "Nenašli sa žiadne aplikácie."
 
 #: src/components/Main/Main.js:66
 msgid "Available Applications"
-msgstr "Tilgjengelige programmer"
+msgstr "Dostupné aplikácie"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Light"
-msgstr "Lys"
+msgstr "svetlý"
 
 #: src/components/Header/DarkModeToggle.js:15
 msgid "Dark"
-msgstr "Mørk"
+msgstr "tmavý"
 
 #: src/components/Header/DarkModeToggle.js:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
-msgstr "Vesksle ${ modeLabel } modus"
+msgstr "Prepnúť na ${ modeLabel } režim"
 
 #: src/components/Header/Header.js:35
 msgid "Turris Logo"
-msgstr "Turris-logo"
+msgstr "Logo Turris"
 
 #: src/components/Header/LangSwitcher.js:19
 msgid "Language"
-msgstr "Språk"
+msgstr "Jazyk"
 
 #: src/components/Header/LangSwitcher.js:27
 msgid "Participate"
-msgstr "Delta"
+msgstr "Podieľať sa"
 
 #: src/components/Footer/Footer.js:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr "Turris utvikles av CZ.NIC, det tsjekkiske domeneregisteret."
+msgstr "Turris vyvíja združenie CZ.NIC, správca domény CZ."
 
 #: src/components/Cards/AppCard.js:42
 #, javascript-format
 msgid "${ title } Logo"
-msgstr "${ title }-logo"
+msgstr "Logo ${ title }"
 
 #: src/components/Cards/AppCard.js:91
 msgid "Go to "
-msgstr "Gå til "
+msgstr "Ísť na "
 
 #: src/store/auth-context.js:42
 msgid "Loading…"

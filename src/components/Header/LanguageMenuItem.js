@@ -12,10 +12,15 @@ import { locale, saveLocale } from "../../i18n";
 
 const LANGS = [
     { id: "cs", title: "Čeština" },
-    { id: "en", title: "English" },
     { id: "de", title: "Deutsch" },
-    { id: "ru", title: "Русский" },
+    { id: "en", title: "English" },
+    { id: "it", title: "Italiano" },
+    { id: "nl", title: "Nederlands" },
     { id: "nb_NO", title: "Norsk Bokmål" },
+    { id: "pl", title: "Polski" },
+    { id: "ru", title: "Русский" },
+    { id: "sk", title: "Slovenčina" },
+    { id: "sv", title: "Svenska" },
 ];
 
 const setLocale = (locale) => (event) => {
