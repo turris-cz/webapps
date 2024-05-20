@@ -1,13 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-03-04 23:41+0000\n"
+"PO-Revision-Date: 2024-05-21 21:02+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak "
-"<https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
+">\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
+"X-Generator: Weblate 5.6-dev\n"
 "x-generator: Weblate 4.16.2-dev\n"
 
 #: src/App.js:40
@@ -106,16 +107,16 @@ msgstr "Ísť na "
 
 #: src/store/auth-context.js:42
 msgid "Loading…"
-msgstr ""
+msgstr "Načítavanie…"
 
 #: src/components/Header/Header.js:47
 msgid "Logout"
-msgstr ""
+msgstr "Odhlásenie"
 
 #: src/components/Header/Header.js:47
 msgid "Login"
-msgstr ""
+msgstr "Prihlásenie"
 
 #: src/components/Cards/AppCard.js:31
 msgid "Default Application"
-msgstr ""
+msgstr "Východisková aplikácia"
