@@ -2,120 +2,110 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2021-10-25 12:11+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål "
-"<https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
 "Language: nb_NO\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "x-generator: Weblate 4.9-dev\n"
 
-#: src/App.js:40
+#: src/App.jsx:41
 msgid "Available Applications | Turris"
 msgstr "Tilgjengelige programmer | Turris"
 
-#: src/utils/ErrorBoundary.js:25
+#: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr "En feil oppstod i WebApp: \"${ error }\", detaljer er å finne nedenfor"
 
-#: src/utils/ErrorBoundary.js:33
+#: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "En feil oppstod - Tilgjengelige programmer | Turris"
 
-#: src/utils/ErrorBoundary.js:38
+#: src/utils/ErrorBoundary.jsx:38
 msgid "Something went wrong:"
 msgstr "Noe gikk galt:"
 
-#: src/utils/ErrorBoundary.js:45
-msgid ""
-"More detailed information is available in the console of your web browser - "
-"on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
-"<kbd>F12</kbd>."
-msgstr ""
-"Mer detaljert info er å finne i din nettlesers konsoll. På de fleste "
-"nettlesere er dette tilgjengelig ved å trykke <kbd>Ctrl+Shift+J</kbd> eller "
-"<kbd>F12</kbd>."
+#: src/utils/ErrorBoundary.jsx:45
+msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
+msgstr "Mer detaljert info er å finne i din nettlesers konsoll. På de fleste nettlesere er dette tilgjengelig ved å trykke <kbd>Ctrl+Shift+J</kbd> eller <kbd>F12</kbd>."
 
-#: src/utils/ErrorBoundary.js:49
-msgid ""
-"Please report this error to our support team via e-mail: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Innrapporter denne feilen til brukerstøttelaget via e-post: <a "
-"href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
+#: src/utils/ErrorBoundary.jsx:49
+msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Innrapporter denne feilen til brukerstøttelaget via e-post: <a href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
 
-#: src/components/Main/CountDown.js:28
+#: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
 msgstr "Bytter til forvalget om ${ timeLeft } sek."
 
-#: src/components/Main/CountDown.js:34
+#: src/components/Main/CountDown.jsx:44
+#, javascript-format
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } sek."
 
-#: src/components/Main/Main.js:35
+#: src/components/Main/Main.jsx:35
 msgid "Loading..."
 msgstr "Laster inn …"
 
-#: src/components/Main/Main.js:50
+#: src/components/Main/Main.jsx:50
 msgid "No apps found."
 msgstr "Fant ingen programmer."
 
-#: src/components/Main/Main.js:66
+#: src/components/Main/Main.jsx:67
 msgid "Available Applications"
 msgstr "Tilgjengelige programmer"
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Light"
 msgstr "Lys"
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Dark"
 msgstr "Mørk"
 
-#: src/components/Header/DarkModeToggle.js:19
+#: src/components/Header/DarkModeToggle.jsx:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Vesksle ${ modeLabel } modus"
 
-#: src/components/Header/Header.js:35
+#: src/components/Header/Header.jsx:35
 msgid "Turris Logo"
 msgstr "Turris-logo"
 
-#: src/components/Header/LangSwitcher.js:19
+#: src/components/Header/LangSwitcher.jsx:19
 msgid "Language"
 msgstr "Språk"
 
-#: src/components/Header/LangSwitcher.js:27
+#: src/components/Header/LangSwitcher.jsx:27
 msgid "Participate"
 msgstr "Delta"
 
-#: src/components/Footer/Footer.js:15
+#: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris utvikles av CZ.NIC, det tsjekkiske domeneregisteret."
 
-#: src/components/Cards/AppCard.js:42
+#: src/components/Cards/AppCard.jsx:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title }-logo"
 
-#: src/components/Cards/AppCard.js:91
+#: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
 msgstr "Gå til "
 
-#: src/store/auth-context.js:42
+#: src/store/auth-context.jsx:42
 msgid "Loading…"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Logout"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Login"
 msgstr ""
 
-#: src/components/Cards/AppCard.js:31
+#: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
 msgstr ""
