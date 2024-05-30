@@ -147,6 +147,35 @@ will generate the `.json` files with translations.
 
 Or you can run all the steps at once by running `make translations`.
 
+### Weblate
+
+The project is set up to use Weblate for managing translations. The Weblate
+project is located at
+[https://hosted.weblate.org/projects/turris/webapps/](https://hosted.weblate.org/projects/turris/webapps/).
+
+New languages are added automatically on Weblate platform.
+
+Updating translations in the project is done by creating a branch with the
+translations and opening a pull request. The translations will be merged into
+the `main` branch after the review. The process is as follows:
+
+```bash
+# 1) Lock translations on Weblate
+
+# 2) Add a Weblate remote
+git remote add weblate https://hosted.weblate.org/projects/turris/webapps/
+git fetch weblate
+
+# 3) Checkout the weblate master branch
+git checkout weblate/master
+
+# 4) Create a new branch for translations
+git checkout -b update-translations
+
+# 5) Push the branch to the project
+# 6) Review the changes and open a pull request
+```
+
 ## Changelog
 
 See [CHANGELOG.md](./CHANGELOG.md).
