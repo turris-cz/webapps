@@ -6,6 +6,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [5.0.0] - 2024-05-30
+
+### Added
+
+-   Added & update Weblate translations
+
+### Changed
+
+-   Migrated from react-scripts to Vite
+-   Migrated mocked API calls to MSW
+-   Migrated from Jest to Vitest
+-   Migrated to Bootstrap 5
+-   Updated React to 18
+-   Updated packages to latest versions
+-   Updated Node.js to 20 in CI/CD
+-   Updated README.md
+-   Other improvements in styles and code
+
+### Removed
+
+-   Removed GitLab CI/CD unit test for coverage
+
 ## [4.1.0] - 2023-02-22
 
 ### Added
@@ -17,7 +41,7 @@ and this project adheres to
 ### Changed
 
 -   Reworked app icons and tooltips
--   Droped unreleased section in Changelog
+-   Dropped unreleased section in Changelog
 -   Changed primary color to Turris specific
 -   Removed obsolete styles
 
