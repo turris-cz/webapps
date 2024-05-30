@@ -85,27 +85,25 @@ $HTTP["url"] =~ "^/coolapp" {
 
 Obviously configuration above depends on `lighttpd` and various modules. For
 simple proxy without authentication you are fine with just `lighttpd-mod-proxy`.
-If you need authentification, you have to add to your dependencies
+If you need authentication, you have to add to your dependencies
 `lighttpd-mod-auth`, `lighttpd-mod-authn_pam` and `lighttpd-mod-authn_file` as
 well.
 
 ## Development
 
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app). \
+This project is written in React.js and uses
+[React Bootstrap](https://react-bootstrap.netlify.app/) for styling. It is built
+using [Vite](https://vitejs.dev/). The project also contains a simple mock
+server based on [MSW](https://mswjs.io/) to simulate the API in development
+mode.
+
 Install all the required packages/dependencies using `npm install`.
-
-Create a `.env.development.local` file with local environment variable:
-
-```
-NODE_ENV="development"
-```
 
 ### Available Scripts
 
 In the project directory, you can run:
 
-#### `npm start`
+#### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -113,30 +111,41 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-#### `npm run server`
+#### `npm run preview`
 
-Runs the local Express.js server on
-[http://localhost:3001](http://localhost:3001).\
-The server will reload if you mke edits.
-
-#### `npm run dev`
-
-Concurrently runs the app in the development mode with the local server
-(`npm start` and `npm run server` runs in parallel).
-
-#### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://create-react-app.dev/docs/running-tests/)
-for more information.
+Runs the app in the production mode locally.
 
 #### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best
 performance.
 
 The build is minified and the filenames include the hashes.
+
+#### `npm test`
+
+Launches the test runner in the interactive watch mode.
+
+#### `npm run lint`
+
+Runs ESLint to check the code for errors.
+
+## Localization
+
+The project uses [ttag](https://ttag.js.org/) for translations and
+[Weblate](https://weblate.org/) for managing translations.
+
+To extract strings for translation, run `make extract-translations`. This will
+generate a `translations.pot` file from the source code.
+
+Then you should update the translations for each language by running
+`make update-translations`. This will update the `.po` files.
+
+And finally, to compile the translations run `make compile-translations`. This
+will generate the `.json` files with translations.
+
+Or you can run all the steps at once by running `make translations`.
 
 ## Changelog
 

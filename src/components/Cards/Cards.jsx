@@ -7,8 +7,8 @@
 
 import PropTypes from "prop-types";
 
-import { locale } from "../../i18n";
 import AppCard from "./AppCard";
+import { locale } from "../../i18n";
 
 const Cards = ({ apps, defaultApp }) => {
     return (

@@ -5,8 +5,8 @@
  * See /LICENSE for more information.
  */
 
-import { Check2 } from "react-bootstrap-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { Check2 } from "react-bootstrap-icons";
 
 import { locale, saveLocale } from "../../i18n";
 

@@ -5,8 +5,8 @@
  * See /LICENSE for more information.
  */
 
-import { BoxArrowUpRight } from "react-bootstrap-icons";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { BoxArrowUpRight } from "react-bootstrap-icons";
 import { t } from "ttag";
 
 import LanguageMenuItem from "./LanguageMenuItem";

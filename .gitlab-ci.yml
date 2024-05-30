@@ -1,4 +1,4 @@
-image: node:16-slim
+image: node:20-alpine
 
 stages:
   - test
@@ -16,11 +16,11 @@ install:
   cache:
     - key: ${CI_JOB_NAME}
       paths:
-         - .npm/
+        - .npm/
       when: on_success
   artifacts:
     paths:
-    - node_modules/
+      - node_modules/
 
 ## Test stage ###################################################################
 
@@ -28,17 +28,8 @@ test:
   stage: test
   needs:
     - job: install
-      artifacts: true
   script:
-    - npm run test:ci
-  coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
-  artifacts:
-    paths:
-      - coverage/
-    when: always
-    reports:
-      junit:
-        - junit.xml
+    - npm run test
 
 test-js-build:
   stage: test
@@ -46,7 +37,7 @@ test-js-build:
     - job: install
       artifacts: true
   script:
-    - npm run-script build -- -o /tmp/app.min.js
+    - npm run build
 
 lint:
   stage: test
@@ -62,7 +53,7 @@ build:
   stage: build
   script:
     - npm run build
-    - mv build turris-webapps-${CI_COMMIT_SHORT_SHA}
+    - mv dist turris-webapps-${CI_COMMIT_SHORT_SHA}
     - cp turris-root.conf turris-webapps-json-cgi turris-webapps-${CI_COMMIT_SHORT_SHA}/
     - tar cvzf "turris-webapps-${CI_COMMIT_SHORT_SHA}.tar.gz" turris-webapps-${CI_COMMIT_SHORT_SHA}
 
