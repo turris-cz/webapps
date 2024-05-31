@@ -3,107 +3,108 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: src/App.js:40
+#: src/App.jsx:41
 msgid "Available Applications | Turris"
 msgstr ""
 
-#: src/utils/ErrorBoundary.js:25
+#: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr ""
 
-#: src/utils/ErrorBoundary.js:33
+#: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr ""
 
-#: src/utils/ErrorBoundary.js:38
+#: src/utils/ErrorBoundary.jsx:38
 msgid "Something went wrong:"
 msgstr ""
 
-#: src/utils/ErrorBoundary.js:45
+#: src/utils/ErrorBoundary.jsx:45
 msgid ""
 "More detailed information is available in the console of your web browser - "
 "on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
 "<kbd>F12</kbd>."
 msgstr ""
 
-#: src/utils/ErrorBoundary.js:49
+#: src/utils/ErrorBoundary.jsx:49
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
 
-#: src/store/auth-context.js:42
+#: src/store/auth-context.jsx:42
 msgid "Loading…"
 msgstr ""
 
-#: src/components/Main/CountDown.js:28
+#: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
 msgstr ""
 
-#: src/components/Main/CountDown.js:34
+#: src/components/Main/CountDown.jsx:44
+#, javascript-format
 msgid "${ timeLeft } sec."
 msgstr ""
 
-#: src/components/Main/Main.js:35
+#: src/components/Main/Main.jsx:35
 msgid "Loading..."
 msgstr ""
 
-#: src/components/Main/Main.js:50
+#: src/components/Main/Main.jsx:50
 msgid "No apps found."
 msgstr ""
 
-#: src/components/Main/Main.js:66
+#: src/components/Main/Main.jsx:67
 msgid "Available Applications"
 msgstr ""
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Light"
 msgstr ""
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Dark"
 msgstr ""
 
-#: src/components/Header/DarkModeToggle.js:19
+#: src/components/Header/DarkModeToggle.jsx:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
 msgstr ""
 
-#: src/components/Header/Header.js:35
+#: src/components/Header/Header.jsx:35
 msgid "Turris Logo"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Logout"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Login"
 msgstr ""
 
-#: src/components/Header/LangSwitcher.js:19
+#: src/components/Header/LangSwitcher.jsx:19
 msgid "Language"
 msgstr ""
 
-#: src/components/Header/LangSwitcher.js:27
+#: src/components/Header/LangSwitcher.jsx:27
 msgid "Participate"
 msgstr ""
 
-#: src/components/Footer/Footer.js:15
+#: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr ""
 
-#: src/components/Cards/AppCard.js:31
+#: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
 msgstr ""
 
-#: src/components/Cards/AppCard.js:42
+#: src/components/Cards/AppCard.jsx:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr ""
 
-#: src/components/Cards/AppCard.js:91
+#: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
 msgstr ""

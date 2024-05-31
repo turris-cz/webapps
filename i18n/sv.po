@@ -2,120 +2,110 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2023-09-04 20:50+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
-"Language-Team: Swedish "
-"<https://hosted.weblate.org/projects/turris/webapps/sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "x-generator: Weblate 5.0.1-dev\n"
 
-#: src/App.js:40
+#: src/App.jsx:41
 msgid "Available Applications | Turris"
 msgstr "Tillgängliga applikationer | Turris"
 
-#: src/utils/ErrorBoundary.js:25
+#: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr "Ett fel inträffade i WebApps: \"${ error }\", se detaljerna nedan."
 
-#: src/utils/ErrorBoundary.js:33
+#: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "Ett fel inträffade - Tillgängliga applikationer | Turris"
 
-#: src/utils/ErrorBoundary.js:38
+#: src/utils/ErrorBoundary.jsx:38
 msgid "Something went wrong:"
 msgstr "Någonting gick fel:"
 
-#: src/utils/ErrorBoundary.js:45
-msgid ""
-"More detailed information is available in the console of your web browser - "
-"on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or "
-"<kbd>F12</kbd>."
-msgstr ""
-"Mer detaljerad information finns tillgängligt i din webbläsares konsol - "
-"kan nås i de flesta webbläsarna genom att man trycker "
-"<kbd>Ctrl+Shift+J</kbd> eller <kbd>F12</kbd>."
+#: src/utils/ErrorBoundary.jsx:45
+msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
+msgstr "Mer detaljerad information finns tillgängligt i din webbläsares konsol - kan nås i de flesta webbläsarna genom att man trycker <kbd>Ctrl+Shift+J</kbd> eller <kbd>F12</kbd>."
 
-#: src/utils/ErrorBoundary.js:49
-msgid ""
-"Please report this error to our support team via e-mail: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+#: src/utils/ErrorBoundary.jsx:49
+msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
-#: src/components/Main/CountDown.js:28
+#: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
 msgstr "Byter till den huvudsakliga om: ${ timeLeft } sek."
 
-#: src/components/Main/CountDown.js:34
+#: src/components/Main/CountDown.jsx:44
+#, javascript-format
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } sek."
 
-#: src/components/Main/Main.js:35
+#: src/components/Main/Main.jsx:35
 msgid "Loading..."
 msgstr "Laddar..."
 
-#: src/components/Main/Main.js:50
+#: src/components/Main/Main.jsx:50
 msgid "No apps found."
 msgstr "Inga appar hittades."
 
-#: src/components/Main/Main.js:66
+#: src/components/Main/Main.jsx:67
 msgid "Available Applications"
 msgstr "Tillgängliga applikationer"
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Light"
 msgstr "Ljus"
 
-#: src/components/Header/DarkModeToggle.js:15
+#: src/components/Header/DarkModeToggle.jsx:15
 msgid "Dark"
 msgstr "Mörk"
 
-#: src/components/Header/DarkModeToggle.js:19
+#: src/components/Header/DarkModeToggle.jsx:19
 #, javascript-format
 msgid "Toggle ${ modeLabel } Mode"
 msgstr "Växla ${ modeLabel } läget"
 
-#: src/components/Header/Header.js:35
+#: src/components/Header/Header.jsx:35
 msgid "Turris Logo"
 msgstr "Logga för Turris"
 
-#: src/components/Header/LangSwitcher.js:19
+#: src/components/Header/LangSwitcher.jsx:19
 msgid "Language"
 msgstr "Språk"
 
-#: src/components/Header/LangSwitcher.js:27
+#: src/components/Header/LangSwitcher.jsx:27
 msgid "Participate"
 msgstr "Delta"
 
-#: src/components/Footer/Footer.js:15
+#: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
 msgstr "Turris utvecklas av CZ.NIC, registret för CZ-domänen."
 
-#: src/components/Cards/AppCard.js:42
+#: src/components/Cards/AppCard.jsx:42
 #, javascript-format
 msgid "${ title } Logo"
 msgstr "${ title } Logga"
 
-#: src/components/Cards/AppCard.js:91
+#: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
 msgstr "Gå till "
 
-#: src/store/auth-context.js:42
+#: src/store/auth-context.jsx:42
 msgid "Loading…"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Logout"
 msgstr ""
 
-#: src/components/Header/Header.js:47
+#: src/components/Header/Header.jsx:47
 msgid "Login"
 msgstr ""
 
-#: src/components/Cards/AppCard.js:31
+#: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
 msgstr ""
