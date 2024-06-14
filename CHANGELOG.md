@@ -8,6 +8,13 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [5.0.1] - 2024-06-15
+
+### Changed
+
+-   Changed the naming of artifacts in GitLab CI/CD
+-   NPM audit fix
+
 ## [5.0.0] - 2024-05-30
 
 ### Added
@@ -117,7 +124,9 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.1.0...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...master
+[5.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.0...v5.0.1
+[5.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.1.0...v5.0.0
 [4.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.0.0...v4.1.0
 [4.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.7...v4.0.0
 [3.7]: https://gitlab.nic.cz/turris/webapps/-/compare/v3.6...v3.7
