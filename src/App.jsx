@@ -23,39 +23,44 @@ const App = () => {
     };
 
     const getInitialMode = () => {
-        const isReturningUser = "dark" in localStorage;
-        const savedMode = JSON.parse(localStorage.getItem("dark"));
+        const isReturningUser = "theme" in localStorage;
+        const savedMode = JSON.parse(localStorage.getItem("theme"));
         const userPrefersDark = getPrefColorScheme();
         if (isReturningUser) {
             return savedMode;
         }
         if (userPrefersDark) {
-            return true;
+            return "dark";
         }
-        return false;
+        return "light";
     };
 
     const [darkMode, setDarkMode] = useState(getInitialMode());
 
     useEffect(() => {
         document.title = t`Available Applications | Turris`;
-        localStorage.setItem("dark", JSON.stringify(darkMode));
+        localStorage.setItem("theme", JSON.stringify(darkMode));
     }, [darkMode]);
 
-    useLayoutEffect(() => {
-        document.documentElement.setAttribute(
-            "data-theme",
-            `${darkMode ? "dark" : "light"}`
-        );
-    });
+    // useLayoutEffect(() => {
+    //     document.documentElement.setAttribute(
+    //         "data-theme",
+    //         `${darkMode ? "dark" : "light"}`
+    //     );
+    // });
 
-    const darkModeToggleHandler = () => {
-        setDarkMode((prevMode) => !prevMode);
+    const changeDarkMode = (mode) => {
+        // Set dark mode to three states: light, dark, auto
+        if (mode === "auto") {
+            setDarkMode(getPrefColorScheme() ? "dark" : "light");
+        } else {
+            setDarkMode(mode);
+        }
     };
 
     return (
         <AuthContextProvider>
-            <Header darkMode={darkMode} toggleMode={darkModeToggleHandler} />
+            <Header darkMode={darkMode} changeDarkMode={changeDarkMode} />
             <ErrorBoundary>
                 <Main />
             </ErrorBoundary>
