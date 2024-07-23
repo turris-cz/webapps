@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -17,16 +17,11 @@ import LangSwitcher from "./LangSwitcher";
 import TurrisLogo from "./turris-dark.svg";
 import AuthContext from "../../store/auth-context";
 
-const Header = ({ darkMode, changeDarkMode }) => {
+const Header = () => {
     const { isLoggedIn, login, logout } = useContext(AuthContext);
     return (
         <header>
-            <Navbar
-                bg="light"
-                variant="light"
-                fixed="top"
-                className="shadow-sm"
-            >
+            <Navbar fixed="top" className="bg-body shadow-sm">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -38,10 +33,7 @@ const Header = ({ darkMode, changeDarkMode }) => {
                     </Navbar.Brand>
                     <div className="ms-auto d-flex align-items-center align-content-center">
                         <Nav className="me-2">
-                            <DarkModeDropdown
-                                darkMode={darkMode}
-                                changeDarkMode={changeDarkMode}
-                            />
+                            <DarkModeDropdown />
                             <LangSwitcher />
                             <Nav.Link onClick={isLoggedIn ? logout : login}>
                                 {isLoggedIn ? t`Logout` : t`Login`}

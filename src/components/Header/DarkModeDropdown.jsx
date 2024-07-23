@@ -5,16 +5,18 @@
  * See /LICENSE for more information.
  */
 
-import PropTypes from "prop-types";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import { t } from "ttag";
+import { useContext } from "react";
 
+import { t } from "ttag";
+import NavDropdown from "react-bootstrap/NavDropdown";
 import {
     BrightnessHighFill,
     Check2,
     CircleHalf,
     MoonStarsFill,
 } from "react-bootstrap-icons";
+
+import ThemeContext from "../../store/theme-context";
 
 const darkModeOptions = [
     {
@@ -34,17 +36,13 @@ const darkModeOptions = [
     },
 ];
 
-const DarkModeToggle = ({ darkMode, changeDarkMode }) => {
-    console.log(darkMode);
-    const dropdownTitle = darkModeOptions.find(
-        (option) => option.mode === darkMode
-    );
-
+const DarkModeToggle = () => {
+    const { theme, setTheme } = useContext(ThemeContext);
     return (
         <NavDropdown
             align="end"
             id="nav-dropdown-dark-mode"
-            title={dropdownTitle.icon || <BrightnessHighFill />}
+            title={<CircleHalf />}
         >
             {darkModeOptions.map((option) => (
                 <li key={option.mode}>
@@ -52,11 +50,11 @@ const DarkModeToggle = ({ darkMode, changeDarkMode }) => {
                         as="button"
                         className="d-flex align-items-center"
                         key={option.mode}
-                        onClick={changeDarkMode(option.mode)}
-                        active={option.mode === darkMode}
+                        onClick={setTheme.bind(null, option.mode)}
+                        active={option.mode === theme}
                     >
                         {option.icon}
-                        {option.mode === darkMode ? (
+                        {option.mode === theme ? (
                             <>
                                 <strong>{option.text}</strong>
                                 <Check2 className="ms-auto" />
@@ -69,11 +67,6 @@ const DarkModeToggle = ({ darkMode, changeDarkMode }) => {
             ))}
         </NavDropdown>
     );
-};
-
-DarkModeToggle.propTypes = {
-    darkMode: PropTypes.bool,
-    changeDarkMode: PropTypes.func,
 };
 
 export default DarkModeToggle;

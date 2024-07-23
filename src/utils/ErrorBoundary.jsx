@@ -33,7 +33,7 @@ export default class ErrorBoundary extends Component {
             document.title = t`An Error Occurred - Available Applications | Turris`;
             return (
                 <div className="container">
-                    <div className="p-3 p-sm-5 bg-light border rounded-3 my-5 shadow-sm">
+                    <div className="p-3 p-sm-5 border rounded-3 my-5 shadow-sm">
                         <div className="container-fluid p-3 py-sm-5">
                             <h1>{t`Something went wrong:`}</h1>
                             <p className="mb-3">

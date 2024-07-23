@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -30,21 +30,19 @@ const setLocale = (locale) => (event) => {
 };
 
 const LanguageMenuItem = () => {
-    const sortedLangs = [
-        ...LANGS.filter((language) => language.id === locale),
-        ...LANGS.filter((language) => language.id !== locale),
-    ];
-    return sortedLangs.map((language) => {
+    return LANGS.map((language) => {
         return (
             <NavDropdown.Item
                 key={language.id}
                 onClick={setLocale(language.id)}
+                className="d-flex align-items-center"
+                active={language.id === locale}
             >
                 {language.id === locale ? (
-                    <strong>
-                        {language.title}
-                        <Check2 className="ms-1" />
-                    </strong>
+                    <>
+                        <strong>{language.title}</strong>
+                        <Check2 className="ms-auto" />
+                    </>
                 ) : (
                     language.title
                 )}
