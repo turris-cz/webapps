@@ -1,4 +1,11 @@
-import React, { useState, useEffect } from "react";
+/*
+ * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ *
+ * This is free software, licensed under the GNU General Public License v3.
+ * See /LICENSE for more information.
+ */
+
+import { useState, useEffect, createContext } from "react";
 
 import PropTypes from "prop-types";
 import Spinner from "react-bootstrap/Spinner";
@@ -7,7 +14,7 @@ import { t } from "ttag";
 import useHttp from "../hooks/use-http";
 import { getAuthData } from "../lib/api";
 
-const AuthContext = React.createContext({
+const AuthContext = createContext({
     isLoggedIn: false,
     login: () => {},
     logout: () => {},

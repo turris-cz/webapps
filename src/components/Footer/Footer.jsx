@@ -8,7 +8,7 @@ import { t } from "ttag";
 
 const Footer = () => {
     return (
-        <footer className="footer mt-auto py-3 bg-light shadow">
+        <footer className="footer bg-body mt-auto py-3 shadow">
             <div className="container text-center">
                 <span className="text-muted">
                     <small>
