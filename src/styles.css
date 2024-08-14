@@ -97,7 +97,7 @@ footer p {
 
 [data-bs-theme="dark"] a img,
 [data-bs-theme="dark"] .card .card-img-top {
-    filter: invert(0.6);
+    filter: invert(0.85);
 }
 
 [data-bs-theme="dark"] .card:hover,
