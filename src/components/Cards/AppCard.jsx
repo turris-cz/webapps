@@ -38,10 +38,10 @@ const AppCard = ({
                 <Card.Img
                     variant="top"
                     src={icon}
-                    className="bd-placeholder-img card-img-top p-5 border-bottom"
+                    className="bd-placeholder-img card-img-top p-5 img-logo-black"
                     alt={t`${title} Logo`}
                 />
-                <Card.Body className="text-truncate">
+                <Card.Body className="text-truncate border-top">
                     <Card.Title
                         as={"h2"}
                         className="h4 d-inline align-middle card-name me-1"
