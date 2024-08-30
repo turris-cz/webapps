@@ -9,6 +9,7 @@ import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 
 import App from "./App";
+import "./httpsRedirect";
 import "./i18n";
 
 import "./index.scss";
