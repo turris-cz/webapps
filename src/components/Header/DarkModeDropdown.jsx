@@ -9,6 +9,8 @@ import { useContext } from "react";
 
 import { t } from "ttag";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Tooltip from "react-bootstrap/Tooltip";
 import {
     BrightnessHighFill,
     Check2,
@@ -20,17 +22,17 @@ import ThemeContext from "../../store/theme-context";
 
 const darkModeOptions = [
     {
-        icon: <BrightnessHighFill className="me-2" />,
+        icon: <BrightnessHighFill />,
         text: t`Light`,
         mode: "light",
     },
     {
-        icon: <MoonStarsFill className="me-2" />,
+        icon: <MoonStarsFill />,
         text: t`Dark`,
         mode: "dark",
     },
     {
-        icon: <CircleHalf className="me-2" />,
+        icon: <CircleHalf />,
         text: t`Auto`,
         mode: "auto",
     },
@@ -38,34 +40,48 @@ const darkModeOptions = [
 
 const DarkModeToggle = () => {
     const { theme, setTheme } = useContext(ThemeContext);
+    const currentThemeIcon = darkModeOptions.find(
+        (option) => option.mode === theme
+    ).icon;
+
+    const renderDarkModeTooltip = (props) => (
+        <Tooltip id="dark-mode-tooltip" {...props}>
+            {t`Change Theme`}
+        </Tooltip>
+    );
     return (
-        <NavDropdown
-            align="end"
-            id="nav-dropdown-dark-mode"
-            title={<CircleHalf />}
-        >
-            {darkModeOptions.map((option) => (
-                <li key={option.mode}>
-                    <NavDropdown.Item
-                        as="button"
-                        className="d-flex align-items-center"
-                        key={option.mode}
-                        onClick={setTheme.bind(null, option.mode)}
-                        active={option.mode === theme}
-                    >
-                        {option.icon}
-                        {option.mode === theme ? (
-                            <>
-                                <strong>{option.text}</strong>
-                                <Check2 className="ms-auto" />
-                            </>
-                        ) : (
-                            option.text
-                        )}
-                    </NavDropdown.Item>
-                </li>
-            ))}
-        </NavDropdown>
+        <OverlayTrigger placement="left" overlay={renderDarkModeTooltip}>
+            <NavDropdown
+                align="end"
+                id="nav-dropdown-dark-mode"
+                title={currentThemeIcon}
+                aria-label={t`Change Theme (${theme})`}
+            >
+                {darkModeOptions.map((option) => (
+                    <li key={option.mode}>
+                        <NavDropdown.Item
+                            as="button"
+                            className="d-flex align-items-center"
+                            key={option.mode}
+                            onClick={setTheme.bind(null, option.mode)}
+                            active={option.mode === theme}
+                        >
+                            <span className="me-2 opacity-50">
+                                {option.icon}
+                            </span>
+                            {option.mode === theme ? (
+                                <>
+                                    <strong>{option.text}</strong>
+                                    <Check2 className="ms-auto" />
+                                </>
+                            ) : (
+                                option.text
+                            )}
+                        </NavDropdown.Item>
+                    </li>
+                ))}
+            </NavDropdown>
+        </OverlayTrigger>
     );
 };
 
