@@ -25,7 +25,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand href="/">
                         <img
-                            className="d-inline-block align-top"
+                            className="d-inline-block align-top img-logo-black"
                             src={TurrisLogo}
                             alt={t`Turris Logo`}
                             height="30"

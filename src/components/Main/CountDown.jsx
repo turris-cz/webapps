@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 import ProgressBar from "react-bootstrap/ProgressBar";
 import { t } from "ttag";
 
-const CountDown = ({ countDownTime = 25, onComplete }) => {
+const CountDown = ({ countDownTime = 25, onComplete, apps }) => {
     const [timeLeft, setTimeLeft] = useState(countDownTime);
 
     useEffect(() => {
@@ -43,6 +43,10 @@ const CountDown = ({ countDownTime = 25, onComplete }) => {
                 now={timeLeft}
                 label={t`${timeLeft} sec.`}
                 visuallyHidden
+                style={{
+                    margin: "0 auto",
+                    width: apps.length > 1 ? "100%" : "45%",
+                }}
             />
         </>
     );

@@ -5,7 +5,13 @@
  * See /LICENSE for more information.
  */
 
-import { useState, useEffect, createContext } from "react";
+import React, {
+    useState,
+    useLayoutEffect,
+    createContext,
+    useCallback,
+    useMemo,
+} from "react";
 
 import PropTypes from "prop-types";
 
@@ -17,31 +23,64 @@ const ThemeContext = createContext({
 export const ThemeContextProvider = ({ children }) => {
     const [theme, setTheme] = useState("auto");
 
-    // Apply theme to the document
-    const applyTheme = (selectedTheme) => {
+    // Function to apply the theme to the document
+    const applyTheme = useCallback((selectedTheme) => {
         document.documentElement.setAttribute("data-bs-theme", selectedTheme);
-    };
+    }, []);
 
-    // Initialize theme based on localStorage and media query
-    useEffect(() => {
-        const savedTheme = localStorage.getItem("theme") || "auto";
-        setTheme(savedTheme);
-        applyTheme(savedTheme);
+    // Function to handle favicon change based on the theme
+    const handleFaviconChange = useCallback((currentTheme) => {
+        const favicon = document.getElementById("favicon");
+        if (favicon) {
+            favicon.setAttribute(
+                "href",
+                `favicon-${currentTheme === "dark" ? "white" : "black"}.png`
+            );
+        }
+    }, []);
 
+    // Initialize theme based on localStorage and prefers-color-scheme media query
+    useLayoutEffect(() => {
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-        const handleMediaChange = (e) => {
+
+        const initializeTheme = () => {
+            const savedTheme = localStorage.getItem("theme") || "auto";
+            setTheme(savedTheme);
+            applyTheme(savedTheme);
+
+            handleFaviconChange(mediaQuery.matches ? "dark" : "light");
+        };
+
+        initializeTheme();
+
+        // Event listener for theme change
+        const handleMediaChange = (event) => {
             if (theme === "auto") {
-                applyTheme(e.matches ? "dark" : "light");
+                const newTheme = event.matches ? "dark" : "light";
+                setTheme(newTheme);
+                applyTheme(newTheme);
             }
+            handleFaviconChange(mediaQuery.matches ? "dark" : "light");
+        };
+
+        // Event listener for storage change
+        const handleStorageChange = () => {
+            const savedTheme = localStorage.getItem("theme") || "auto";
+            setTheme(savedTheme);
+            applyTheme(savedTheme);
         };
 
         mediaQuery.addEventListener("change", handleMediaChange);
-        return () =>
-            mediaQuery.removeEventListener("change", handleMediaChange);
-    }, [theme]);
+        window.addEventListener("storage", handleStorageChange);
 
-    // Apply the selected theme
-    useEffect(() => {
+        return () => {
+            mediaQuery.removeEventListener("change", handleMediaChange);
+            window.removeEventListener("storage", handleStorageChange);
+        };
+    }, [applyTheme, handleFaviconChange, theme]);
+
+    // Apply the selected theme on change
+    useLayoutEffect(() => {
         if (theme === "auto") {
             const prefersDark = window.matchMedia(
                 "(prefers-color-scheme: dark)"
@@ -50,19 +89,25 @@ export const ThemeContextProvider = ({ children }) => {
         } else {
             applyTheme(theme);
         }
-    }, [theme]);
+    }, [theme, applyTheme]);
 
-    // Handle theme change and save to localStorage
-    const handleThemeChange = (newTheme) => {
-        setTheme(newTheme);
-        applyTheme(newTheme);
-        localStorage.setItem("theme", newTheme);
-    };
+    // Handle theme change and save it to localStorage
+    const handleThemeChange = useCallback(
+        (newTheme) => {
+            setTheme(newTheme);
+            applyTheme(newTheme);
+            localStorage.setItem("theme", newTheme);
+        },
+        [applyTheme]
+    );
 
-    const contextValue = {
-        theme,
-        setTheme: handleThemeChange,
-    };
+    const contextValue = useMemo(
+        () => ({
+            theme,
+            setTheme: handleThemeChange,
+        }),
+        [theme, handleThemeChange]
+    );
 
     return (
         <ThemeContext.Provider value={contextValue}>

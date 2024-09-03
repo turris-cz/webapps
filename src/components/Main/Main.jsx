@@ -68,6 +68,7 @@ const Main = () => {
                     <CountDown
                         countDownTime={loadedData.countdown}
                         onComplete={onCompleteHandler}
+                        apps={loadedData.apps}
                     />
                 </div>
             </section>
