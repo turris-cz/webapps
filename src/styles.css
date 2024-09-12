@@ -42,15 +42,6 @@ section .container {
     margin-bottom: 0.5rem;
 }
 
-footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-footer p {
-    margin-bottom: 0.25rem;
-}
-
 .spinner-center {
     height: 100vh;
     display: flex;
@@ -80,4 +71,15 @@ footer p {
 
 [data-bs-theme="dark"] div.border-top {
     border-color: var(--bs-gray-dark) !important;
+}
+
+.nav-item.dropdown a {
+    display: flex;
+    align-items: center;
+}
+
+#lang-tooltip,
+#login-tooltip,
+#dark-mode-tooltip {
+    position: fixed;
 }
