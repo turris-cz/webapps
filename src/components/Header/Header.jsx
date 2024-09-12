@@ -21,7 +21,7 @@ const Header = () => {
     const { isLoggedIn, login, logout } = useContext(AuthContext);
     return (
         <header>
-            <Navbar fixed="top" className="bg-body shadow-sm">
+            <Navbar fixed="top" className="bg-body shadow-sm py-2">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
