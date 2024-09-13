@@ -2,18 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-06-16 18:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
-"webapps/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
 "Language: nb_NO\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.6-dev\n"
 "x-generator: Weblate 4.9-dev\n"
-
-#: src/App.jsx:41
-msgid "Available Applications | Turris"
-msgstr "Tilgjengelige programmer | Turris"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
@@ -24,15 +19,7 @@ msgstr "En feil oppstod i WebApp: \"${ error }\", detaljer er å finne nedenfor"
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "En feil oppstod - Tilgjengelige programmer | Turris"
 
-#: src/utils/ErrorBoundary.jsx:38
-msgid "Something went wrong:"
-msgstr "Noe gikk galt:"
-
-#: src/utils/ErrorBoundary.jsx:45
-msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
-msgstr "Mer detaljert info er å finne i din nettlesers konsoll. På de fleste nettlesere er dette tilgjengelig ved å trykke <kbd>Ctrl+Shift+J</kbd> eller <kbd>F12</kbd>."
-
-#: src/utils/ErrorBoundary.jsx:49
+#: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr "Innrapporter denne feilen til brukerstøttelaget via e-post: <a href=\"mailto:tech.support@turris.cz\">tech@support@turris.cz</a>."
 
@@ -58,28 +45,19 @@ msgstr "Fant ingen programmer."
 msgid "Available Applications"
 msgstr "Tilgjengelige programmer"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
 msgstr "Lys"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
 msgstr "Mørk"
 
-#: src/components/Header/DarkModeToggle.jsx:19
-#, javascript-format
-msgid "Toggle ${ modeLabel } Mode"
-msgstr "Vesksle ${ modeLabel } modus"
-
-#: src/components/Header/Header.jsx:35
+#: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
 msgstr "Turris-logo"
 
-#: src/components/Header/LangSwitcher.jsx:19
-msgid "Language"
-msgstr "Språk"
-
-#: src/components/Header/LangSwitcher.jsx:27
+#: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
 msgstr "Delta"
 
@@ -96,19 +74,43 @@ msgstr "${ title }-logo"
 msgid "Go to "
 msgstr "Gå til "
 
-#: src/store/auth-context.jsx:42
+#: src/store/auth-context.jsx:49
 msgid "Loading…"
 msgstr "Laster inn …"
-
-#: src/components/Header/Header.jsx:47
-#, fuzzy
-msgid "Logout"
-msgstr "Logg ut"
-
-#: src/components/Header/Header.jsx:47
-msgid "Login"
-msgstr "Logg inn"
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
 msgstr "Forvalgt program"
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
+msgstr ""

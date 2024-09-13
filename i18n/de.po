@@ -19,15 +19,7 @@ msgstr "Der Fehler \"${ error }\" ist in WebApps aufgetreten, Details siehe unte
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "Ein Fehler ist aufgetreten - Verfügbare Anwendungen | Turris"
 
-#: src/utils/ErrorBoundary.jsx:38
-msgid "Something went wrong:"
-msgstr "Etwas ist schiefgegangen:"
-
-#: src/utils/ErrorBoundary.jsx:45
-msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
-msgstr "Detailliertere Informationen finden Sie in der Konsole Ihres Webbrowsers. In den meisten Browsern lässt sich diese durch Drücken von <kbd>Strg+Shift+J</kbd> oder <kbd>F12</kbd> aufrufen."
-
-#: src/utils/ErrorBoundary.jsx:49
+#: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr "Bitte melden Sie diesen Fehler unserem Support-Team via E-Mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
@@ -53,28 +45,19 @@ msgstr "Keine Anwendungen gefunden."
 msgid "Available Applications"
 msgstr "Verfügbare Anwendungen"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
 msgstr "Hell"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
 msgstr "Dunkel"
 
-#: src/components/Header/DarkModeToggle.jsx:19
-#, javascript-format
-msgid "Toggle ${ modeLabel } Mode"
-msgstr "Zu Modus ${ modeLabel } wechseln"
-
-#: src/components/Header/Header.jsx:35
+#: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
 msgstr "Turris-Logo"
 
-#: src/components/Header/LangSwitcher.jsx:19
-msgid "Language"
-msgstr "Sprache"
-
-#: src/components/Header/LangSwitcher.jsx:27
+#: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
 msgstr "Mitmachen"
 
@@ -91,22 +74,43 @@ msgstr "${ title }-Logo"
 msgid "Go to "
 msgstr "Wechseln zu "
 
-#: src/App.jsx:41
-msgid "Available Applications | Turris"
-msgstr "Verfügbare Anwendungen | Turris"
-
-#: src/store/auth-context.jsx:42
+#: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Logout"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Login"
 msgstr ""
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
 msgstr ""
