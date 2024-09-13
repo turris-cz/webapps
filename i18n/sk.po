@@ -1,13 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-21 21:02+0000\n"
+"PO-Revision-Date: 2024-09-09 18:09+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
+">\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.6-dev\n"
+"X-Generator: Weblate 5.8-dev\n"
 "x-generator: Weblate 4.16.2-dev\n"
 
 #: src/App.jsx:41
@@ -59,11 +60,11 @@ msgstr "Dostupné aplikácie"
 
 #: src/components/Header/DarkModeToggle.jsx:15
 msgid "Light"
-msgstr "svetlý"
+msgstr "Svetlá"
 
 #: src/components/Header/DarkModeToggle.jsx:15
 msgid "Dark"
-msgstr "tmavý"
+msgstr "Tmavá"
 
 #: src/components/Header/DarkModeToggle.jsx:19
 #, javascript-format
@@ -72,7 +73,7 @@ msgstr "Prepnúť na ${ modeLabel } režim"
 
 #: src/components/Header/Header.jsx:35
 msgid "Turris Logo"
-msgstr "Logo Turris"
+msgstr "Turris Logo"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Language"

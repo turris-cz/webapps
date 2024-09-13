@@ -1,12 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-25 12:11+0000\n"
+"PO-Revision-Date: 2024-06-16 18:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/webapps/nb_NO/>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/turris/"
+"webapps/nb_NO/>\n"
 "Language: nb_NO\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6-dev\n"
 "x-generator: Weblate 4.9-dev\n"
 
 #: src/App.jsx:41
@@ -96,16 +98,17 @@ msgstr "Gå til "
 
 #: src/store/auth-context.jsx:42
 msgid "Loading…"
-msgstr ""
+msgstr "Laster inn …"
 
 #: src/components/Header/Header.jsx:47
+#, fuzzy
 msgid "Logout"
-msgstr ""
+msgstr "Logg ut"
 
 #: src/components/Header/Header.jsx:47
 msgid "Login"
-msgstr ""
+msgstr "Logg inn"
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Forvalgt program"
