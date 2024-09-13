@@ -8,7 +8,7 @@
 /* Custom styles */
 
 body {
-    padding-top: 4.5rem;
+    padding-top: 3.5rem;
 }
 
 .intro p:last-child {
@@ -33,21 +33,13 @@ section .container {
 }
 
 .card:hover,
-.card:focus {
+.card:focus,
+.card:focus-within {
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.175) !important;
 }
 
 .card p.card-text {
     margin-bottom: 0.5rem;
-}
-
-footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-footer p {
-    margin-bottom: 0.25rem;
 }
 
 .spinner-center {
@@ -77,16 +69,17 @@ footer p {
     }
 }
 
-/* Dark mode theme fixes */
-[data-bs-theme="dark"] .card:hover,
-[data-bs-theme="dark"] .card:focus {
-    box-shadow: 0 1rem 1.5rem rgba(255, 255, 255, 0.175) !important;
+[data-bs-theme="dark"] div.border-top {
+    border-color: var(--bs-gray-dark) !important;
 }
 
-[data-bs-theme="dark"] .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(255, 255, 255, 0.075) !important;
+.nav-item.dropdown a {
+    display: flex;
+    align-items: center;
 }
 
-[data-bs-theme="dark"] .shadow {
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15) !important;
+#lang-tooltip,
+#login-tooltip,
+#dark-mode-tooltip {
+    position: fixed;
 }

@@ -61,7 +61,7 @@ const Main = () => {
     };
 
     return (
-        <main role="main">
+        <main role="main" className="flex-shrink-0">
             <section className="py-4 text-center container">
                 <div className="container">
                     <h1>{t`Available Applications`}</h1>

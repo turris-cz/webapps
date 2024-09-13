@@ -23,6 +23,7 @@ if (locale !== "en") {
         .then((translationsObj) => {
             addLocale(locale, translationsObj.default);
             useLocale(locale);
+            document.documentElement.lang = locale;
         })
         .catch((error) => {
             console.error("Failed to load the translation file:", error);

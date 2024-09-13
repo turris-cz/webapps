@@ -4,7 +4,6 @@
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
  */
-import { useContext } from "react";
 
 import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
@@ -14,14 +13,13 @@ import { t } from "ttag";
 
 import DarkModeDropdown from "./DarkModeDropdown";
 import LangSwitcher from "./LangSwitcher";
+import LoginButton from "./LoginButton";
 import TurrisLogo from "./turris-dark.svg";
-import AuthContext from "../../store/auth-context";
 
 const Header = () => {
-    const { isLoggedIn, login, logout } = useContext(AuthContext);
     return (
         <header>
-            <Navbar fixed="top" className="bg-body shadow-sm">
+            <Navbar fixed="top" className="bg-body shadow-sm py-2">
                 <Container>
                     <Navbar.Brand href="/">
                         <img
@@ -35,9 +33,7 @@ const Header = () => {
                         <Nav className="me-2">
                             <DarkModeDropdown />
                             <LangSwitcher />
-                            <Nav.Link onClick={isLoggedIn ? logout : login}>
-                                {isLoggedIn ? t`Logout` : t`Login`}
-                            </Nav.Link>
+                            <LoginButton />
                         </Nav>
                     </div>
                 </Container>

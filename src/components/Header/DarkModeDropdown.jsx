@@ -50,7 +50,7 @@ const DarkModeToggle = () => {
         </Tooltip>
     );
     return (
-        <OverlayTrigger placement="left" overlay={renderDarkModeTooltip}>
+        <OverlayTrigger placement="bottom" overlay={renderDarkModeTooltip}>
             <NavDropdown
                 align="end"
                 id="nav-dropdown-dark-mode"
