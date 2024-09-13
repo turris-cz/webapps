@@ -2,13 +2,11 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-08-17 00:09+0000\n"
 "Last-Translator: Maxim <astralfestival@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/"
-"ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/ru/>\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.7\n"
 "mime-version: 1.0\n"
 
@@ -21,15 +19,7 @@ msgstr "Произошла ошибка в WebApps: \"${ error }\", подроб
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "Произошла ошибка - Доступные Приложения | Turris"
 
-#: src/utils/ErrorBoundary.jsx:38
-msgid "Something went wrong:"
-msgstr "Что-то пошло не так:"
-
-#: src/utils/ErrorBoundary.jsx:45
-msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
-msgstr "Более подробная информация доступна в консоли вашего веб-браузера - в большинстве браузеров, она доступна после нажатия <kbd>Ctrl+Shift+J</kbd> или <kbd>F12</kbd>."
-
-#: src/utils/ErrorBoundary.jsx:49
+#: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr "Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
@@ -55,28 +45,19 @@ msgstr "Приложения не найдены."
 msgid "Available Applications"
 msgstr "Доступные Приложения"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
 msgstr "Светлый"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
 msgstr "Тёмный"
 
-#: src/components/Header/DarkModeToggle.jsx:19
-#, javascript-format
-msgid "Toggle ${ modeLabel } Mode"
-msgstr "Включить ${ modeLabel } режим"
-
-#: src/components/Header/Header.jsx:35
+#: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
 msgstr "Логотип Turris"
 
-#: src/components/Header/LangSwitcher.jsx:19
-msgid "Language"
-msgstr "Язык"
-
-#: src/components/Header/LangSwitcher.jsx:27
+#: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
 msgstr "Участвовать"
 
@@ -93,22 +74,43 @@ msgstr "${ title } Логотип"
 msgid "Go to "
 msgstr "Перейти в "
 
-#: src/App.jsx:41
-msgid "Available Applications | Turris"
-msgstr "Доступные Приложения | Turris"
-
-#: src/store/auth-context.jsx:42
+#: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Logout"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Login"
 msgstr ""
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
 msgstr ""

@@ -2,18 +2,13 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-09-09 18:09+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
-">\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 5.8-dev\n"
 "x-generator: Weblate 4.16.2-dev\n"
-
-#: src/App.jsx:41
-msgid "Available Applications | Turris"
-msgstr "Dostupné aplikácie | Turris"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
@@ -24,15 +19,7 @@ msgstr "Vo WebApps nastala chyba: \"${ error }\", podrobnosti sú nižšie."
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "Nastala chyba – Dostupné aplikácie | Turris"
 
-#: src/utils/ErrorBoundary.jsx:38
-msgid "Something went wrong:"
-msgstr "Nastala chyba:"
-
-#: src/utils/ErrorBoundary.jsx:45
-msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
-msgstr "Podrobnejšie informácie sú k dispozícii v konzole vášho prehliadača – obvykle je dostupná klávesovou skratkou <kbd>Ctrl+Shift+J</kbd> alebo <kbd>F12</kbd>."
-
-#: src/utils/ErrorBoundary.jsx:49
+#: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr "Prosím, ohláste túto chybu našej technickej podpore na e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
@@ -58,28 +45,19 @@ msgstr "Nenašli sa žiadne aplikácie."
 msgid "Available Applications"
 msgstr "Dostupné aplikácie"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
 msgstr "Svetlá"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
 msgstr "Tmavá"
 
-#: src/components/Header/DarkModeToggle.jsx:19
-#, javascript-format
-msgid "Toggle ${ modeLabel } Mode"
-msgstr "Prepnúť na ${ modeLabel } režim"
-
-#: src/components/Header/Header.jsx:35
+#: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
 msgstr "Turris Logo"
 
-#: src/components/Header/LangSwitcher.jsx:19
-msgid "Language"
-msgstr "Jazyk"
-
-#: src/components/Header/LangSwitcher.jsx:27
+#: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
 msgstr "Podieľať sa"
 
@@ -96,18 +74,43 @@ msgstr "Logo ${ title }"
 msgid "Go to "
 msgstr "Ísť na "
 
-#: src/store/auth-context.jsx:42
+#: src/store/auth-context.jsx:49
 msgid "Loading…"
 msgstr "Načítavanie…"
-
-#: src/components/Header/Header.jsx:47
-msgid "Logout"
-msgstr "Odhlásenie"
-
-#: src/components/Header/Header.jsx:47
-msgid "Login"
-msgstr "Prihlásenie"
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
 msgstr "Východisková aplikácia"
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
+msgstr ""

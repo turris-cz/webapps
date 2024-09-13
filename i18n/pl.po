@@ -9,10 +9,6 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "x-generator: Weblate 5.0-dev\n"
 
-#: src/App.jsx:41
-msgid "Available Applications | Turris"
-msgstr "Dostępne aplikacje | Turris"
-
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
@@ -22,15 +18,7 @@ msgstr "Wystąpił błąd w WebApps: \"${ error }\", zobacz szczegóły poniżej
 msgid "An Error Occurred - Available Applications | Turris"
 msgstr "Wystąpił błąd - Dostępne aplikacje | Turris"
 
-#: src/utils/ErrorBoundary.jsx:38
-msgid "Something went wrong:"
-msgstr "Coś poszło nie tak:"
-
-#: src/utils/ErrorBoundary.jsx:45
-msgid "More detailed information is available in the console of your web browser - on most browsers accessible after pressing <kbd>Ctrl+Shift+J</kbd> or <kbd>F12</kbd>."
-msgstr "Więcej szczegółów dostępne w konsoli Twojej przeglądarki internetowej - w większości przeglądarek konsolę można uruchomić wciskając <kbd>Ctrl+Shift+J</kbd> lub <kbd>F12</kbd>."
-
-#: src/utils/ErrorBoundary.jsx:49
+#: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr "Prosimy zgłosić ten błąd naszemu zespołowi obsługi na adres <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
@@ -56,28 +44,19 @@ msgstr "Nie znaleziono aplikacji."
 msgid "Available Applications"
 msgstr "Dostępne aplikacje"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
 msgstr "Jasny"
 
-#: src/components/Header/DarkModeToggle.jsx:15
+#: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
 msgstr "Ciemny"
 
-#: src/components/Header/DarkModeToggle.jsx:19
-#, javascript-format
-msgid "Toggle ${ modeLabel } Mode"
-msgstr "Przełącz tryb ${ modeLabel }"
-
-#: src/components/Header/Header.jsx:35
+#: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
 msgstr "Logo Turris"
 
-#: src/components/Header/LangSwitcher.jsx:19
-msgid "Language"
-msgstr "Język"
-
-#: src/components/Header/LangSwitcher.jsx:27
+#: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
 msgstr "Weź udział"
 
@@ -94,18 +73,43 @@ msgstr "Logo ${ title }"
 msgid "Go to "
 msgstr "Idź do "
 
-#: src/store/auth-context.jsx:42
+#: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Logout"
-msgstr ""
-
-#: src/components/Header/Header.jsx:47
-msgid "Login"
 msgstr ""
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
 msgstr ""
