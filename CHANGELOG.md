@@ -8,6 +8,28 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.0] - 2024-09-13
+
+### Added
+
+-   Added & updated Weblate translations
+-   Added Bootswatch v5.3.3
+-   Added window.matchMedia mocking to setupTests.js
+-   Added Access-Control-Allow-Origin header globally
+-   Redirect to HTTPS if available
+
+### Changed
+
+-   Refactored Dark Mode
+-   Refactored index.scss & styles to match common Turris Bootstrap theme
+-   Refactored ThemeContext to improve theme handling and favicon change
+-   Refactored Header items to use icons with tooltips
+-   Refactored ErrorBoundary component for improved error handling and UI
+    display
+-   Set document language based on selected locale
+-   Other improvements in styles and code
+-   NPM audit fix
+
 ## [5.0.1] - 2024-06-15
 
 ### Changed
@@ -124,7 +146,8 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...master
+[6.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...v6.0.0
 [5.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.0...v5.0.1
 [5.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.1.0...v5.0.0
 [4.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.0.0...v4.1.0
