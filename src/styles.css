@@ -78,8 +78,10 @@ section .container {
     align-items: center;
 }
 
-#lang-tooltip,
-#login-tooltip,
-#dark-mode-tooltip {
-    position: fixed;
+
+/* Fix for tooltips, until fixed in React Bootstrap:
+https://github.com/react-bootstrap/react-bootstrap/issues/6563
+*/
+div[role="tooltip"] {
+    position: fixed !important;
 }
