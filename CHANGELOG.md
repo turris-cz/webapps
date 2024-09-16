@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.1] - 2024-09-16
+
+### Changed
+
+-   Fixed position of tooltips in styles.css
+
 ## [6.0.0] - 2024-09-13
 
 ### Added
@@ -146,7 +152,8 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...master
+[6.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...v6.0.1
 [6.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...v6.0.0
 [5.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.0...v5.0.1
 [5.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v4.1.0...v5.0.0
