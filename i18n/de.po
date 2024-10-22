@@ -1,12 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-13 11:47+0000\n"
-"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/>\n"
+"PO-Revision-Date: 2024-10-23 02:15+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
+">\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 "x-generator: Weblate 5.0-dev\n"
 "mime-version: 1.0\n"
 
@@ -76,41 +78,45 @@ msgstr "Wechseln zu "
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
+msgstr "Wird geladen …"
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Standardanwendung"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr ""
+msgstr "Hoppla! Etwas ist schiefgelaufen:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
+"Ausführlichere Informationen finden Sie in der Konsole Ihres Webbrowsers. "
+"Bei den meisten Browsern können Sie darauf zugreifen, nachdem Sie "
+"<kbd><kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>J</kbd></kbd> oder <kbd>F12</"
+"kbd> gedrückt haben."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Automatisch"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr ""
+msgstr "Thema ändern"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr ""
+msgstr "Thema ändern (${ theme })"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Sprache ändern"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Abmeldung"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
-msgstr ""
+msgstr "Anmeldung"
