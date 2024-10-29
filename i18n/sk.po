@@ -1,13 +1,14 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-09-09 18:09+0000\n"
+"PO-Revision-Date: 2024-10-30 18:11+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
+">\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.8.2-dev\n"
 "x-generator: Weblate 4.16.2-dev\n"
 
 #: src/utils/ErrorBoundary.jsx:25
@@ -55,7 +56,7 @@ msgstr "Tmavá"
 
 #: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
-msgstr "Turris Logo"
+msgstr "Logo Turris"
 
 #: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
@@ -84,33 +85,36 @@ msgstr "Východisková aplikácia"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr ""
+msgstr "Ups! Niečo sa pokazilo:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
+"Podrobnejšie informácie sú k dispozícii v konzole vášho webového "
+"prehliadača. Obvykle sa otvorí stlačením "
+"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Automaticky"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr ""
+msgstr "Zmeniť tému"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr ""
+msgstr "Zmeniť tému (${ theme })"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Zmeniť jazyk"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Odhlásiť sa"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
-msgstr ""
+msgstr "Prihlásiť sa"
