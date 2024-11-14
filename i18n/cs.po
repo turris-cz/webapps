@@ -1,34 +1,36 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-09-25 10:15+0000\n"
-"Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
+"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>"
 "\n"
 "Language: cs\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8-dev\n"
+"X-Generator: Weblate 5.9-dev\n"
 "x-generator: Weblate 4.16.2-dev\n"
 "mime-version: 1.0\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "Došlo k chybě ve WebApps: \"${ error }\", detaily naleznete níže."
+msgstr "Došlo k chybě ve WebApps: „${ error }“ – podrobnosti naleznete níže."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr "Došlo k chybě - Dostupné aplikace | Turris"
+msgstr "Došlo k chybě – Dostupné aplikace | Turris"
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr "Nahlaste, prosím, tuto chybu naší technické podpoře prostřednictvím e-mailu na: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Prosím nahlaste tuto chybu naší technické podpoře prostřednictvím e-mailu na:"
+" <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr "Přepínám na výchozí za: ${ timeLeft } sec."
+msgstr "Přepíná se na výchozí za: ${ timeLeft } sec."
 
 #: src/components/Main/CountDown.jsx:44
 #, javascript-format
@@ -37,11 +39,11 @@ msgstr "${ timeLeft } s"
 
 #: src/components/Main/Main.jsx:35
 msgid "Loading..."
-msgstr "Načítám..."
+msgstr "Načítání…"
 
 #: src/components/Main/Main.jsx:50
 msgid "No apps found."
-msgstr "Nebyly nalezeny žádné aplikace."
+msgstr "Nenalezeny žádné aplikace."
 
 #: src/components/Main/Main.jsx:67
 msgid "Available Applications"
@@ -49,11 +51,11 @@ msgstr "Dostupné aplikace"
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
-msgstr "Světlé"
+msgstr "Světlý"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
-msgstr "Tmavé"
+msgstr "Tmavý"
 
 #: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
@@ -86,12 +88,12 @@ msgstr "Výchozí aplikace"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr "Ouha! Stalo se něco špatného:"
+msgstr "Ouha! Něco se pokazilo:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
-"Podrobnější informace jsou k dispozici v konzole vašeho webového prohlížeče –"
+"Podrobnější informace jsou k dispozici v konzoli vašeho webového prohlížeče –"
 " ve většině prohlížečů je dostupná stisknutím "
 "<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 
@@ -101,12 +103,12 @@ msgstr "Automaticky"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr "Změnit téma"
+msgstr "Změnit motiv vzhledu"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr "Změnit téma (${ theme })"
+msgstr "Změnit motiv vzhledu (${ theme })"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
