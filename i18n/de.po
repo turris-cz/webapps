@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-10-23 02:15+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/"
-">\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/webapps/de/>\n"
 "Language: de\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -90,11 +89,7 @@ msgstr "Hoppla! Etwas ist schiefgelaufen:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Ausführlichere Informationen finden Sie in der Konsole Ihres Webbrowsers. "
-"Bei den meisten Browsern können Sie darauf zugreifen, nachdem Sie "
-"<kbd><kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>J</kbd></kbd> oder <kbd>F12</"
-"kbd> gedrückt haben."
+msgstr "Ausführlichere Informationen finden Sie in der Konsole Ihres Webbrowsers. Bei den meisten Browsern können Sie darauf zugreifen, nachdem Sie <kbd><kbd>Strg</kbd>+<kbd>Umschalt</kbd>+<kbd>J</kbd></kbd> oder <kbd>F12</kbd> gedrückt haben."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
