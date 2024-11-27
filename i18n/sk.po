@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-10-30 18:11+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/"
-">\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -89,10 +88,7 @@ msgstr "Ups! Niečo sa pokazilo:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Podrobnejšie informácie sú k dispozícii v konzole vášho webového "
-"prehliadača. Obvykle sa otvorí stlačením "
-"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr "Podrobnejšie informácie sú k dispozícii v konzole vášho webového prehliadača. Obvykle sa otvorí stlačením <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"

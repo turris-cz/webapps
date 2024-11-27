@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2024-11-15 13:00+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>"
-"\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>\n"
 "Language: cs\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,9 +22,7 @@ msgstr "Došlo k chybě – Dostupné aplikace | Turris"
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Prosím nahlaste tuto chybu naší technické podpoře prostřednictvím e-mailu na:"
-" <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Prosím nahlaste tuto chybu naší technické podpoře prostřednictvím e-mailu na: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
@@ -92,10 +89,7 @@ msgstr "Ouha! Něco se pokazilo:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Podrobnější informace jsou k dispozici v konzoli vašeho webového prohlížeče –"
-" ve většině prohlížečů je dostupná stisknutím "
-"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr "Podrobnější informace jsou k dispozici v konzoli vašeho webového prohlížeče – ve většině prohlížečů je dostupná stisknutím <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
