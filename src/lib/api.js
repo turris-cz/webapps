@@ -12,14 +12,21 @@ const getAllData = async () => {
         throw new Error(data.message || "Could not fetch data");
     }
 
-    if (!response.headers.get("content-type")?.includes("application/json")) {
-        throw new Error(
-            "Expected JSON, got " + response.headers.get("content-type")
+    let contentType = response.headers.get("content-type");
+    if (!contentType?.includes("application/json")) {
+        console.warn(
+            "Unexpected Content-Type: " +
+                contentType +
+                ". Attempting to parse as JSON."
         );
     }
 
-    const data = await response.json();
-    return data;
+    try {
+        const data = await response.json();
+        return data;
+    } catch (e) {
+        throw new Error("Failed to parse JSON: " + e.message);
+    }
 };
 
 const getAuthData = async () => {
@@ -29,15 +36,21 @@ const getAuthData = async () => {
         throw new Error(data.message || "Could not fetch data.");
     }
 
-    if (!response.headers.get("content-type")?.includes("application/json")) {
-        throw new Error(
-            "Expected JSON, got " + response.headers.get("content-type")
+    let contentType = response.headers.get("content-type");
+    if (!contentType?.includes("application/json")) {
+        console.warn(
+            "Unexpected Content-Type: " +
+                contentType +
+                ". Attempting to parse as JSON."
         );
     }
 
-    const data = await response.json();
-
-    return data;
+    try {
+        const data = await response.json();
+        return data;
+    } catch (e) {
+        throw new Error("Failed to parse JSON: " + e.message);
+    }
 };
 
 export { getAuthData };
