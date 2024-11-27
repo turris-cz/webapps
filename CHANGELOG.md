@@ -8,6 +8,16 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.2] - 2024-11-27
+
+### Added
+
+-   Added & updated Weblate translations
+
+### Changed
+
+-   Enhanced JSON response handling & added Content-Type header to cgi script
+
 ## [6.0.1] - 2024-09-16
 
 ### Changed
