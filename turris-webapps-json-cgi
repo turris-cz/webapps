@@ -76,6 +76,10 @@ else
     HOST="$SERVER_NAME"
 fi
 
+# Add Content-Type header
+echo "Content-Type: application/json"
+echo ""
+
 cat << JSON
 {
     "lang": "$LANG",
