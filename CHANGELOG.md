@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.0.3] - 2025-01-28
+
+### Changed
+
+-   Make more specific Lighttpd configuration not to block the root namespace
+
 ## [6.0.2] - 2024-11-27
 
 ### Added
@@ -162,7 +168,9 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.3...master
+[6.0.3]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.2...v6.0.3
+[6.0.2]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...v6.0.1
 [6.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...v6.0.0
 [5.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.0...v5.0.1
