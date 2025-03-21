@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Language: es\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: src/utils/ErrorBoundary.jsx:25
+#, javascript-format
+msgid "An error ocurred in WebApps: \"${ error }\", see details below."
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:33
+msgid "An Error Occurred - Available Applications | Turris"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:37
+msgid "Oops! Something went wrong:"
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:43
+msgid ""
+"More detailed information is available in the console of your web browser. "
+"On most browsers accessible after pressing "
+"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr ""
+
+#: src/utils/ErrorBoundary.jsx:48
+msgid ""
+"Please report this error to our support team via e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+
+#: src/store/auth-context.jsx:49
+msgid "Loading…"
+msgstr ""
+
+#: src/components/Main/CountDown.jsx:38
+#, javascript-format
+msgid "Switching to the default one in: ${ timeLeft } sec."
+msgstr ""
+
+#: src/components/Main/CountDown.jsx:44
+#, javascript-format
+msgid "${ timeLeft } sec."
+msgstr ""
+
+#: src/components/Main/Main.jsx:35
+msgid "Loading..."
+msgstr ""
+
+#: src/components/Main/Main.jsx:50
+msgid "No apps found."
+msgstr ""
+
+#: src/components/Main/Main.jsx:67
+msgid "Available Applications"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:26
+msgid "Light"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:31
+msgid "Dark"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:36
+msgid "Auto"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:49
+msgid "Change Theme"
+msgstr ""
+
+#: src/components/Header/DarkModeDropdown.jsx:58
+#, javascript-format
+msgid "Change Theme (${ theme })"
+msgstr ""
+
+#: src/components/Header/Header.jsx:28
+msgid "Turris Logo"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:19
+msgid "Change Language"
+msgstr ""
+
+#: src/components/Header/LangSwitcher.jsx:35
+msgid "Participate"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log Out"
+msgstr ""
+
+#: src/components/Header/LoginButton.jsx:23
+msgid "Log In"
+msgstr ""
+
+#: src/components/Footer/Footer.jsx:15
+msgid "Turris is developed by CZ.NIC, the CZ domain registry."
+msgstr ""
+
+#: src/components/Cards/AppCard.jsx:31
+msgid "Default Application"
+msgstr ""
+
+#: src/components/Cards/AppCard.jsx:42
+#, javascript-format
+msgid "${ title } Logo"
+msgstr ""
+
+#: src/components/Cards/AppCard.jsx:91
+msgid "Go to "
+msgstr ""
