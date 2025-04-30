@@ -19,16 +19,11 @@ msgid "Oops! Something went wrong:"
 msgstr ""
 
 #: src/utils/ErrorBoundary.jsx:43
-msgid ""
-"More detailed information is available in the console of your web browser. "
-"On most browsers accessible after pressing "
-"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
 
 #: src/utils/ErrorBoundary.jsx:48
-msgid ""
-"Please report this error to our support team via e-mail: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
 
 #: src/store/auth-context.jsx:49
