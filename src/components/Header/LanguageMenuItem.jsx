@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (c) 2021-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -13,14 +13,17 @@ import { locale, saveLocale } from "../../i18n";
 const LANGS = [
     { id: "cs", title: "Čeština" },
     { id: "de", title: "Deutsch" },
+    { id: "es", title: "Español" },
     { id: "en", title: "English" },
+    { id: "fr", title: "Français" },
     { id: "it", title: "Italiano" },
-    { id: "nl", title: "Nederlands" },
     { id: "nb_NO", title: "Norsk Bokmål" },
+    { id: "nl", title: "Nederlands" },
     { id: "pl", title: "Polski" },
     { id: "ru", title: "Русский" },
     { id: "sk", title: "Slovenčina" },
     { id: "sv", title: "Svenska" },
+    { id: "ta", title: "தமிழ்" },
 ];
 
 const setLocale = (locale) => (event) => {
