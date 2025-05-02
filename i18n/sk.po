@@ -33,15 +33,15 @@ msgstr "Prepnutie na predvolenú o ${ timeLeft } s."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } s."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Načítavanie…"
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Nenašli sa žiadne aplikácie."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Dostupné aplikácie"
 
@@ -114,3 +114,7 @@ msgstr "Odhlásiť sa"
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
 msgstr "Prihlásiť sa"
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
+msgstr ""

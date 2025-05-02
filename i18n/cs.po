@@ -34,15 +34,15 @@ msgstr "Přepíná se na výchozí za: ${ timeLeft } sec."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } s"
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Načítání…"
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Nenalezeny žádné aplikace."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Dostupné aplikace"
 
@@ -115,3 +115,7 @@ msgstr "Odhlásit se"
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
 msgstr "Přihlásit se"
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
+msgstr ""

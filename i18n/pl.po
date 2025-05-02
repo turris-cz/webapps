@@ -32,15 +32,15 @@ msgstr "Przełączenie na domyślną w ciągu ${ timeLeft } sek."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } sek."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Ładowanie..."
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Nie znaleziono aplikacji."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Dostępne aplikacje"
 
@@ -112,4 +112,8 @@ msgstr ""
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
+msgstr ""
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
 msgstr ""

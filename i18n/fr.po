@@ -40,15 +40,15 @@ msgstr ""
 msgid "${ timeLeft } sec."
 msgstr ""
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr ""
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr ""
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr ""
 
@@ -108,4 +108,8 @@ msgstr ""
 
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
+msgstr ""
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
 msgstr ""
