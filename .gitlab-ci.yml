@@ -1,4 +1,4 @@
-image: node:20-alpine
+image: node:22-alpine
 
 stages:
   - test
@@ -55,7 +55,8 @@ build:
     - npm run build
     - >
       if [ -n "${CI_COMMIT_TAG}" ]; then
-        VERSION="$(echo "${CI_COMMIT_TAG}" | sed -nE 's/v([0-9]+)\.([0-9]+)\.([0-9]+).*/\1.\2.\3/p')"
+        VERSION="$(echo "${CI_COMMIT_TAG}" | sed -nE
+      's/v([0-9]+)\.([0-9]+)\.([0-9]+).*/\1.\2.\3/p')"
       else
         VERSION="${CI_COMMIT_SHORT_SHA}-dev"
       fi

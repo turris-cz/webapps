@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2021-2024 CZ.NIC z.s.p.o. (https://www.nic.cz/)
+ * Copyright (c) 2021-2025 CZ.NIC z.s.p.o. (https://www.nic.cz/)
  *
  * This is free software, licensed under the GNU General Public License v3.
  * See /LICENSE for more information.
@@ -25,6 +25,7 @@ const Main = () => {
 
     useEffect(() => {
         sendRequest();
+        document.title = t`Available Applications | Turris`;
     }, [sendRequest]);
 
     if (status === "pending") {

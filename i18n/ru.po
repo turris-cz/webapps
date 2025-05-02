@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-08-17 00:09+0000\n"
-"Last-Translator: Maxim <astralfestival@gmail.com>\n"
+"PO-Revision-Date: 2025-04-18 14:13+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/ru/>\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 "mime-version: 1.0\n"
 
 #: src/utils/ErrorBoundary.jsx:25
@@ -33,21 +33,21 @@ msgstr "Переключение на приложение по умолчани
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } сек."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Загрузка..."
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Приложения не найдены."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Доступные Приложения"
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
-msgstr "Светлый"
+msgstr "Светлая"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
@@ -76,41 +76,45 @@ msgstr "Перейти в "
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
+msgstr "Загрузка…"
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Приложение по умолчанию"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr ""
+msgstr "Упс! Что-то пошло не так:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
+msgstr "Более подробная информация доступна в консоли вашего веб-браузера. В большинстве браузеров она доступна после нажатия <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> или <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Автоматически"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr ""
+msgstr "Изменить тему"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr ""
+msgstr "Изменить тему (${ theme })"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Изменить язык"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Выйти"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
+msgstr "Авторизоваться"
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
 msgstr ""

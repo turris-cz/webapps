@@ -1,7 +1,12 @@
-import { defineConfig } from "vite";
-import { rimraf } from "rimraf";
-import react from "@vitejs/plugin-react";
 import path from "path";
+import { fileURLToPath } from "url";
+
+import react from "@vitejs/plugin-react";
+import { rimraf } from "rimraf";
+import { defineConfig } from "vite";
+
+// Get the equivalent of __dirname in ES modules
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // This plugin removes the Service Worker file from the final build.
 const removeMSW = () => ({

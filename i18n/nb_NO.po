@@ -33,15 +33,15 @@ msgstr "Bytter til forvalget om ${ timeLeft } sek."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } sek."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Laster inn …"
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Fant ingen programmer."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Tilgjengelige programmer"
 
@@ -113,4 +113,8 @@ msgstr ""
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
+msgstr ""
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
 msgstr ""
