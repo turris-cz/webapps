@@ -8,6 +8,20 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.1.0] - 2025-05-02
+
+### Added
+
+-   Added & updated Weblate translations
+-   Added new languages to the language menu
+-   Added localization for title
+
+### Changed
+
+-   Set html lang attribute for used locale
+-   Updated Node.js version to 22-alpine in CI configuration
+-   Reordered imports and defined \_\_dirname for ES modules in vite.config.js
+
 ## [6.0.2] - 2024-11-27
 
 ### Added
@@ -42,6 +56,7 @@ and this project adheres to
 -   Refactored Header items to use icons with tooltips
 -   Refactored ErrorBoundary component for improved error handling and UI
     display
+
 -   Set document language based on selected locale
 -   Other improvements in styles and code
 -   NPM audit fix
@@ -162,7 +177,9 @@ and this project adheres to
 
 -   Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.1.0...master
+[6.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.2...v6.1.0
+[6.0.2]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...v6.0.1
 [6.0.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.1...v6.0.0
 [5.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v5.0.0...v5.0.1
