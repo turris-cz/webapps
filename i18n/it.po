@@ -32,15 +32,15 @@ msgstr "Ritorno a quella predefinita in: ${ timeLeft } sec."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } sec."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Caricamento..."
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Nessun'applicazione trovata."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Applicazioni disponibili"
 
@@ -112,4 +112,8 @@ msgstr ""
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
+msgstr ""
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
 msgstr ""

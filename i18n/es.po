@@ -44,15 +44,15 @@ msgstr "Se cambiará al predeterminado en: ${ timeLeft } s."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } s."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Cargando..."
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "No se encontró ninguna aplicación."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Aplicaciones disponibles"
 
@@ -113,3 +113,7 @@ msgstr "Logo de ${ title }"
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
 msgstr "Ir a "
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
+msgstr ""

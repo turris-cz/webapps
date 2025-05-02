@@ -34,15 +34,15 @@ msgstr "Weiterleitung zur Standard-Anwendung in ${ timeLeft } Sekunden."
 msgid "${ timeLeft } sec."
 msgstr "${ timeLeft } Sekunden."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "Wird geladen …"
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "Keine Anwendungen gefunden."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "Verfügbare Anwendungen"
 
@@ -115,3 +115,7 @@ msgstr "Abmeldung"
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
 msgstr "Anmeldung"
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
+msgstr ""

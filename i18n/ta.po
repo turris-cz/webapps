@@ -44,15 +44,15 @@ msgstr "இயல்புநிலை ஒன்றுக்கு மாறு�
 msgid "${ timeLeft } sec."
 msgstr "$ { timeLeft } நொடி."
 
-#: src/components/Main/Main.jsx:35
+#: src/components/Main/Main.jsx:36
 msgid "Loading..."
 msgstr "ஏற்றுகிறது ..."
 
-#: src/components/Main/Main.jsx:50
+#: src/components/Main/Main.jsx:51
 msgid "No apps found."
 msgstr "பயன்பாடுகள் எதுவும் கிடைக்கவில்லை."
 
-#: src/components/Main/Main.jsx:67
+#: src/components/Main/Main.jsx:68
 msgid "Available Applications"
 msgstr "கிடைக்கும் பயன்பாடுகள்"
 
@@ -113,3 +113,7 @@ msgstr "$ { title } லோகோ"
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
 msgstr "செல்லுங்கள் "
+
+#: src/components/Main/Main.jsx:28
+msgid "Available Applications | Turris"
+msgstr ""
