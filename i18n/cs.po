@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-05-14 20:16+0000\n"
+"PO-Revision-Date: 2025-05-17 21:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/webapps/cs/>"
 "\n"
@@ -122,4 +122,4 @@ msgstr "Přihlásit se"
 
 #: src/components/Main/Main.jsx:28
 msgid "Available Applications | Turris"
-msgstr "Dostupné aplikace | Turris"
+msgstr "Aplikace k dispozici | Turris"
