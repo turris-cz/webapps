@@ -1,11 +1,14 @@
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-03-20 22:11+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/turris/webapps/"
+"et/>\n"
 "Language: et\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
@@ -65,11 +68,11 @@ msgstr ""
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
-msgstr ""
+msgstr "Hele kujundus"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
-msgstr ""
+msgstr "Tume kujundus"
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
