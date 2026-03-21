@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-03-22 18:09+0000\n"
-"Last-Translator: XVI <social-xvi@protonmail.com>\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/webapps/"
 "fr/>\n"
 "Language: fr\n"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: src/components/Main/Main.jsx:68
 msgid "Available Applications"
-msgstr ""
+msgstr "Applications disponibles"
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
@@ -69,7 +69,7 @@ msgstr "Clair"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
-msgstr ""
+msgstr "Sombre"
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Changer de langue"
 
 #: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
@@ -98,11 +98,11 @@ msgstr ""
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Déconnexion"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
-msgstr ""
+msgstr "Se connecter"
 
 #: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Application par défaut"
 
 #: src/components/Cards/AppCard.jsx:42
 #, javascript-format
@@ -119,7 +119,7 @@ msgstr ""
 
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
-msgstr ""
+msgstr "Aller vers "
 
 #: src/components/Main/Main.jsx:28
 msgid "Available Applications | Turris"
