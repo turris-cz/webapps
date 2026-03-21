@@ -1,26 +1,37 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-03-22 18:09+0000\n"
+"Last-Translator: XVI <social-xvi@protonmail.com>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/webapps/"
+"fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr ""
+"Une erreur s'est produite dans WebApps : \"${ error }\", voir détails ci-"
+"dessous."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Une erreur s'est produite - Aplications disponibles | Turris"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
 msgstr ""
 
 #: src/utils/ErrorBoundary.jsx:43
+#, fuzzy
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
+"Information plus détaillée disponible dans la console de votre navigateur. "
+"Accessible dans la plupart des navigateurs en appuyant sur les touches <kbd>"
+"<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> ou<kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
@@ -54,7 +65,7 @@ msgstr ""
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
-msgstr ""
+msgstr "Clair"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
@@ -62,7 +73,7 @@ msgstr ""
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Automatique"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
