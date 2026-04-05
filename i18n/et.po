@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-03-20 22:11+0000\n"
+"PO-Revision-Date: 2026-04-06 21:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/turris/webapps/"
 "et/>\n"
@@ -76,7 +76,7 @@ msgstr "Tume kujundus"
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Automaatne"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
@@ -89,7 +89,7 @@ msgstr ""
 
 #: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
-msgstr ""
+msgstr "Turrise logo"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
