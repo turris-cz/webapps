@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-04-06 21:09+0000\n"
+"PO-Revision-Date: 2026-04-08 10:09+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Estonian <https://hosted.weblate.org/projects/turris/webapps/"
 "et/>\n"
@@ -14,14 +14,15 @@ msgstr ""
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
 msgstr ""
+"WebAppsi kontekstis tekkis viga: „${ error }“, üksikasju vaata alljärgnevas."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Tekkis viga - Saadaval rakendused | Turris"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr ""
+msgstr "Vaat kus lops! Midagi läks nüüd viltu:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid ""
@@ -29,42 +30,47 @@ msgid ""
 "On most browsers accessible after pressing "
 "<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
+"Lisateavet leiad oma veebibrauseri arenduskonsoolilt. Enamustes brauserites "
+"on ta nähtav <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> või "
+"<kbd>F12</kbd> vajutamisel."
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Palun teata sellest veast meie kasutajatoe tiimile aadressil: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
+msgstr "Laadin…"
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr ""
+msgstr "Vaikimisi valiku kasutamiseni on jäänud: ${ timeLeft } sek."
 
 #: src/components/Main/CountDown.jsx:44
 #, javascript-format
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } sek."
 
 #: src/components/Main/Main.jsx:28
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Saadaval rakendused | Turris"
 
 #: src/components/Main/Main.jsx:36
 msgid "Loading..."
-msgstr ""
+msgstr "Laadin…"
 
 #: src/components/Main/Main.jsx:51
 msgid "No apps found."
-msgstr ""
+msgstr "Rakendusi ei leidu."
 
 #: src/components/Main/Main.jsx:68
 msgid "Available Applications"
-msgstr ""
+msgstr "Saadaval rakendused"
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
@@ -80,12 +86,12 @@ msgstr "Automaatne"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr ""
+msgstr "Muuda kujundust"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr ""
+msgstr "Muuda kujundust (${ theme })"
 
 #: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
@@ -93,33 +99,33 @@ msgstr "Turrise logo"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Vaheta keelt"
 
 #: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
-msgstr ""
+msgstr "Osale"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Logi välja"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
-msgstr ""
+msgstr "Logi sisse"
 
 #: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turrise arendajaks on CZ.NIC, CZ-domeeni registripidaja."
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Vaikimisi rakendust"
 
 #: src/components/Cards/AppCard.jsx:42
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "${ title } | Logo"
 
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
-msgstr ""
+msgstr "Mine "
