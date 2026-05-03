@@ -1,24 +1,27 @@
 msgid ""
 msgstr ""
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-04 02:14+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
+"webapps/pt/>\n"
 "Language: pt\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
+msgstr "Ocorreu um erro em WebApps: \"${ error }\", veja os detalhes em baixo."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
-msgstr ""
+msgstr "Ocorreu um erro - Aplicações Disponíveis | Turris"
 
 #: src/utils/ErrorBoundary.jsx:37
 msgid "Oops! Something went wrong:"
-msgstr ""
+msgstr "Oops! Algo correu mal:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid ""
@@ -26,97 +29,102 @@ msgid ""
 "On most browsers accessible after pressing "
 "<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
 msgstr ""
+"Informação mais detalhada está disponível na consola do seu navegador web. "
+"Na maioria dos navegadores é acessível pressionando <kbd><kbd>Ctrl</kbd>"
+"+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> ou <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid ""
 "Please report this error to our support team via e-mail: <a "
 "href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 msgstr ""
+"Por favor reporte este erro à nossa equipa de suporte via e-mail: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"
-msgstr ""
+msgstr "A carregar…"
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
 msgid "Switching to the default one in: ${ timeLeft } sec."
-msgstr ""
+msgstr "A mudar para a predefinição em: ${ timeLeft } segundos."
 
 #: src/components/Main/CountDown.jsx:44
 #, javascript-format
 msgid "${ timeLeft } sec."
-msgstr ""
+msgstr "${ timeLeft } segundos."
 
 #: src/components/Main/Main.jsx:28
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Aplicações Disponíveis | Turris"
 
 #: src/components/Main/Main.jsx:36
 msgid "Loading..."
-msgstr ""
+msgstr "A carregar..."
 
 #: src/components/Main/Main.jsx:51
 msgid "No apps found."
-msgstr ""
+msgstr "Nenhuma aplicação encontrada."
 
 #: src/components/Main/Main.jsx:68
 msgid "Available Applications"
-msgstr ""
+msgstr "Aplicações Disponíveis"
 
 #: src/components/Header/DarkModeDropdown.jsx:26
 msgid "Light"
-msgstr ""
+msgstr "Claro"
 
 #: src/components/Header/DarkModeDropdown.jsx:31
 msgid "Dark"
-msgstr ""
+msgstr "Escuro"
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"
-msgstr ""
+msgstr "Automático"
 
 #: src/components/Header/DarkModeDropdown.jsx:49
 msgid "Change Theme"
-msgstr ""
+msgstr "Mudar Tema"
 
 #: src/components/Header/DarkModeDropdown.jsx:58
 #, javascript-format
 msgid "Change Theme (${ theme })"
-msgstr ""
+msgstr "Mudar Tema (${ theme })"
 
 #: src/components/Header/Header.jsx:28
 msgid "Turris Logo"
-msgstr ""
+msgstr "Logotipo do Turris"
 
 #: src/components/Header/LangSwitcher.jsx:19
 msgid "Change Language"
-msgstr ""
+msgstr "Mudar Idioma"
 
 #: src/components/Header/LangSwitcher.jsx:35
 msgid "Participate"
-msgstr ""
+msgstr "Participar"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log Out"
-msgstr ""
+msgstr "Terminar Sessão"
 
 #: src/components/Header/LoginButton.jsx:23
 msgid "Log In"
-msgstr ""
+msgstr "Iniciar Sessão"
 
 #: src/components/Footer/Footer.jsx:15
 msgid "Turris is developed by CZ.NIC, the CZ domain registry."
-msgstr ""
+msgstr "Turris é desenvolvido por CZ.NIC, o registro de domínio CZ."
 
 #: src/components/Cards/AppCard.jsx:31
 msgid "Default Application"
-msgstr ""
+msgstr "Aplicação Predefinida"
 
 #: src/components/Cards/AppCard.jsx:42
 #, javascript-format
 msgid "${ title } Logo"
-msgstr ""
+msgstr "${ title } Logotipo"
 
 #: src/components/Cards/AppCard.jsx:91
 msgid "Go to "
-msgstr ""
+msgstr "Ir para "
