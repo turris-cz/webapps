@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
-"Last-Translator: Piotr Orzechowski <piotr@orzechowski.tech>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/turris/webapps/"
 "pl/>\n"
 "Language: pl\n"
