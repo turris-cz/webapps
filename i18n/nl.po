@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/turris/webapps/nl/>"
 "\n"
 "Language: nl\n"
@@ -13,7 +13,9 @@ msgstr ""
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "De volgende fout is opgetreden in WebApps: \"${ error }\". Zie hieronder voor meer informatie."
+msgstr ""
+"De volgende fout is opgetreden in WebApps: \"${ error }\". Zie hieronder "
+"voor meer informatie."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -21,7 +23,9 @@ msgstr "Er is een fout opgetreden - beschikbare applicaties | Turris"
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr "Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Meld a.u.b. deze fout door eens mail te sturen aan ons support-team: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
