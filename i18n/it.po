@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Anselmo <anselmo@casinadicornia.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/turris/webapps/"
 "it/>\n"
 "Language: it\n"
@@ -13,7 +13,8 @@ msgstr ""
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "Si è verificato un errore in WebApps:\"${ error }\", di seguito i dettagli."
+msgstr ""
+"Si è verificato un errore in WebApps:\"${ error }\", di seguito i dettagli."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -21,7 +22,9 @@ msgstr "Si è verificato un errore - Applicazioni disponibili | Turris"
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr "Vi prego di riportare questo errore alla nostra squadra di supporto via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Vi prego di riportare questo errore alla nostra squadra di supporto via e-"
+"mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
