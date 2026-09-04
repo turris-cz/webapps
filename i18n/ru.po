@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
-"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/"
 "ru/>\n"
 "Language: ru\n"
@@ -23,7 +23,9 @@ msgstr "Произошла ошибка - Доступные Приложени�
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr "Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a "
+"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
