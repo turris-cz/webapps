@@ -1,18 +1,21 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-22 21:01+0000\n"
+"PO-Revision-Date: 2026-09-04 14:02+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
-"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/webapps/es/>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/webapps/"
+"es/>\n"
 "Language: es\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11-dev\n"
+"X-Generator: Weblate 2026.9\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr "Se produjo un error en las aplicaciones web: «${ error }»; encuentre más abajo los detalles."
+msgstr ""
+"Se produjo un error en las aplicaciones web: «${ error }»; encuentre más "
+"abajo los detalles."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -24,11 +27,17 @@ msgstr "Se ha producido un problema:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr "Hallará más información a detalle en la consola del navegador web. Acceda a ella en la mayoría de navegadores con las teclas <kbd><kbd>Ctrl</kbd>+<kbd>Mayús</kbd>+<kbd>J</kbd></kbd> o <kbd>F12</kbd>."
+msgstr ""
+"Hallará más información a detalle en la consola del navegador web. Acceda a "
+"ella en la mayoría de navegadores con las teclas <kbd><kbd>Ctrl</kbd>+<kbd>"
+"Mayús</kbd>+<kbd>J</kbd></kbd> o <kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr "Informe de este error a nuestro equipo de asistencia por correo electrónico (en inglés): <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr ""
+"Informe de este error a nuestro equipo de asistencia por correo electrónico "
+"(en inglés): <a href=\"mailto:tech.support@turris.cz\">"
+"tech.support@turris.cz</a>."
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"
