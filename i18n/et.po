@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:03+0000\n"
 "Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
-"Language-Team: Estonian <https://hosted.weblate.org/projects/turris/webapps/"
-"et/>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/turris/webapps/et/>\n"
 "Language: et\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,8 +12,7 @@ msgstr ""
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
-"WebAppsi kontekstis tekkis viga: „${ error }“, üksikasju vaata alljärgnevas."
+msgstr "WebAppsi kontekstis tekkis viga: „${ error }“, üksikasju vaata alljärgnevas."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -25,22 +23,12 @@ msgid "Oops! Something went wrong:"
 msgstr "Vaat kus lops! Midagi läks nüüd viltu:"
 
 #: src/utils/ErrorBoundary.jsx:43
-msgid ""
-"More detailed information is available in the console of your web browser. "
-"On most browsers accessible after pressing "
-"<kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Lisateavet leiad oma veebibrauseri arenduskonsoolilt. Enamustes brauserites "
-"on ta nähtav <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> või "
-"<kbd>F12</kbd> vajutamisel."
+msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
+msgstr "Lisateavet leiad oma veebibrauseri arenduskonsoolilt. Enamustes brauserites on ta nähtav <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> või <kbd>F12</kbd> vajutamisel."
 
 #: src/utils/ErrorBoundary.jsx:48
-msgid ""
-"Please report this error to our support team via e-mail: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Palun teata sellest veast meie kasutajatoe tiimile aadressil: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Palun teata sellest veast meie kasutajatoe tiimile aadressil: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/store/auth-context.jsx:49
 msgid "Loading…"

@@ -2,13 +2,11 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
 "Last-Translator: Maxim <astralfestival@gmail.com>\n"
-"Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/"
-"ru/>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/webapps/ru/>\n"
 "Language: ru\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 2026.9\n"
 "mime-version: 1.0\n"
 
@@ -23,9 +21,7 @@ msgstr "Произошла ошибка - Доступные Приложени�
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Сообщите об этой ошибке в нашу службу поддержки по электронной почте: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
@@ -92,10 +88,7 @@ msgstr "Упс! Что-то пошло не так:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Более подробная информация доступна в консоли вашего веб-браузера. В "
-"большинстве браузеров она доступна после нажатия <kbd><kbd>Ctrl</kbd>+<kbd>"
-"Shift</kbd>+<kbd>J</kbd></kbd> или <kbd>F12</kbd>."
+msgstr "Более подробная информация доступна в консоли вашего веб-браузера. В большинстве браузеров она доступна после нажатия <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> или <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"

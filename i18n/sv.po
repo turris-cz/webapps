@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
-"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/"
-"sv/>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/webapps/sv/>\n"
 "Language: sv\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,9 +21,7 @@ msgstr "Ett fel inträffade - Tillgängliga applikationer | Turris"
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
-msgstr ""
-"Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a "
-"href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
+msgstr "Vänligen rapportera det här felet till vårat hjälpteam via e-post: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
 
 #: src/components/Main/CountDown.jsx:38
 #, javascript-format
@@ -91,10 +88,7 @@ msgstr "Hoppsan! Någonting gick fel:"
 
 #: src/utils/ErrorBoundary.jsx:43
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Mer detaljerad information finns tillgängligt i din webbläsares konsol. "
-"Tillgänglig i flest webbläsare efter att man trycker <kbd><kbd>Ctrl</kbd>"
-"+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> eller <kbd>F12</kbd>."
+msgstr "Mer detaljerad information finns tillgängligt i din webbläsares konsol. Tillgänglig i flest webbläsare efter att man trycker <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> eller <kbd>F12</kbd>."
 
 #: src/components/Header/DarkModeDropdown.jsx:36
 msgid "Auto"

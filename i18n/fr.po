@@ -2,8 +2,7 @@ msgid ""
 msgstr ""
 "PO-Revision-Date: 2026-09-04 14:02+0000\n"
 "Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/turris/webapps/"
-"fr/>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/webapps/fr/>\n"
 "Language: fr\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,9 +12,7 @@ msgstr ""
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format
 msgid "An error ocurred in WebApps: \"${ error }\", see details below."
-msgstr ""
-"Une erreur s'est produite dans WebApps : \"${ error }\", voir détails ci-"
-"dessous."
+msgstr "Une erreur s'est produite dans WebApps : \"${ error }\", voir détails ci-dessous."
 
 #: src/utils/ErrorBoundary.jsx:33
 msgid "An Error Occurred - Available Applications | Turris"
@@ -26,12 +23,8 @@ msgid "Oops! Something went wrong:"
 msgstr ""
 
 #: src/utils/ErrorBoundary.jsx:43
-#, fuzzy
 msgid "More detailed information is available in the console of your web browser. On most browsers accessible after pressing <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> or <kbd>F12</kbd>."
-msgstr ""
-"Information plus détaillée disponible dans la console de votre navigateur. "
-"Accessible dans la plupart des navigateurs en appuyant sur les touches <kbd>"
-"<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> ou<kbd>F12</kbd>."
+msgstr "Information plus détaillée disponible dans la console de votre navigateur. Accessible dans la plupart des navigateurs en appuyant sur les touches <kbd><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>J</kbd></kbd> ou<kbd>F12</kbd>."
 
 #: src/utils/ErrorBoundary.jsx:48
 msgid "Please report this error to our support team via e-mail: <a href=\"mailto:tech.support@turris.cz\">tech.support@turris.cz</a>."
