@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-08-11 23:58+0000\n"
-"Last-Translator: Piotr Orzechowski <piotr@orzechowski.tech>\n"
+"PO-Revision-Date: 2026-09-04 14:02+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/turris/webapps/pl/>\n"
 "Language: pl\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"x-generator: Weblate 5.0-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"x-generator: Weblate 2026.9\n"
 
 #: src/utils/ErrorBoundary.jsx:25
 #, javascript-format

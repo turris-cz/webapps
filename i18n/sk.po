@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-30 18:11+0000\n"
+"PO-Revision-Date: 2026-09-04 14:02+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/webapps/sk/>\n"
 "Language: sk\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.8.2-dev\n"
+"X-Generator: Weblate 2026.9\n"
 "x-generator: Weblate 4.16.2-dev\n"
 
 #: src/utils/ErrorBoundary.jsx:25
@@ -117,4 +117,4 @@ msgstr "Prihlásiť sa"
 
 #: src/components/Main/Main.jsx:28
 msgid "Available Applications | Turris"
-msgstr ""
+msgstr "Dostupné aplikácie | Turris"
