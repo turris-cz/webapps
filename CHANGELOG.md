@@ -8,7 +8,7 @@ and this project adheres to
 
 ## [Unreleased]
 
-## [6.1.0] - 2026-10-29
+## [6.2.0] - 2026-10-30
 
 ### Added
 
@@ -20,6 +20,20 @@ and this project adheres to
 - Implemented redirection for single app and added tests for Main component
 - Updated several npm dependencies
 - NPM audit fix
+
+## [6.1.0] - 2025-05-02
+
+### Added
+
+- Added & updated Weblate translations
+- Added new languages to the language menu
+- Added localization for title
+
+### Changed
+
+- Set html lang attribute for used locale
+- Updated Node.js version to 22-alpine in CI configuration
+- Reordered imports and define dirname for ES modules in vite.config.js
 
 ## [6.0.3] - 2025-01-28
 
@@ -180,7 +194,8 @@ and this project adheres to
 
 - Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.1.0...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.2.0...master
+[6.2.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.1.0...v6.2.0
 [6.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.3...v6.1.0
 [6.0.3]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.2...v6.0.3
 [6.0.2]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...v6.0.2
