@@ -28,7 +28,23 @@ const Main = () => {
         document.title = t`Available Applications | Turris`;
     }, [sendRequest]);
 
-    if (status === "pending") {
+    // There is nothing to choose from when only one app is available, so
+    // redirect straight to it instead of waiting for the countdown. Skipped in
+    // development, where app URLs fall back to this page and would loop.
+    const singleApp =
+        !import.meta.env.DEV &&
+        status === "completed" &&
+        loadedData?.apps?.length === 1
+            ? loadedData.apps[0]
+            : null;
+
+    useEffect(() => {
+        if (singleApp) {
+            window.location.replace(singleApp.url);
+        }
+    }, [singleApp]);
+
+    if (status === "pending" || singleApp) {
         return (
             <div id="backdrop">
                 <div className="spinner-center">
