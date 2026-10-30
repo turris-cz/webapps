@@ -8,167 +8,180 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.1.0] - 2026-10-29
+
+### Added
+
+- Added & updated Weblate translations
+- Added missing language entries for Estonian and Portuguese
+
+### Changed
+
+- Implemented redirection for single app and added tests for Main component
+- Updated several npm dependencies
+- NPM audit fix
+
 ## [6.0.3] - 2025-01-28
 
 ### Changed
 
--   Make more specific Lighttpd configuration not to block the root namespace
+- Make more specific Lighttpd configuration not to block the root namespace
 
 ## [6.0.2] - 2024-11-27
 
 ### Added
 
--   Added & updated Weblate translations
+- Added & updated Weblate translations
 
 ### Changed
 
--   Enhanced JSON response handling & added Content-Type header to cgi script
+- Enhanced JSON response handling & added Content-Type header to cgi script
 
 ## [6.0.1] - 2024-09-16
 
 ### Changed
 
--   Fixed position of tooltips in styles.css
+- Fixed position of tooltips in styles.css
 
 ## [6.0.0] - 2024-09-13
 
 ### Added
 
--   Added & updated Weblate translations
--   Added Bootswatch v5.3.3
--   Added window.matchMedia mocking to setupTests.js
--   Added Access-Control-Allow-Origin header globally
--   Redirect to HTTPS if available
+- Added & updated Weblate translations
+- Added Bootswatch v5.3.3
+- Added window.matchMedia mocking to setupTests.js
+- Added Access-Control-Allow-Origin header globally
+- Redirect to HTTPS if available
 
 ### Changed
 
--   Refactored Dark Mode
--   Refactored index.scss & styles to match common Turris Bootstrap theme
--   Refactored ThemeContext to improve theme handling and favicon change
--   Refactored Header items to use icons with tooltips
--   Refactored ErrorBoundary component for improved error handling and UI
-    display
--   Set document language based on selected locale
--   Other improvements in styles and code
--   NPM audit fix
+- Refactored Dark Mode
+- Refactored index.scss & styles to match common Turris Bootstrap theme
+- Refactored ThemeContext to improve theme handling and favicon change
+- Refactored Header items to use icons with tooltips
+- Refactored ErrorBoundary component for improved error handling and UI display
+- Set document language based on selected locale
+- Other improvements in styles and code
+- NPM audit fix
 
 ## [5.0.1] - 2024-06-15
 
 ### Changed
 
--   Changed the naming of artifacts in GitLab CI/CD
--   NPM audit fix
+- Changed the naming of artifacts in GitLab CI/CD
+- NPM audit fix
 
 ## [5.0.0] - 2024-05-30
 
 ### Added
 
--   Added & update Weblate translations
+- Added & update Weblate translations
 
 ### Changed
 
--   Migrated from react-scripts to Vite
--   Migrated mocked API calls to MSW
--   Migrated from Jest to Vitest
--   Migrated to Bootstrap 5
--   Updated React to 18
--   Updated packages to latest versions
--   Updated Node.js to 20 in CI/CD
--   Updated README.md
--   Other improvements in styles and code
+- Migrated from react-scripts to Vite
+- Migrated mocked API calls to MSW
+- Migrated from Jest to Vitest
+- Migrated to Bootstrap 5
+- Updated React to 18
+- Updated packages to latest versions
+- Updated Node.js to 20 in CI/CD
+- Updated README.md
+- Other improvements in styles and code
 
 ### Removed
 
--   Removed GitLab CI/CD unit test for coverage
+- Removed GitLab CI/CD unit test for coverage
 
 ## [4.1.0] - 2023-02-22
 
 ### Added
 
--   Added `.pre` stage to GitLab CI
--   Added GitLab CI/CD unit test for coverage
--   Added login and logout support for turris-auth
+- Added `.pre` stage to GitLab CI
+- Added GitLab CI/CD unit test for coverage
+- Added login and logout support for turris-auth
 
 ### Changed
 
--   Reworked app icons and tooltips
--   Dropped unreleased section in Changelog
--   Changed primary color to Turris specific
--   Removed obsolete styles
+- Reworked app icons and tooltips
+- Dropped unreleased section in Changelog
+- Changed primary color to Turris specific
+- Removed obsolete styles
 
 ## [4.0.0] - 2022-12-31
 
--   Migrate to React.js
--   Add language switcher
--   Add GitLab CI
--   Other improvements
+- Migrate to React.js
+- Add language switcher
+- Add GitLab CI
+- Other improvements
 
 ## [3.7] - 2021-09-27
 
--   Use color-scheme detection for theme
--   Sync translations with Turris OS
--   Improve cards transitions
--   Fix headline in README
+- Use color-scheme detection for theme
+- Sync translations with Turris OS
+- Improve cards transitions
+- Fix headline in README
 
 ## [3.6] - 2021-02-19
 
--   Add CSS loader
--   Add tabbing navigation
--   Refactor page loading stages
--   Handle special case with only one app
+- Add CSS loader
+- Add tabbing navigation
+- Refactor page loading stages
+- Handle special case with only one app
 
 ## [3.5] - 2021-01-26
 
--   Make sure default application is listed first
+- Make sure default application is listed first
 
 ## [3.4] - 2020-12-11
 
--   Add light/dark favicon switch
--   Reduce app card's width size
--   Fix default's app focus outline unevenness
--   Fix "default" wording
+- Add light/dark favicon switch
+- Reduce app card's width size
+- Fix default's app focus outline unevenness
+- Fix "default" wording
 
 ## [3.3] - 2020-10-16
 
--   Fix odd icons padding
--   Fix cards transitions
+- Fix odd icons padding
+- Fix cards transitions
 
 ## [3.2] - 2020-09-25
 
--   Fix shadows in Dark Mode
--   Reduce intro paddings
--   Style noscript warning
--   Fix dark-mode toggle on page load
--   Add dark-mode source js & update minified file
+- Fix shadows in Dark Mode
+- Reduce intro paddings
+- Style noscript warning
+- Fix dark-mode toggle on page load
+- Add dark-mode source js & update minified file
 
 ## [3.1] - 2020-09-22
 
--   Fix default translations
--   Remove obsolete icons
--   Add color icons
--   Update monochrome icons
--   Add two columns on medium screens
+- Fix default translations
+- Remove obsolete icons
+- Add color icons
+- Update monochrome icons
+- Add two columns on medium screens
 
 ## [3.0] - 2020-09-17
 
--   Including redesign using bootstrap
--   Minor fixes on backend (introduced @HOST@ notation)
--   Some basic documentation
+- Including redesign using bootstrap
+- Minor fixes on backend (introduced @HOST@ notation)
+- Some basic documentation
 
 ## [2.9] - 2020-09-11
 
--   Redesign WebApps (bootstrap style)
--   Add dark mode
+- Redesign WebApps (bootstrap style)
+- Add dark mode
 
 ## [2.0] - 2020-07-23
 
--   Release version 2.0 - first release of the new system rewritten from scratch
+- Release version 2.0 - first release of the new system rewritten from scratch
 
 ## [1.2] - 2020-06-25
 
--   Initial version
+- Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.3...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.1.0...master
+[6.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.3...v6.1.0
 [6.0.3]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.2...v6.0.3
 [6.0.2]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.1...v6.0.2
 [6.0.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.0...v6.0.1
