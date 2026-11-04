@@ -8,6 +8,12 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [6.2.1] - 2026-11-04
+
+### Changed
+
+- Refactored CI configuration
+
 ## [6.2.0] - 2026-10-30
 
 ### Added
@@ -194,7 +200,8 @@ and this project adheres to
 
 - Initial version
 
-[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.2.0...master
+[unreleased]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.2.1...master
+[6.2.1]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.2.0...v6.2.1
 [6.2.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.1.0...v6.2.0
 [6.1.0]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.3...v6.1.0
 [6.0.3]: https://gitlab.nic.cz/turris/webapps/-/compare/v6.0.2...v6.0.3
