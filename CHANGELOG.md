@@ -8,6 +8,10 @@ and this project adheres to
 
 ## [Unreleased]
 
+### Removed
+
+- Removed global Access-Control-Allow-Origin header; HTTPS availability is now probed with a no-cors request
+
 ## [6.2.1] - 2026-11-04
 
 ### Changed
